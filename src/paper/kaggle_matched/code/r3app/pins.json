@@ -1,0 +1,453 @@
+{
+  "version": "R3_offline_v1",
+  "source_root": "${PCA_DEEP_ROOT}",
+  "capture_sha256": "d7c915162db795f732ec10c5a94832465b995c3de6fd9060818a3e732f803c3f",
+  "tasks": [
+    {
+      "task_id": "kt_9082e3fdd92c8eb20f64",
+      "cell_type": "NK cells",
+      "heldout_donor": "donor_0",
+      "source_donors": "donor_1|donor_2",
+      "target_context_id": "kctx_023f2b1aa744d4db7eac",
+      "source_context_ids": "kctx_9a627aee18e0ee50b28c|kctx_48728b229417a6cf6913",
+      "n_source_atomic_conditions": "274",
+      "n_query_atomic_conditions": "137",
+      "n_source_A_cells_for_feature_selection": "2196",
+      "required_feature_count": "3000",
+      "source_only_gene_selection_done": "False",
+      "expression_read": "False",
+      "task_scope": "DONOR_HELDOUT_WITHIN_FIXED_TYPE_WITH_PLATE_LIBRARY_SHIFT"
+    },
+    {
+      "task_id": "kt_21f23ee980bdee659aea",
+      "cell_type": "NK cells",
+      "heldout_donor": "donor_1",
+      "source_donors": "donor_0|donor_2",
+      "target_context_id": "kctx_9a627aee18e0ee50b28c",
+      "source_context_ids": "kctx_023f2b1aa744d4db7eac|kctx_48728b229417a6cf6913",
+      "n_source_atomic_conditions": "274",
+      "n_query_atomic_conditions": "137",
+      "n_source_A_cells_for_feature_selection": "1959",
+      "required_feature_count": "3000",
+      "source_only_gene_selection_done": "False",
+      "expression_read": "False",
+      "task_scope": "DONOR_HELDOUT_WITHIN_FIXED_TYPE_WITH_PLATE_LIBRARY_SHIFT"
+    },
+    {
+      "task_id": "kt_075e9245b591d87b1e5a",
+      "cell_type": "NK cells",
+      "heldout_donor": "donor_2",
+      "source_donors": "donor_0|donor_1",
+      "target_context_id": "kctx_48728b229417a6cf6913",
+      "source_context_ids": "kctx_023f2b1aa744d4db7eac|kctx_9a627aee18e0ee50b28c",
+      "n_source_atomic_conditions": "274",
+      "n_query_atomic_conditions": "137",
+      "n_source_A_cells_for_feature_selection": "1657",
+      "required_feature_count": "3000",
+      "source_only_gene_selection_done": "False",
+      "expression_read": "False",
+      "task_scope": "DONOR_HELDOUT_WITHIN_FIXED_TYPE_WITH_PLATE_LIBRARY_SHIFT"
+    },
+    {
+      "task_id": "kt_cc0a8fe7ba0f19cf9691",
+      "cell_type": "T cells CD4+",
+      "heldout_donor": "donor_0",
+      "source_donors": "donor_1|donor_2",
+      "target_context_id": "kctx_fe6372070679471828d1",
+      "source_context_ids": "kctx_8d0ad8f0dbf878a9ad47|kctx_8b9759131cfe1f71db66",
+      "n_source_atomic_conditions": "270",
+      "n_query_atomic_conditions": "135",
+      "n_source_A_cells_for_feature_selection": "3708",
+      "required_feature_count": "3000",
+      "source_only_gene_selection_done": "False",
+      "expression_read": "False",
+      "task_scope": "DONOR_HELDOUT_WITHIN_FIXED_TYPE_WITH_PLATE_LIBRARY_SHIFT"
+    },
+    {
+      "task_id": "kt_c85a4378b5936096736f",
+      "cell_type": "T cells CD4+",
+      "heldout_donor": "donor_1",
+      "source_donors": "donor_0|donor_2",
+      "target_context_id": "kctx_8d0ad8f0dbf878a9ad47",
+      "source_context_ids": "kctx_fe6372070679471828d1|kctx_8b9759131cfe1f71db66",
+      "n_source_atomic_conditions": "270",
+      "n_query_atomic_conditions": "135",
+      "n_source_A_cells_for_feature_selection": "3582",
+      "required_feature_count": "3000",
+      "source_only_gene_selection_done": "False",
+      "expression_read": "False",
+      "task_scope": "DONOR_HELDOUT_WITHIN_FIXED_TYPE_WITH_PLATE_LIBRARY_SHIFT"
+    },
+    {
+      "task_id": "kt_d54f075599c244d42b1b",
+      "cell_type": "T cells CD4+",
+      "heldout_donor": "donor_2",
+      "source_donors": "donor_0|donor_1",
+      "target_context_id": "kctx_8b9759131cfe1f71db66",
+      "source_context_ids": "kctx_fe6372070679471828d1|kctx_8d0ad8f0dbf878a9ad47",
+      "n_source_atomic_conditions": "270",
+      "n_query_atomic_conditions": "135",
+      "n_source_A_cells_for_feature_selection": "3508",
+      "required_feature_count": "3000",
+      "source_only_gene_selection_done": "False",
+      "expression_read": "False",
+      "task_scope": "DONOR_HELDOUT_WITHIN_FIXED_TYPE_WITH_PLATE_LIBRARY_SHIFT"
+    }
+  ],
+  "files": [
+    {
+      "path": "code/effect_alignment_metrics.py",
+      "sha256": "7719b593c53ed556750d60e6416fb3ef2b8876869e7ee924693e1ea1fabb2749",
+      "size_bytes": 4074,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "code/prediction_metrics.py",
+      "sha256": "690d8d09711db134e9747c25517fd66d8d1d5454253613409905262844b56b75",
+      "size_bytes": 11842,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "code/run_effect_alignment_v1.py",
+      "sha256": "cf802067764510e41390e5b2c74ea9fe2c9c4f2d481f1e45767f01ed4c4841d3",
+      "size_bytes": 14497,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "code/run_kaggle_prediction_v1.py",
+      "sha256": "4436b3838d05fbc4aa9461e93c60407a31477f5b36b777c5c0d888504bf83865",
+      "size_bytes": 47954,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "configs/kaggle_independent_study_contract_v1.json",
+      "sha256": "e21ea7f1d67ffa0cf1e8376206e629c7a72889b6f28ef1b8c3a9287fb15f5f1f",
+      "size_bytes": 6973,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "configs/kaggle_prediction_v1.json",
+      "sha256": "eb9346db40bf5015825e1088a511ba9d72ca5330f3961aa69cfbb7731de8cc71",
+      "size_bytes": 7710,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "effects/kaggle_atomic_effects_v1/arrays.npz",
+      "sha256": "d939d6b5daf23874af78c9abd0a2c03745a2d2b0ccbf98b87e2dd8a318ae0829",
+      "size_bytes": 11226282,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "effects/kaggle_atomic_effects_v1/fold_gene_panels.tsv",
+      "sha256": "080fdd00b2c6b463dfa5825e88fbd9ffe923d03f28eb492b728f13f775b6fd8c",
+      "size_bytes": 1686818,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "effects/kaggle_atomic_effects_v1/output_manifest.json",
+      "sha256": "020e37ca4efbb0cece9179cd8b9785f044176eb267901740ce575a59987c0261",
+      "size_bytes": 4671,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "metadata/kaggle_atomic_preflight_v1/atomic_index.tsv",
+      "sha256": "85dc44c21a1d6763179dbdf7c01790265d6963e4d1adc65b29f04d763be0ac54",
+      "size_bytes": 168136,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "metadata/kaggle_atomic_preflight_v1/fold_atomic_membership.tsv",
+      "sha256": "051a4919e8885df1c31a16aae0bf3409a2a24c7a17ca5ca03ef273510b7e84ed",
+      "size_bytes": 293503,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "metadata/kaggle_atomic_preflight_v1/output_manifest.json",
+      "sha256": "cb9009609c10fb10062637980949665b9258446b3068cf6a28004334fd352f42",
+      "size_bytes": 3079,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "metadata/kaggle_atomic_preflight_v1/task_index.tsv",
+      "sha256": "5127bb3e7c8bd5b95b057372077c75ae884e5b7bcdc3a428c438b0b25f339848",
+      "size_bytes": 1601,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/input_manifest.json",
+      "sha256": "23e7cc520ebaa2b97c22a5df959af3abddb3a826ad6547549d49ec2ae70ad70e",
+      "size_bytes": 20984,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_075e9245b591d87b1e5a/evaluation_truth.npz",
+      "sha256": "fc3b29038c4608b5e35ed7eadaa13f7dac9ac85bf6bf64b88c791f75fd95b113",
+      "size_bytes": 1557775,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_075e9245b591d87b1e5a/frozen_predictions.npz",
+      "sha256": "aa342a1c863a70d0ca2e69e5edeb0fb629a96a9fc1c72559b718379851dcbe5b",
+      "size_bytes": 29058884,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_075e9245b591d87b1e5a/query_atoms.tsv",
+      "sha256": "b4cbaa72c1f8fdea29995a990a546b8698309b6d17095d1518dcd02cc3d78d03",
+      "size_bytes": 28890,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_075e9245b591d87b1e5a/source_atoms.tsv",
+      "sha256": "7d4b9dea4fe17408331ee9e7968c405d29f0c18a4a667f5404a67241ec87a2ae",
+      "size_bytes": 57363,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_075e9245b591d87b1e5a/source_targets.npz",
+      "sha256": "c0616cbb206a940d675a1fc663bc2296164df85fda2b53666a9ccfffa91e18a1",
+      "size_bytes": 3086910,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_21f23ee980bdee659aea/evaluation_truth.npz",
+      "sha256": "bdad98ed9727b9c3f94218827681f290acfe40e77d5ac8bf79d581db164291cd",
+      "size_bytes": 1557736,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_21f23ee980bdee659aea/frozen_predictions.npz",
+      "sha256": "053cfcc8c674bb4ba2041cbbc3fd012fbdecd670e62caced441744ae15077bae",
+      "size_bytes": 29069012,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_21f23ee980bdee659aea/query_atoms.tsv",
+      "sha256": "793f08c27586d9acf22f2f0ee0abc68eaabc1034c8b2cfb69aec0286eba4f0c5",
+      "size_bytes": 28834,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_21f23ee980bdee659aea/source_atoms.tsv",
+      "sha256": "46feecf5a3d3b5ce636759368f008f852218f7f46f7117752d990055c1bd8bf9",
+      "size_bytes": 57419,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_21f23ee980bdee659aea/source_targets.npz",
+      "sha256": "a2918bc6a0dca09fab3f86fcc5cb0d137b37402238afeda44946ed770e8faa0d",
+      "size_bytes": 3088330,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_9082e3fdd92c8eb20f64/evaluation_truth.npz",
+      "sha256": "21b0b62d553db019364a2aa9af653933bcecf5d21555e9d28cb6513f7fb3ac9d",
+      "size_bytes": 1556270,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_9082e3fdd92c8eb20f64/frozen_predictions.npz",
+      "sha256": "4f0172cc256541f7f1329e14dedeb3dce609ad3916437b196daa432c3eea367f",
+      "size_bytes": 29075213,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_9082e3fdd92c8eb20f64/query_atoms.tsv",
+      "sha256": "e5317f4ceba26346566d9547cb420779ef2c9ec664c832ee360a3bd14f9f3230",
+      "size_bytes": 28795,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_9082e3fdd92c8eb20f64/source_atoms.tsv",
+      "sha256": "99661458c369d8fbd171c3b934aa47f26131b3d1372ede2def733163d32ffc86",
+      "size_bytes": 57458,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_9082e3fdd92c8eb20f64/source_targets.npz",
+      "sha256": "e6495cfc1a30066198ab9cf9a97ab25892437777700454c5e1ec8aa57c0b4316",
+      "size_bytes": 3088370,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_c85a4378b5936096736f/evaluation_truth.npz",
+      "sha256": "ed056b5a00d7b315c17f6db3b6950b3c0da2c2cfdf2a01ec126dd899a7f7e5e1",
+      "size_bytes": 1534297,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_c85a4378b5936096736f/frozen_predictions.npz",
+      "sha256": "b3dc8b07414859d5c841692f699e3c76fdd2ea6406ac3ca386f86d60f5b230b4",
+      "size_bytes": 28670905,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_c85a4378b5936096736f/query_atoms.tsv",
+      "sha256": "a92a757ca4d0f7f2a469ba0c162fdefb48d454dcaee9b67f5acf4b8d392f8e01",
+      "size_bytes": 29019,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_c85a4378b5936096736f/source_atoms.tsv",
+      "sha256": "d9477080506bee6b8bb31ccc2de4b1fc47f7dd016ecc1a21624d82715bfc0fe7",
+      "size_bytes": 57772,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_c85a4378b5936096736f/source_targets.npz",
+      "sha256": "4a3f7b7749146d463f2bac1457fc01d7bb9d4c55a6229935e27f267c5f1d8e61",
+      "size_bytes": 3041216,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_cc0a8fe7ba0f19cf9691/evaluation_truth.npz",
+      "sha256": "f867af352f98dce7d32477ced066b62dd6b8b5d7f54cf3cfe755a18f8ee45854",
+      "size_bytes": 1533783,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_cc0a8fe7ba0f19cf9691/frozen_predictions.npz",
+      "sha256": "79e63604a5251a97eba46c01467f988a9757ad709c876ed1b643d637ba776398",
+      "size_bytes": 28672104,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_cc0a8fe7ba0f19cf9691/query_atoms.tsv",
+      "sha256": "e961a4679fd3b78878a4fbd2a08ed1bf369106b460207d588c18f4fd548769f1",
+      "size_bytes": 29018,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_cc0a8fe7ba0f19cf9691/source_atoms.tsv",
+      "sha256": "9275168e4a9ed3cda08f423c63f2d203ec61bca50832ea9baeda5082fcfc3b69",
+      "size_bytes": 57773,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_cc0a8fe7ba0f19cf9691/source_targets.npz",
+      "sha256": "6cd82ba83a2c1f78c09147bd8c3785d7e6c24d8fbc91a60858b3c05806874985",
+      "size_bytes": 3040939,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_d54f075599c244d42b1b/evaluation_truth.npz",
+      "sha256": "f6d116acd02f28274651962afaf6358f59da8ff713acae0c42414b4d16ba02c2",
+      "size_bytes": 1534704,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_d54f075599c244d42b1b/frozen_predictions.npz",
+      "sha256": "4657a1dccb04d6018864adfad6f5e763f1959e278565c10d80693f14f13c9535",
+      "size_bytes": 28668092,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_d54f075599c244d42b1b/query_atoms.tsv",
+      "sha256": "ae04cb34c936ea71d6e766bd3a0bcc87ee2a9658582a7106d57b9d1197f16fb1",
+      "size_bytes": 29020,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_d54f075599c244d42b1b/source_atoms.tsv",
+      "sha256": "9ad5f16ba257ad349f8d638ebf518918aa0795d58c9ce2e7baf84cf65f64aeed",
+      "size_bytes": 57771,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/kt_d54f075599c244d42b1b/source_targets.npz",
+      "sha256": "53227d6ce23e862006dbdfc85892aca45ded950e30211bf4e2680f5a2223b7be",
+      "size_bytes": 3040855,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "predictions/kaggle_prediction_v1/output_manifest.json",
+      "sha256": "0fb644962d99e4097ce33fcb73553fcf35518e0adec2a05907af36358f334336",
+      "size_bytes": 19931,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "qa/kaggle_clean_embeddings_independent_v1.json",
+      "sha256": "c9e5bad81ac0b62f69c0526d0ce3c280ef219a298c271935e092d729e7f1cffa",
+      "size_bytes": 67915,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "qa/kaggle_effects_independent_v1/audit.json",
+      "sha256": "051f731e9bb919b8180ec53c503d94b74ea4a5697300dddcca9a28527fd561dc",
+      "size_bytes": 23941,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "qa/kaggle_prediction_independent_v2/audit.json",
+      "sha256": "040b90ab0f98d33e515520008aa83a7795c410fdbdcc64ba66795a761bcf7a62",
+      "size_bytes": 6947,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/bge_m3__source_name.npz",
+      "sha256": "1bebaaf7f02577c6f04db1590e25af4cec9c38f4582e7f80884569fbbc5ab06c",
+      "size_bytes": 535926,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/biomedbert__source_name.npz",
+      "sha256": "d90fd342d58f7c4d249a5b63fb57f22348dcc7551ff7935abaab7ea969a93e6f",
+      "size_bytes": 405950,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/encoding_manifest.tsv",
+      "sha256": "b63f3ea4db7b72350151c79a6860883894dd892c142719f23cf5fecf41ea56d6",
+      "size_bytes": 2166,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/medcpt_article__source_name.npz",
+      "sha256": "5bb700d2dc92b512f049dae1938cb1d4c4060c7ff79706fffc174751273395fd",
+      "size_bytes": 405324,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/medcpt_query__source_name.npz",
+      "sha256": "ea1adba9289dbbb2d40129cefabf0e75507656d780afd1dc01e30be96e01a2cb",
+      "size_bytes": 405703,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/output_manifest.json",
+      "sha256": "84c147059162990cec14facda217ebbaf2eb7beafe371ce0acdc934118ae3b38",
+      "size_bytes": 1771,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/qwen3_0_6b__source_name.npz",
+      "sha256": "e4a3f12690eaba698e82505de2fc611589b1d2bfcea07b03a5ed3d448e2652d0",
+      "size_bytes": 536035,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "representations/kaggle_clean_embeddings_v1/full/sapbert__source_name.npz",
+      "sha256": "bdd3035c97d6d779b36f90bf360985d4a0836374aca3a131fda12e5a1456fc3c",
+      "size_bytes": 405631,
+      "binding": "frozen_output_manifest"
+    },
+    {
+      "path": "representations/kaggle_clean_views_v1/output_manifest.json",
+      "sha256": "bdc89812f4d9d46561bf7298e79a8f5bcd1e52437879e65a2a7ee8a9ad83b595",
+      "size_bytes": 779,
+      "binding": "interface_capture"
+    },
+    {
+      "path": "representations/kaggle_clean_views_v1/row_to_text_registry.tsv",
+      "sha256": "7f86f3a107cea667eebdcd430d71394d55c2c4a991cbe3f9d0fc0f6e3ccba909",
+      "size_bytes": 264327,
+      "binding": "capture_table_identity"
+    },
+    {
+      "path": "representations/kaggle_clean_views_v1/unique_texts.tsv",
+      "sha256": "38493900df0bdbd35d8b51eda33752fe040a19a2fb5be2ac96df6bc528045cf8",
+      "size_bytes": 38112,
+      "binding": "capture_table_identity"
+    }
+  ]
+}

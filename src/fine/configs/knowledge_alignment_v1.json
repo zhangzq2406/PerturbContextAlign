@@ -1,0 +1,846 @@
+{
+  "version": "e08_knowledge_alignment_v1_20260920",
+  "configuration_status": "READY_FOR_EXPLICIT_EXECUTION",
+  "output_root": "metrics/knowledge_alignment_v1",
+  "metadata_root": "metadata/knowledge_inputs_v1",
+  "effects_root": "effects/atomic_effects_v1",
+  "e02_root": "metrics/effect_alignment_v1",
+  "morgan_root": "representations/morgan_v1",
+  "clean_views_root": "representations/clean_views_v1",
+  "embedding_root": "representations/knowledge_embeddings_v1/full",
+  "scope": "Result 3 local descriptive knowledge-input/native-prior association and fixed geometric fusion only. No global scores, p-values, CI, prediction decoder, or claim that all E08 prediction objectives are complete.",
+  "scientific_definition_frozen_before_new_alignment_outcomes": true,
+  "models": [
+    "bge_m3",
+    "sapbert",
+    "qwen3_0_6b",
+    "biomedbert",
+    "medcpt_article",
+    "medcpt_query"
+  ],
+  "folds": [
+    "A549",
+    "K562",
+    "MCF7"
+  ],
+  "doses": [
+    10,
+    100,
+    1000,
+    10000
+  ],
+  "dose_unit": "nM",
+  "duration_hours": 24,
+  "cohorts": [
+    {
+      "cohort": "mechanism_text",
+      "flag": "admitted_mechanism",
+      "expected_entities": 57,
+      "expected_atoms": 684,
+      "group_sizes": [
+        57,
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "cohort": "human_target",
+      "flag": "admitted_human_target",
+      "expected_entities": 56,
+      "expected_atoms": 672,
+      "group_sizes": [
+        56,
+        56,
+        56,
+        56
+      ]
+    },
+    {
+      "cohort": "morgan_all",
+      "flag": "all_primary",
+      "expected_entities": 188,
+      "expected_atoms": 2250,
+      "group_sizes": [
+        188,
+        187,
+        187,
+        188
+      ]
+    }
+  ],
+  "expected_primary_atoms": 2250,
+  "expected_all_effect_atoms": 2256,
+  "expected_genes_per_fold": 3000,
+  "expected_objects": 44,
+  "expected_group_results": 528,
+  "expected_query_rows": 50298,
+  "expected_contrasts": 48,
+  "expected_paired_group_results": 576,
+  "expected_paired_query_rows": 60804,
+  "variant": "verified_chembl37_snapshot",
+  "knowledge_views": [
+    "complete_metadata+knowledge",
+    "knowledge_only"
+  ],
+  "expected_unique_knowledge_texts": 729,
+  "knowledge_information": "All sorted unique allowed original mechanism_of_action strings only; no extra target names/IDs, synonyms, disease/approval fields or response selection.",
+  "target_geometry": "Binary membership of deduplicated linked human ChEMBL target IDs; set Jaccard. Target objects may be complexes, families, proteins or nucleic acids; not a gene network. Missing/empty sets fail, never zero vectors.",
+  "morgan_geometry": "Pure binary Tanimoto on frozen full-source radius2 2048bit chirality-preserving Morgan; no dose/state kernel added because dose/context fixed.",
+  "truth_geometry": "Float64 cosine of original effect_log2fc on unchanged heldout-line source-A-selected 3000-gene panel. No centering/residualization or gene re-selection. Fail closed on any exact zero norm.",
+  "original_complete_geometry": "Slice archived authenticated E02 complete_metadata strict-upper cosines bitwise; do not refit or recompute original encoder geometry.",
+  "new_embedding_geometry": "Float64 cosine of exact unique numeric rows then broadcast; identical text vectors remain tied. No epsilon merging, zero-vector substitution or extra transform.",
+  "embedding_norm_atol": 0.000002,
+  "neighbor_k": 10,
+  "minimum_group_n": 12,
+  "truth_relevance": "Exclude self. Fractional top10 boundary exact ties sum10; all truth candidates tied -> NA; recompute per fixed cohort.",
+  "predicted_ties": "Expected DCG over uniform exact-score tie permutations; all predicted candidates tied -> analytic random NDCG and exact zero excess; no tolerance or ID tiebreak.",
+  "rsa": "Spearman on strict upper triangle, average exact-tie ranks; constant geometry NA. No pair-level inference.",
+  "fusion": "Within each already-filtered cohort/line/dose strict-upper pair list, ascending doubled midranks r2. F=(r2_a+r2_b-4)/(4*(P-1)); one final division; fixed0.5 weights. Constant component percentile0.5. Mirror symmetric; exclude diagonal from every rank and score.",
+  "paired": "Left minus right within same cohort and group; compute query differences only for shared finite endpoints before aggregation; retain both marginal and paired counts. RSA paired on common valid groups.",
+  "aggregation": "Query -> fixed group mean -> equal valid dose groups within line -> equal valid lines. Metric-specific valid counts and all unsupported rows retained; no unpaired macro subtraction or study-independent n.",
+  "permissions": {
+    "raw_reads": false,
+    "fit": false,
+    "reencode": false,
+    "modify_upstream": false,
+    "overwrite": false,
+    "real_run_requires_explicit_config_sha256": true
+  },
+  "objects": [
+    {
+      "cohort": "mechanism_text",
+      "object_id": "bge_m3__complete_metadata",
+      "model": "bge_m3",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "bge_m3__complete_metadata+knowledge",
+      "model": "bge_m3",
+      "view": "complete_metadata+knowledge",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "bge_m3__knowledge_only",
+      "model": "bge_m3",
+      "view": "knowledge_only",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "sapbert__complete_metadata",
+      "model": "sapbert",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "sapbert__complete_metadata+knowledge",
+      "model": "sapbert",
+      "view": "complete_metadata+knowledge",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "sapbert__knowledge_only",
+      "model": "sapbert",
+      "view": "knowledge_only",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "qwen3_0_6b__complete_metadata",
+      "model": "qwen3_0_6b",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "qwen3_0_6b__complete_metadata+knowledge",
+      "model": "qwen3_0_6b",
+      "view": "complete_metadata+knowledge",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "qwen3_0_6b__knowledge_only",
+      "model": "qwen3_0_6b",
+      "view": "knowledge_only",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "biomedbert__complete_metadata",
+      "model": "biomedbert",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "biomedbert__complete_metadata+knowledge",
+      "model": "biomedbert",
+      "view": "complete_metadata+knowledge",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "biomedbert__knowledge_only",
+      "model": "biomedbert",
+      "view": "knowledge_only",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "medcpt_article__complete_metadata",
+      "model": "medcpt_article",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "medcpt_article__complete_metadata+knowledge",
+      "model": "medcpt_article",
+      "view": "complete_metadata+knowledge",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "medcpt_article__knowledge_only",
+      "model": "medcpt_article",
+      "view": "knowledge_only",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "medcpt_query__complete_metadata",
+      "model": "medcpt_query",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "medcpt_query__complete_metadata+knowledge",
+      "model": "medcpt_query",
+      "view": "complete_metadata+knowledge",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "mechanism_text",
+      "object_id": "medcpt_query__knowledge_only",
+      "model": "medcpt_query",
+      "view": "knowledge_only",
+      "kind": "knowledge_cosine"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "bge_m3__complete_metadata",
+      "model": "bge_m3",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "sapbert__complete_metadata",
+      "model": "sapbert",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "qwen3_0_6b__complete_metadata",
+      "model": "qwen3_0_6b",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "biomedbert__complete_metadata",
+      "model": "biomedbert",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "medcpt_article__complete_metadata",
+      "model": "medcpt_article",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "medcpt_query__complete_metadata",
+      "model": "medcpt_query",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "native_human_target",
+      "model": "native_human_target",
+      "view": "native_prior",
+      "kind": "native"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "bge_m3__fusion_native_human_target",
+      "model": "bge_m3",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "bge_m3__complete_metadata",
+      "component_b": "native_human_target"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "sapbert__fusion_native_human_target",
+      "model": "sapbert",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "sapbert__complete_metadata",
+      "component_b": "native_human_target"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "qwen3_0_6b__fusion_native_human_target",
+      "model": "qwen3_0_6b",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "qwen3_0_6b__complete_metadata",
+      "component_b": "native_human_target"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "biomedbert__fusion_native_human_target",
+      "model": "biomedbert",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "biomedbert__complete_metadata",
+      "component_b": "native_human_target"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "medcpt_article__fusion_native_human_target",
+      "model": "medcpt_article",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "medcpt_article__complete_metadata",
+      "component_b": "native_human_target"
+    },
+    {
+      "cohort": "human_target",
+      "object_id": "medcpt_query__fusion_native_human_target",
+      "model": "medcpt_query",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "medcpt_query__complete_metadata",
+      "component_b": "native_human_target"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "bge_m3__complete_metadata",
+      "model": "bge_m3",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "sapbert__complete_metadata",
+      "model": "sapbert",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "qwen3_0_6b__complete_metadata",
+      "model": "qwen3_0_6b",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "biomedbert__complete_metadata",
+      "model": "biomedbert",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "medcpt_article__complete_metadata",
+      "model": "medcpt_article",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "medcpt_query__complete_metadata",
+      "model": "medcpt_query",
+      "view": "complete_metadata",
+      "kind": "archived_complete"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "native_morgan",
+      "model": "native_morgan",
+      "view": "native_prior",
+      "kind": "native"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "bge_m3__fusion_native_morgan",
+      "model": "bge_m3",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "bge_m3__complete_metadata",
+      "component_b": "native_morgan"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "sapbert__fusion_native_morgan",
+      "model": "sapbert",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "sapbert__complete_metadata",
+      "component_b": "native_morgan"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "qwen3_0_6b__fusion_native_morgan",
+      "model": "qwen3_0_6b",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "qwen3_0_6b__complete_metadata",
+      "component_b": "native_morgan"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "biomedbert__fusion_native_morgan",
+      "model": "biomedbert",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "biomedbert__complete_metadata",
+      "component_b": "native_morgan"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "medcpt_article__fusion_native_morgan",
+      "model": "medcpt_article",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "medcpt_article__complete_metadata",
+      "component_b": "native_morgan"
+    },
+    {
+      "cohort": "morgan_all",
+      "object_id": "medcpt_query__fusion_native_morgan",
+      "model": "medcpt_query",
+      "view": "fixed_rank_fusion",
+      "kind": "fusion",
+      "component_a": "medcpt_query__complete_metadata",
+      "component_b": "native_morgan"
+    }
+  ],
+  "contrasts": [
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "bge_m3__augmentation_minus_complete",
+      "left": "bge_m3__complete_metadata+knowledge",
+      "right": "bge_m3__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "bge_m3__knowledge_only_minus_complete",
+      "left": "bge_m3__knowledge_only",
+      "right": "bge_m3__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "sapbert__augmentation_minus_complete",
+      "left": "sapbert__complete_metadata+knowledge",
+      "right": "sapbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "sapbert__knowledge_only_minus_complete",
+      "left": "sapbert__knowledge_only",
+      "right": "sapbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "qwen3_0_6b__augmentation_minus_complete",
+      "left": "qwen3_0_6b__complete_metadata+knowledge",
+      "right": "qwen3_0_6b__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "qwen3_0_6b__knowledge_only_minus_complete",
+      "left": "qwen3_0_6b__knowledge_only",
+      "right": "qwen3_0_6b__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "biomedbert__augmentation_minus_complete",
+      "left": "biomedbert__complete_metadata+knowledge",
+      "right": "biomedbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "biomedbert__knowledge_only_minus_complete",
+      "left": "biomedbert__knowledge_only",
+      "right": "biomedbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "medcpt_article__augmentation_minus_complete",
+      "left": "medcpt_article__complete_metadata+knowledge",
+      "right": "medcpt_article__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "medcpt_article__knowledge_only_minus_complete",
+      "left": "medcpt_article__knowledge_only",
+      "right": "medcpt_article__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "medcpt_query__augmentation_minus_complete",
+      "left": "medcpt_query__complete_metadata+knowledge",
+      "right": "medcpt_query__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "mechanism_text",
+      "contrast_id": "medcpt_query__knowledge_only_minus_complete",
+      "left": "medcpt_query__knowledge_only",
+      "right": "medcpt_query__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "bge_m3__native_minus_complete",
+      "left": "native_human_target",
+      "right": "bge_m3__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "bge_m3__fusion_minus_complete",
+      "left": "bge_m3__fusion_native_human_target",
+      "right": "bge_m3__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "bge_m3__fusion_minus_native",
+      "left": "bge_m3__fusion_native_human_target",
+      "right": "native_human_target",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "sapbert__native_minus_complete",
+      "left": "native_human_target",
+      "right": "sapbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "sapbert__fusion_minus_complete",
+      "left": "sapbert__fusion_native_human_target",
+      "right": "sapbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "sapbert__fusion_minus_native",
+      "left": "sapbert__fusion_native_human_target",
+      "right": "native_human_target",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "qwen3_0_6b__native_minus_complete",
+      "left": "native_human_target",
+      "right": "qwen3_0_6b__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "qwen3_0_6b__fusion_minus_complete",
+      "left": "qwen3_0_6b__fusion_native_human_target",
+      "right": "qwen3_0_6b__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "qwen3_0_6b__fusion_minus_native",
+      "left": "qwen3_0_6b__fusion_native_human_target",
+      "right": "native_human_target",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "biomedbert__native_minus_complete",
+      "left": "native_human_target",
+      "right": "biomedbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "biomedbert__fusion_minus_complete",
+      "left": "biomedbert__fusion_native_human_target",
+      "right": "biomedbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "biomedbert__fusion_minus_native",
+      "left": "biomedbert__fusion_native_human_target",
+      "right": "native_human_target",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "medcpt_article__native_minus_complete",
+      "left": "native_human_target",
+      "right": "medcpt_article__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "medcpt_article__fusion_minus_complete",
+      "left": "medcpt_article__fusion_native_human_target",
+      "right": "medcpt_article__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "medcpt_article__fusion_minus_native",
+      "left": "medcpt_article__fusion_native_human_target",
+      "right": "native_human_target",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "medcpt_query__native_minus_complete",
+      "left": "native_human_target",
+      "right": "medcpt_query__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "medcpt_query__fusion_minus_complete",
+      "left": "medcpt_query__fusion_native_human_target",
+      "right": "medcpt_query__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "human_target",
+      "contrast_id": "medcpt_query__fusion_minus_native",
+      "left": "medcpt_query__fusion_native_human_target",
+      "right": "native_human_target",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "bge_m3__native_minus_complete",
+      "left": "native_morgan",
+      "right": "bge_m3__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "bge_m3__fusion_minus_complete",
+      "left": "bge_m3__fusion_native_morgan",
+      "right": "bge_m3__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "bge_m3__fusion_minus_native",
+      "left": "bge_m3__fusion_native_morgan",
+      "right": "native_morgan",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "sapbert__native_minus_complete",
+      "left": "native_morgan",
+      "right": "sapbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "sapbert__fusion_minus_complete",
+      "left": "sapbert__fusion_native_morgan",
+      "right": "sapbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "sapbert__fusion_minus_native",
+      "left": "sapbert__fusion_native_morgan",
+      "right": "native_morgan",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "qwen3_0_6b__native_minus_complete",
+      "left": "native_morgan",
+      "right": "qwen3_0_6b__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "qwen3_0_6b__fusion_minus_complete",
+      "left": "qwen3_0_6b__fusion_native_morgan",
+      "right": "qwen3_0_6b__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "qwen3_0_6b__fusion_minus_native",
+      "left": "qwen3_0_6b__fusion_native_morgan",
+      "right": "native_morgan",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "biomedbert__native_minus_complete",
+      "left": "native_morgan",
+      "right": "biomedbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "biomedbert__fusion_minus_complete",
+      "left": "biomedbert__fusion_native_morgan",
+      "right": "biomedbert__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "biomedbert__fusion_minus_native",
+      "left": "biomedbert__fusion_native_morgan",
+      "right": "native_morgan",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "medcpt_article__native_minus_complete",
+      "left": "native_morgan",
+      "right": "medcpt_article__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "medcpt_article__fusion_minus_complete",
+      "left": "medcpt_article__fusion_native_morgan",
+      "right": "medcpt_article__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "medcpt_article__fusion_minus_native",
+      "left": "medcpt_article__fusion_native_morgan",
+      "right": "native_morgan",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "medcpt_query__native_minus_complete",
+      "left": "native_morgan",
+      "right": "medcpt_query__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "medcpt_query__fusion_minus_complete",
+      "left": "medcpt_query__fusion_native_morgan",
+      "right": "medcpt_query__complete_metadata",
+      "direction": "left_minus_right"
+    },
+    {
+      "cohort": "morgan_all",
+      "contrast_id": "medcpt_query__fusion_minus_native",
+      "left": "medcpt_query__fusion_native_morgan",
+      "right": "native_morgan",
+      "direction": "left_minus_right"
+    }
+  ],
+  "static_gates": [
+    {
+      "path": "effects/atomic_effects_v1/audit.json",
+      "sha256": "678d96f575c72383beb08d2c0bd5302d39044007cb76c31c7499eb868c5d002d",
+      "status": "PASS"
+    },
+    {
+      "path": "qa/effect_alignment_independent_v1/audit.json",
+      "sha256": "e33a09b3dc3d2d6a1c9ae83a550c5ceb8c40fab2922d92884e4e68bde592b12d",
+      "status": "PASS"
+    },
+    {
+      "path": "metrics/effect_alignment_v1/audit.json",
+      "sha256": "84b0c22da0e5a08bfeabea7be723f8eac2bf61c8b6305658627da6d61fd78231",
+      "status": "PASS"
+    },
+    {
+      "path": "metrics/effect_alignment_v1/representation_manifest.json",
+      "sha256": "4b5c1ab62aad89d6f5e9e30f26d18eadf5d8d4a4803ae1d3fbd3a7d34704e5ce"
+    },
+    {
+      "path": "metrics/effect_alignment_v1/input_manifest.json",
+      "sha256": "a36175a0d22e1163e3d1ae521cca13d36bc02f16181c2099b8e3ee1e8b8a69b8"
+    },
+    {
+      "path": "predictions/sciplex_loco_six_encoder_v1/representation_manifest.json",
+      "sha256": "a859bc1ffcd7195ba386ce2f5de2a227ae843680d420c3bbc29717f95ec8534a"
+    },
+    {
+      "path": "representations/morgan_v1/audit.json",
+      "sha256": "b4656a2a4403e5d023e551c522944390a3fa795c1f310cd843f25203b6750492",
+      "status": "PASS"
+    },
+    {
+      "path": "metadata/knowledge_inputs_v1/output_manifest.json",
+      "sha256": "a26c50d33537f3cf40e4d4e35539a610e213ab10d67df5a31f85b5446230d2d1"
+    },
+    {
+      "path": "configs/knowledge_admission_v1.json",
+      "sha256": "5188ff0a134ad796eb1c8e70728b4df1cbae0e95d5474199172c2b59397214d5"
+    },
+    {
+      "path": "code/effect_alignment_metrics.py",
+      "sha256": "7719b593c53ed556750d60e6416fb3ef2b8876869e7ee924693e1ea1fabb2749"
+    }
+  ],
+  "runtime_gates": {
+    "metadata_independent": {
+      "path": "qa/knowledge_inputs_independent_v1/audit.json",
+      "sha256": "1d2b29de1a997ef1dcf7c9f44dc51f9641a62dd5c3a8f121b56f84585e19071f",
+      "status": "PASS_INDEPENDENT_KNOWLEDGE_INPUTS",
+      "manifest_sha256_field": "producer_output_manifest_sha256"
+    },
+    "encoding_independent": {
+      "path": "qa/knowledge_embeddings_independent_v1.json",
+      "sha256": "4c0c3454c480ab270f0b8b895fed59322e1bd7b1e176d611ae8583a4eff5f03f",
+      "status": "PASS_INDEPENDENT_KNOWLEDGE_EMBEDDINGS",
+      "manifest_sha256_field": "producer_output_manifest_sha256"
+    },
+    "encoding_output_manifest": {
+      "path": "representations/knowledge_embeddings_v1/full/output_manifest.json",
+      "sha256": "32ae5fc9384635e83a650a41b59978ac46524f1926dc5fb1a62a49ab09a1b524"
+    }
+  }
+}

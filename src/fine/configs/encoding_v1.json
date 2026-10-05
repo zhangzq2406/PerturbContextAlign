@@ -1,0 +1,30 @@
+{
+  "version": "clean_embeddings_v1",
+  "input_root": "${PCA_DEEP_ROOT}/representations/clean_views_v1",
+  "output_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v1",
+  "log_root": "${PCA_DEEP_ROOT}/logs/encoding_v1",
+  "model_manifest": "${PCA_DATA_ROOT}/analysis/sciplex_context_effect_v1/manifests/model_snapshot_manifest.tsv",
+  "model_files_manifest": "${PCA_DATA_ROOT}/analysis/sciplex_context_effect_v1/manifests/model_snapshot_file_sha256.tsv",
+  "variant": "source_name",
+  "views": ["entity", "entity_exposure", "entity_context", "complete_metadata"],
+  "expected_text_count": 3760,
+  "expected_atom_count": 2256,
+  "max_length": 512,
+  "batch_size": 16,
+  "seed": 20260711,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "cpu_threads": 4,
+  "l2_normalize": true,
+  "network_access": "disabled",
+  "input_expression_or_effect_data": false,
+  "smoke_texts_per_view": 3,
+  "smoke_full_absolute_tolerance": 0.0001,
+  "models": [
+    {"model_key": "bge_m3", "model_id": "BAAI/bge-m3", "revision": "5617a9f61b028005a4858fdac845db406aefb181", "backend": "sentence_transformers", "pooling": "bundled", "dimension": 1024},
+    {"model_key": "sapbert", "model_id": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext", "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d", "backend": "hf_mean", "pooling": "mean", "dimension": 768}
+  ],
+  "input_manifest_sha256": "b0eefb1cfee63e98e7f9c962b09efc07df92f63964f62718d64283363b787507",
+  "model_manifest_sha256": "d23c578183f23fc57ca178f6544ac92d806dba15f9972c386083784883723de1",
+  "model_files_manifest_sha256": "b7ff885e6c1037682f504caecbdc238734e5fcd1a02d6dfac1f64ee1dae98543"
+}

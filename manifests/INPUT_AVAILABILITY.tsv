@@ -1,0 +1,9 @@
+input_group	location_or_authority	availability	notes
+publication_sources	Figshare public source-data archive	EXTERNAL_COMPANION_RELEASE	Current public source inventory: 122 files, including 105 TSV files; not duplicated in this code repository.
+raw_single_cell	Original public dataset releases	EXTERNAL	Raw or processed H5AD files are not redistributed; obtain them from the cited study resources and preserve dataset-specific expression scales.
+pretrained_model_weights	Original model providers	EXTERNAL	Model weights and local caches are not redistributed. Public fine-stage manifests record model revisions and selected file hashes.
+fine_model_identity	inputs/frozen/fine_models	INCLUDED	Path-sanitized model snapshot manifest and per-file SHA256 manifest.
+r2_lightweight_inputs	inputs/frozen/result2/configs	INCLUDED	Dataset catalog and effect-cache configuration required by released R2 code; corrected nuisance-control policy is supplied separately in configs/r2.
+phase_ab_freeze	inputs/frozen/phase_ab	INCLUDED	Path-sanitized lightweight freeze manifest; underlying expression/schema data remain external.
+mechanism_length_balanced	inputs/v30/mechanism_length_balanced	INCLUDED	Public-safe mechanism corpus metadata, fixed length-balanced assignment map, and mapping-quality audit.
+large_prediction_arrays	Author-machine frozen run directories	NOT_REDISTRIBUTED	Large prediction arrays are omitted; release tables and frozen seals/checksums are provided in the companion results/provenance release where applicable.

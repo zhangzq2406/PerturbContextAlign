@@ -1,0 +1,26 @@
+{
+  "status": "CAPTURED",
+  "scope": "IMPLEMENTATION_INTERFACE_ONLY_NOT_R3_RESULTS",
+  "source_root": "${PCA_DEEP_ROOT}",
+  "output_root": "${PCA_PAPER_ROOT}/R3_interface_capture_20260925T010715912767Z",
+  "environment": {
+    "python": "3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]",
+    "python_executable": "${PYTHON}",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3"
+  },
+  "n_tasks_observed": 6,
+  "n_source_files_copied": 13,
+  "small_source_bytes_copied": 406992,
+  "numeric_matrix_read": false,
+  "scientific_metrics_computed": false,
+  "project_code_executed": false,
+  "npz_files_exported": false,
+  "raw_h5ad_read": false,
+  "training_performed": false,
+  "inputs_modified": false,
+  "limitations": [],
+  "note": "No numerical validity or R3 scoring PASS is claimed."
+}

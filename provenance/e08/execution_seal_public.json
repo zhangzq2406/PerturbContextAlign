@@ -1,0 +1,72 @@
+{
+  "status": "SEALED_BEFORE_NEW_RESPONSE_FIT",
+  "created_utc": "2026-09-20T00:30:28.989326+00:00",
+  "config_sha256": "454d46aec78d4e1a98c207305276d120e63f5725b3619bdf5fa69343eb344d05",
+  "input_manifest_sha256": "3e73d17b613fe3d5850f3d4b0f041bfba0507051936840e44600dbabc7401657",
+  "script_sha256": "9237155f6b85dbbb5fc96ea026e05444f7bb6dea32afc6a6850c568d451553cb",
+  "test_report_path": "${PCA_PAPER_ROOT}/paper/20260920/experiments/e08_prediction_v1/synthetic_tests_v1.json",
+  "test_report_sha256": "693c590dcdd2d304244557b2a7861158fe7ba2ddd4612b0c6614ab7b2ec8f068",
+  "preflight_outputs": [
+    {
+      "path": "preflight/audit.json",
+      "sha256": "b216f5af3e3047c058ff0cc89048f001e4891490f4532620159ef544566038c7"
+    },
+    {
+      "path": "preflight/contrast_registry.tsv",
+      "sha256": "c0d49ac8ea6bf7672815553692d48a3072e73fa09e5592e56c5e9ddd17a2c79d"
+    },
+    {
+      "path": "preflight/fold_support.tsv",
+      "sha256": "6daa9cbfd85e172aec68ba23f2a0c78c3fc5bfdc21cddf50302c2692784f551b"
+    },
+    {
+      "path": "preflight/gene_panels.tsv",
+      "sha256": "209687796595fa94ec97f7dbcd62452c57f9e10af9a35854521c59ef9a056119"
+    },
+    {
+      "path": "preflight/mechanism57__A549__landmarks.tsv",
+      "sha256": "0c6cc1282b6391ede815b4169608f091eb1002d3124d7e44c0c53daa2b2136bc"
+    },
+    {
+      "path": "preflight/mechanism57__K562__landmarks.tsv",
+      "sha256": "52d57c1884ad71a6ba6e027a31b1db81cf72492848e4efae82a6f207244a8663"
+    },
+    {
+      "path": "preflight/mechanism57__MCF7__landmarks.tsv",
+      "sha256": "a1f1905f023661a8a405a3929d6784e1eaab32986e422777a23a34d7be8700e9"
+    },
+    {
+      "path": "preflight/mechanism57__atoms.tsv",
+      "sha256": "8859fdfdda3e5aaeb76f68786afb6f928dadb2f3fce3933222b9c3879cc83417"
+    },
+    {
+      "path": "preflight/mechanism57__text_mapping.tsv",
+      "sha256": "e04561fcffaed085e7dc70e9cc05170f8132ff6d5d56425dbe9d6485f911df15"
+    },
+    {
+      "path": "preflight/method_registry.tsv",
+      "sha256": "ea1aebeb2f0d430a73ae97902f89dd33371abf186522ba9a3bf624d813e03546"
+    },
+    {
+      "path": "preflight/target56__A549__landmarks.tsv",
+      "sha256": "f8154198c7d4d88d931a43bcbed592463ae812353b8f2073658a9aded2c4c207"
+    },
+    {
+      "path": "preflight/target56__K562__landmarks.tsv",
+      "sha256": "e445a2e903aebf6287932b5c0aa98f1437ae2361cc61332926f80c742f37b5b3"
+    },
+    {
+      "path": "preflight/target56__MCF7__landmarks.tsv",
+      "sha256": "a0f284ec7c9e02a9fd6faba1eac6cb8ed39f933d5ed158274eace3a81d1c7b26"
+    },
+    {
+      "path": "preflight/target56__atoms.tsv",
+      "sha256": "84e3f6fe7271dfb1adb2e0810394dc6f398398e0b90ece2a44773cde3839a4c7"
+    },
+    {
+      "path": "preflight/target56__text_mapping.tsv",
+      "sha256": "13612ba53d417d756bc415c6b8aea7a9a93d057fe670e6a420dc0519a79a785d"
+    }
+  ],
+  "production_requires_explicit_execute_and_exact_seal_sha": true
+}

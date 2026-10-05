@@ -1,0 +1,7 @@
+model_key	display_name	group	model_id	backend	pooling	trust_remote_code	expected_dim	max_length	encoder_batch_size	text_chunk_size	component_aggregation_chunk	normalized	source_contract
+bge_m3	BGE-M3	general_purpose	BAAI/bge-m3	sentence_transformers	sentence_transformers	False	1024	512	64	2048	4096	True	frozen_corrected_R1_r1_full_pipeline.py
+qwen3_0_6b	Qwen3-Embedding-0.6B	general_purpose	Qwen/Qwen3-Embedding-0.6B	sentence_transformers	sentence_transformers	True	1024	512	64	2048	4096	True	frozen_corrected_R1_r1_full_pipeline.py
+sapbert	SapBERT	biomedical	cambridgeltl/SapBERT-from-PubMedBERT-fulltext	transformers	mean	False	768	512	64	2048	4096	True	frozen_corrected_R1_r1_full_pipeline.py
+biomedbert	BiomedBERT	biomedical	microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext	transformers	mean	False	768	512	64	2048	4096	True	frozen_corrected_R1_r1_full_pipeline.py
+medcpt_query	MedCPT Query	biomedical	ncbi/MedCPT-Query-Encoder	transformers	cls	False	768	512	64	2048	4096	True	frozen_corrected_R1_r1_full_pipeline.py
+medcpt_article	MedCPT Article	biomedical	ncbi/MedCPT-Article-Encoder	transformers	cls	False	768	512	64	2048	4096	True	frozen_corrected_R1_r1_full_pipeline.py

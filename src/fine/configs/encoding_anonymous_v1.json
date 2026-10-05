@@ -1,0 +1,24 @@
+{
+  "version": "clean_embeddings_anonymous_shared_text_v1_20260915",
+  "legacy_configs": [
+    {"path": "${PCA_DEEP_ROOT}/configs/encoding_v1.json", "sha256": "72fea4fdad20bd3d15a97eed1cb7857645cdfc3ce0fb6b4fdcbea41e0ea3def9"},
+    {"path": "${PCA_DEEP_ROOT}/configs/encoding_v2_additional_four.json", "sha256": "88095de266308f158d6fa8120f4a98face38a2c02a82e09f3126794cf1a3dc5c"}
+  ],
+  "helper_hashes": {
+    "encode_clean_views.py": "8bb2df4b1774338f89d74015d2d8b07a9a50344215431179aba30b09d5ecf409",
+    "encode_clean_views_v2.py": "b53a24f201f85227b4c91c6553b6742e2fb50d51392ea79da83bdb4b9c35b7b0"
+  },
+  "output_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_anonymous_v1",
+  "log_root": "${PCA_DEEP_ROOT}/logs/encoding_anonymous_v1",
+  "variant": "anonymous_shared_text",
+  "variants": ["anonymous_seed_20260914", "anonymous_seed_20260915", "anonymous_seed_20260916"],
+  "anonymous_mapping_seeds": [20260914, 20260915, 20260916],
+  "expected_shared_unique_texts": 3760,
+  "expected_variant_registry_rows": 9024,
+  "expected_union_registry_rows": 27072,
+  "expected_atoms_per_variant": 2256,
+  "source_name_text_overlap": 0,
+  "inference_policy": "Inherit unchanged exact revisions, pooling, float32, max_length512, batch16 and inference RNG seed20260711 from the two hash-locked legacy configs. Mapping seeds are a different concept.",
+  "join_policy": "Use (atomic_id, view, variant) to join the immutable registry to text_id. Same anonymous text can denote different drugs across variants. Only text embeddings are shared; variant/entity semantic assignments must never be merged.",
+  "scope": "Generate six-model anonymous shared exact-text embeddings only. No anonymous E01/E02/prediction scores; no response/raw access; no model download."
+}

@@ -1,0 +1,33 @@
+{
+  "version": "clean_embeddings_v2_additional_four",
+  "input_root": "${PCA_DEEP_ROOT}/representations/clean_views_v1",
+  "output_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v2_additional_four",
+  "log_root": "${PCA_DEEP_ROOT}/logs/encoding_v2_additional_four",
+  "model_manifest": "${PCA_DATA_ROOT}/analysis/sciplex_context_effect_v1/manifests/model_snapshot_manifest.tsv",
+  "model_files_manifest": "${PCA_DATA_ROOT}/analysis/sciplex_context_effect_v1/manifests/model_snapshot_file_sha256.tsv",
+  "variant": "source_name",
+  "views": ["entity", "entity_exposure", "entity_context", "complete_metadata"],
+  "expected_text_count": 3760,
+  "expected_atom_count": 2256,
+  "max_length": 512,
+  "batch_size": 16,
+  "seed": 20260711,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "cpu_threads": 4,
+  "l2_normalize": true,
+  "network_access": "disabled",
+  "input_expression_or_effect_data": false,
+  "smoke_texts_per_view": 3,
+  "smoke_full_absolute_tolerance": 0.0001,
+  "models": [
+    {"model_key": "qwen3_0_6b", "model_id": "Qwen/Qwen3-Embedding-0.6B", "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3", "backend": "sentence_transformers", "pooling": "bundled", "effective_pooling": "last_token", "dimension": 1024},
+    {"model_key": "biomedbert", "model_id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext", "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062", "backend": "hf_mean", "pooling": "mean", "dimension": 768},
+    {"model_key": "medcpt_article", "model_id": "ncbi/MedCPT-Article-Encoder", "revision": "d05a736da4bb84ee4057b7f7999485be6ed85465", "backend": "hf_mean", "pooling": "cls", "dimension": 768},
+    {"model_key": "medcpt_query", "model_id": "ncbi/MedCPT-Query-Encoder", "revision": "d83a36cc6b8e3a5c5e9d9d6ba156808c1643dcbc", "backend": "hf_mean", "pooling": "cls", "dimension": 768}
+  ],
+  "input_manifest_sha256": "b0eefb1cfee63e98e7f9c962b09efc07df92f63964f62718d64283363b787507",
+  "model_manifest_sha256": "d23c578183f23fc57ca178f6544ac92d806dba15f9972c386083784883723de1",
+  "model_files_manifest_sha256": "b7ff885e6c1037682f504caecbdc238734e5fcd1a02d6dfac1f64ee1dae98543",
+  "v1_helper_sha256": "8bb2df4b1774338f89d74015d2d8b07a9a50344215431179aba30b09d5ecf409"
+}

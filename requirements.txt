@@ -1,0 +1,6 @@
+# Numerical source/fixture checks. Pins inherited from the supplied v20 check environment.
+# This is NOT the lockfile for all original GPU/encoder runs.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0

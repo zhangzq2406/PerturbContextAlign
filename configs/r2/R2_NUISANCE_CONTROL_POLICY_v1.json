@@ -1,0 +1,62 @@
+{
+  "version": "R2_NUISANCE_CONTROL_POLICY_v1",
+  "status": "FROZEN",
+  "primary_response_atom": "condition × species × cell_type × cell_line × tissue × disease",
+  "biological_context_control_boundary": {
+    "required_exact_match_fields": [
+      "C_context_species",
+      "C_context_cell_type",
+      "C_context_cell_line",
+      "C_context_tissue",
+      "C_context_disease"
+    ],
+    "cross_biological_context_fallback_allowed": false
+  },
+  "support_thresholds": {
+    "min_perturbed_cells_per_response_atom": 20,
+    "min_biological_context_control_cells": 20,
+    "min_controls_per_nuisance_stratum": 5
+  },
+  "primary_nuisance_hierarchy": [
+    {
+      "level": 1,
+      "name": "donor+batch",
+      "match_fields": [
+        "C_context_donor",
+        "C_batch"
+      ]
+    },
+    {
+      "level": 2,
+      "name": "donor",
+      "match_fields": [
+        "C_context_donor"
+      ]
+    }
+  ],
+  "failure_policy": {
+    "if_donor_level_not_feasible": "UNSUPPORTED_NUISANCE_MATCH",
+    "batch_only_fallback_allowed": false,
+    "biological_context_only_fallback_allowed": false,
+    "global_control_fallback_allowed": false
+  },
+  "platform_policy": {
+    "part_of_primary_matching": false,
+    "role": "QC/sensitivity only",
+    "reason": "Platform provided zero incremental support over corresponding non-platform matching levels in the eligible-atom preflight."
+  },
+  "coverage": {
+    "eligible_response_atom_n": 9054,
+    "donor_batch_selected_n": 8413,
+    "donor_selected_n": 641,
+    "donor_batch_selected_fraction": 0.9292025624033576,
+    "donor_selected_fraction": 0.07079743759664237,
+    "donor_feasible_n": 9054,
+    "donor_batch_feasible_n": 8413
+  },
+  "input_sha256": {
+    "R2_NUISANCE_HIERARCHY_PREFLIGHT_v1.tsv": "c64989f1ead9d08e222b819d6b2b4ded9db050544566314a0e831369e43c0fbf",
+    "R2_NUISANCE_HIERARCHY_SELECTION_v1.tsv": "1332ab3032b12bf41482e8baebf16f26f3922c8495c30da0ae67970b4ffba31b",
+    "R2_RESPONSE_ATOM_AUDIT_v1.tsv": "9e78e0f95444a9be9c8dd28dc99c72c4300e9155a68b7a45a7edc59382fe9e31"
+  }
+}

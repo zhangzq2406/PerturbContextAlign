@@ -1,0 +1,771 @@
+{
+  "public_derivative": true,
+  "original_private_sha256": "4e05c48e9b687461566968102c5a9a68c7e1ed13596f02f2604f6361b8e99e4f",
+  "path_policy": "project-root absolute paths replaced by ${PERTURBCONTEXTALIGN_PROJECT_ROOT}; other private home paths redacted",
+  "historical_execution_binding": "manifest itself recovered from canonical Phase A/B freeze path; no independent pre-existing expected SHA reference was available in the recovery scanner",
+  "freeze_name": "PerturbREST Phase A/B local freeze",
+  "freeze_version": "PHASE_AB_FREEZE_v1_20261001",
+  "created_at_local": "2026-10-02T00:04:00.846235+08:00",
+  "project_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}",
+  "authority": {
+    "final_audit": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/0_ProjectCodeAndLogs/LOCAL_PHASE_AB_FINAL_AUDIT_v3_20261001/LOCAL_PHASE_AB_FINAL_AUDIT.txt",
+    "final_audit_status": "PASS",
+    "required_corrected_dataset_n": 13,
+    "resolved_corrected_dataset_n": 13,
+    "fail_n": 0
+  },
+  "corrected_generator": {
+    "path": "0_ProjectCodeAndLogs/context_p4_fix_v1_20261001/preprocess2_embedding_bgem3_p4_v4_context_instance.py",
+    "sha256": "dceb6851609c839680157ed5d55ca0042d02c446cf92d8cf507eccfe7d4d8937"
+  },
+  "dataset_records": [
+    {
+      "dataset": "Norman",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019/1_condition/norman_2019_raw_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019/1_condition/norman_2019_raw_with_minimal_context_schema.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019/2_semantic_embedding_v2_corrected_20261001/NormanWeissman2019_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "111445",
+      "n_vars": "33694",
+      "semantic_instance_n_noncontrol": "1888",
+      "component_prompt_n": "2936",
+      "context_X_sha256": "5a689efd26e1774ae7f5467de212ac9e30e3daf173f5a38e9cde638d41beb5c9",
+      "embedding_X_sha256": "5a689efd26e1774ae7f5467de212ac9e30e3daf173f5a38e9cde638d41beb5c9",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "2",
+      "note": ""
+    },
+    {
+      "dataset": "K562_essential",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/1_condition/ReplogleWeissman2022_K562_essential_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/1_condition/ReplogleWeissman2022_K562_essential_with_minimal_context_schema.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/2_semantic_embedding_v2_corrected_20261001/K562_essential_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "310385",
+      "n_vars": "8563",
+      "semantic_instance_n_noncontrol": "84393",
+      "component_prompt_n": "84393",
+      "context_X_sha256": "f5d850bddbd3360d8fe646a0eb56cb4baea294f3d9531a9c0b9fb3e3b37e88ab",
+      "embedding_X_sha256": "f5d850bddbd3360d8fe646a0eb56cb4baea294f3d9531a9c0b9fb3e3b37e88ab",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "RPE1",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/1_condition/ReplogleWeissman2022_rpe1_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/1_condition/ReplogleWeissman2022_rpe1_with_minimal_context_schema.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/2_semantic_embedding_v2_corrected_20261001/rpe1_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "247914",
+      "n_vars": "8749",
+      "semantic_instance_n_noncontrol": "90285",
+      "component_prompt_n": "90285",
+      "context_X_sha256": "5dcd20efed4bffe6b3303a8f337d026375df0508a7876801c836f6e1f1393c9e",
+      "embedding_X_sha256": "5dcd20efed4bffe6b3303a8f337d026375df0508a7876801c836f6e1f1393c9e",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "TianActivation",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation/1_condition/TianKampmann2021_CRISPRa_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation/1_condition/TianKampmann2021_CRISPRa_with_minimal_context_schema.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation/2_semantic_embedding_v2_corrected_20261001/TianActivation_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "21193",
+      "n_vars": "33538",
+      "semantic_instance_n_noncontrol": "200",
+      "component_prompt_n": "200",
+      "context_X_sha256": "cd56438157d5c282efa4d45d9ac5b05a7f4a32bfc582b5a0760925e380e9fd7b",
+      "embedding_X_sha256": "cd56438157d5c282efa4d45d9ac5b05a7f4a32bfc582b5a0760925e380e9fd7b",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "TianInhibition",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition/1_condition/TianKampmann2021_CRISPRi_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition/1_condition/TianKampmann2021_CRISPRi_with_minimal_context_schema.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition/2_semantic_embedding_v2_corrected_20261001/TianInhibition_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "32300",
+      "n_vars": "33538",
+      "semantic_instance_n_noncontrol": "736",
+      "component_prompt_n": "736",
+      "context_X_sha256": "9e0ab818afbcd28726b3c782c1dce2663fbd6af21d56634f7ca798bb63764407",
+      "embedding_X_sha256": "9e0ab818afbcd28726b3c782c1dce2663fbd6af21d56634f7ca798bb63764407",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "sciPlex3",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/1_condition/SrivatsanTrapnell2020_sciplex3_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/1_condition/SrivatsanTrapnell2020_sciplex3_with_minimal_context_schema.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/2_semantic_embedding_v2_corrected_20261001/SrivatsanTrapnell2020_sciPlex3_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "799317",
+      "n_vars": "110983",
+      "semantic_instance_n_noncontrol": "4889",
+      "component_prompt_n": "4889",
+      "context_X_sha256": "7fb7e0bb832fd457a4dd1e13d75d9618af79d6915984e440d2bc4eeaf48e820d",
+      "embedding_X_sha256": "7fb7e0bb832fd457a4dd1e13d75d9618af79d6915984e440d2bc4eeaf48e820d",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "McFarland",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/1_condition/McFarlandTsherniak2020_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/1_condition/McFarlandTsherniak2020_with_minimal_context_schema.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/2_semantic_embedding_v2_corrected_20261001/McFarland2020_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "182875",
+      "n_vars": "32738",
+      "semantic_instance_n_noncontrol": "1627",
+      "component_prompt_n": "1627",
+      "context_X_sha256": "837e23192f9f9a2c6653d75233fd3c030d2e720c4e08eb62a1240a7bc152ccf8",
+      "embedding_X_sha256": "837e23192f9f9a2c6653d75233fd3c030d2e720c4e08eb62a1240a7bc152ccf8",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "KaggleCrossPatient",
+      "status": "CORRECTED_EMBEDDING_ONLY",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/1_condition/KaggleCrossPatient_with_minimal_context_schema_v2.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/1_condition/KaggleCrossPatient_with_minimal_context_schema_v2.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/2_semantic_embedding_v2_corrected_20261001/KaggleCrossPatient_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "240090",
+      "n_vars": "21255",
+      "semantic_instance_n_noncontrol": "2270",
+      "component_prompt_n": "2270",
+      "context_X_sha256": "3b7ff846301da13384113a9bdd1b750cebbe9dacbc7a237474c61c536c06f8ab",
+      "embedding_X_sha256": "3b7ff846301da13384113a9bdd1b750cebbe9dacbc7a237474c61c536c06f8ab",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "Kang2018",
+      "status": "CORRECTED_CONTEXT_AND_EMBEDDING",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/1_condition/Kang2018_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/1_condition_v2_1_corrected_20261001/Kang2018_with_minimal_context_schema_v2_1_corrected.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/2_semantic_embedding_v2_1_corrected_20261001/Kang2018_with_minimal_context_schema_bgem3_p4_v2_1_corrected.h5ad",
+      "n_obs": "43095",
+      "n_vars": "35635",
+      "semantic_instance_n_noncontrol": "9",
+      "component_prompt_n": "9",
+      "context_X_sha256": "dc53f4657f14b102e69cca90adc5d63437b04af516a6c9cdda63c8e86f1fbe95",
+      "embedding_X_sha256": "dc53f4657f14b102e69cca90adc5d63437b04af516a6c9cdda63c8e86f1fbe95",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "TCDD",
+      "status": "CORRECTED_CONTEXT_AND_EMBEDDING",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/1_condition/GSE148339_TCDD_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/1_condition_v2_corrected_20261001/GSE148339_TCDD_with_minimal_context_schema_v2_corrected.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/2_semantic_embedding_v2_corrected_20261001/GSE148339_TCDD_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "16015",
+      "n_vars": "31053",
+      "semantic_instance_n_noncontrol": "11",
+      "component_prompt_n": "11",
+      "context_X_sha256": "1e3f40939a730062a8faefe0ad438c5a8a1bb2dc9aaefd710627bdec3dc92616",
+      "embedding_X_sha256": "1e3f40939a730062a8faefe0ad438c5a8a1bb2dc9aaefd710627bdec3dc92616",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "Haber",
+      "status": "CORRECTED_CONTEXT_AND_EMBEDDING",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/1_condition/Haber_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/1_condition_v2_corrected_20261001/Haber_with_minimal_context_schema_v2_corrected.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/2_semantic_embedding_v2_corrected_20261001/Haber_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "9842",
+      "n_vars": "15215",
+      "semantic_instance_n_noncontrol": "48",
+      "component_prompt_n": "48",
+      "context_X_sha256": "28fb213a09b2a451ce05a496919f7056be946e0cbfc16f3eb90efa6f15e04d6d",
+      "embedding_X_sha256": "28fb213a09b2a451ce05a496919f7056be946e0cbfc16f3eb90efa6f15e04d6d",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "CrossSpecies",
+      "status": "CORRECTED_CONTEXT_AND_EMBEDDING",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/1_condition/HagaiCrossSpecies_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/1_condition_v2_corrected_20261001/HagaiCrossSpecies_with_minimal_context_schema_v2_corrected.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/2_semantic_embedding_v2_corrected_20261001/HagaiCrossSpecies_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "119792",
+      "n_vars": "85225",
+      "semantic_instance_n_noncontrol": "36",
+      "component_prompt_n": "36",
+      "context_X_sha256": "08621cb00f704a0c48a70d8204599c7f1d1ce0f3d795de000659f838052e0eb1",
+      "embedding_X_sha256": "08621cb00f704a0c48a70d8204599c7f1d1ce0f3d795de000659f838052e0eb1",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "GSE236581",
+      "status": "CORRECTED_CONTEXT_AND_EMBEDDING",
+      "dataset_root": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581",
+      "historical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/1_condition/GSE236581_with_minimal_context_schema.h5ad",
+      "canonical_context_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/1_condition_v2_corrected_20261001/GSE236581_with_minimal_context_schema_v2_corrected.h5ad",
+      "canonical_embedding_h5ad": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/2_semantic_embedding_v2_corrected_20261001/GSE236581_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "n_obs": "975275",
+      "n_vars": "36027",
+      "semantic_instance_n_noncontrol": "5605",
+      "component_prompt_n": "5605",
+      "context_X_sha256": "00fec5a36e3e57844870008a8cdb479075a063281e36a1e1c2ebdb9fdbf54ef0",
+      "embedding_X_sha256": "00fec5a36e3e57844870008a8cdb479075a063281e36a1e1c2ebdb9fdbf54ef0",
+      "token_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_tokens",
+      "mask_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_mask",
+      "pooled_key": "X_sem_pert_key__bge_m3__p4_normalized_full_context__component__dense_pooled",
+      "max_components": "1",
+      "note": ""
+    },
+    {
+      "dataset": "sciPlex3_comb",
+      "status": "ACCEPTED_UNCHANGED",
+      "dataset_root": "",
+      "historical_context_h5ad": "",
+      "canonical_context_h5ad": "",
+      "canonical_embedding_h5ad": "",
+      "n_obs": "",
+      "n_vars": "",
+      "semantic_instance_n_noncontrol": "",
+      "component_prompt_n": "",
+      "context_X_sha256": "",
+      "embedding_X_sha256": "",
+      "token_key": "",
+      "mask_key": "",
+      "pooled_key": "",
+      "max_components": "",
+      "note": "Historical audit found no P4 context-granularity collapse."
+    },
+    {
+      "dataset": "B_cell_pre",
+      "status": "ACCEPTED_UNCHANGED",
+      "dataset_root": "",
+      "historical_context_h5ad": "",
+      "canonical_context_h5ad": "",
+      "canonical_embedding_h5ad": "",
+      "n_obs": "",
+      "n_vars": "",
+      "semantic_instance_n_noncontrol": "",
+      "component_prompt_n": "",
+      "context_X_sha256": "",
+      "embedding_X_sha256": "",
+      "token_key": "",
+      "mask_key": "",
+      "pooled_key": "",
+      "max_components": "",
+      "note": "Historical audit found no P4 context-granularity collapse."
+    },
+    {
+      "dataset": "K562_gwps",
+      "status": "EXCLUDED_FROM_MAIN_ANALYSIS",
+      "dataset_root": "",
+      "historical_context_h5ad": "",
+      "canonical_context_h5ad": "",
+      "canonical_embedding_h5ad": "",
+      "n_obs": "",
+      "n_vars": "",
+      "semantic_instance_n_noncontrol": "",
+      "component_prompt_n": "",
+      "context_X_sha256": "",
+      "embedding_X_sha256": "",
+      "token_key": "",
+      "mask_key": "",
+      "pooled_key": "",
+      "max_components": "",
+      "note": "Excluded from main analyses; corrected rerun not required for current paper authority."
+    }
+  ],
+  "file_records": [
+    {
+      "dataset": "Norman",
+      "role": "canonical_context_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/1_NormanWeissman2019/1_condition/norman_2019_raw_with_minimal_context_schema.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019/1_condition/norman_2019_raw_with_minimal_context_schema.h5ad",
+      "bytes": 2907237270,
+      "sha256": "5fd3b11c6d71310cfeb4df04262fc702f312433e5f25ff328438627b6cab03ea"
+    },
+    {
+      "dataset": "Norman",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/1_NormanWeissman2019/2_semantic_embedding_v2_corrected_20261001/NormanWeissman2019_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019/2_semantic_embedding_v2_corrected_20261001/NormanWeissman2019_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 3601636474,
+      "sha256": "78bdda260aa09e5f537632e2ae6c933e2b9a808ce72ca4c493115bf5a14d0fca"
+    },
+    {
+      "dataset": "Norman",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "1_GeneticPerturbationDatasets/1_NormanWeissman2019/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 544260,
+      "sha256": "edc9a7e23940e47fe6806625edda2943472d542d4b2e195395b600a768a3b3a0"
+    },
+    {
+      "dataset": "Norman",
+      "role": "p4_component_prompts",
+      "relative_path": "1_GeneticPerturbationDatasets/1_NormanWeissman2019/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/1_NormanWeissman2019/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 1188653,
+      "sha256": "fb326ac28ce0c326a4baa2dab87112f6579dadb7d67a47052f233f925edc119a"
+    },
+    {
+      "dataset": "K562_essential",
+      "role": "canonical_context_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/1_condition/ReplogleWeissman2022_K562_essential_with_minimal_context_schema.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/1_condition/ReplogleWeissman2022_K562_essential_with_minimal_context_schema.h5ad",
+      "bytes": 10665055514,
+      "sha256": "f87a654323758b032edc08160259319a9ab05d6ae186380d3cdaed2bc85e83b3"
+    },
+    {
+      "dataset": "K562_essential",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/2_semantic_embedding_v2_corrected_20261001/K562_essential_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/2_semantic_embedding_v2_corrected_20261001/K562_essential_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 12131591468,
+      "sha256": "a502ee30f7879e01f2d229f9f72a0a19e339668255892e3e7b88f79340c8b0ef"
+    },
+    {
+      "dataset": "K562_essential",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 20391484,
+      "sha256": "450ff49948647f267a368d1154602715ad8334984618e6f0adec74bb95a39f52"
+    },
+    {
+      "dataset": "K562_essential",
+      "role": "p4_component_prompts",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/K562_essential/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 31852460,
+      "sha256": "130f56b2bfe09cd8822678f1b9e1c81b0cd27f9792db3e1d1bd2316e91ac5d03"
+    },
+    {
+      "dataset": "RPE1",
+      "role": "canonical_context_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/1_condition/ReplogleWeissman2022_rpe1_with_minimal_context_schema.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/1_condition/ReplogleWeissman2022_rpe1_with_minimal_context_schema.h5ad",
+      "bytes": 8705335796,
+      "sha256": "20c01f728067876358c5c736de2b92b708aa232bf0b9db298efb4359b7c27991"
+    },
+    {
+      "dataset": "RPE1",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/2_semantic_embedding_v2_corrected_20261001/rpe1_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/2_semantic_embedding_v2_corrected_20261001/rpe1_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 9928817944,
+      "sha256": "c4ba63fd11fca7fe7d64956e69122efb79be0ea398641058673ed017b40a7484"
+    },
+    {
+      "dataset": "RPE1",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 22014784,
+      "sha256": "c6fdbb83754a4e2fbf01f12245d750885a4a5885604b4e4957592819e08c676f"
+    },
+    {
+      "dataset": "RPE1",
+      "role": "p4_component_prompts",
+      "relative_path": "1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/2_ReplogleWeissman2022/rpe1/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 34273911,
+      "sha256": "27a4208c9498d7e60f721f6cc89d62c63c6bbc08aabb389bbab06f1c4843f567"
+    },
+    {
+      "dataset": "TianActivation",
+      "role": "canonical_context_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianActivation/1_condition/TianKampmann2021_CRISPRa_with_minimal_context_schema.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation/1_condition/TianKampmann2021_CRISPRa_with_minimal_context_schema.h5ad",
+      "bytes": 595375792,
+      "sha256": "43aec475ab64601a040ac1a93bff59573666828f9ada3caca4e9fe31d19fe65f"
+    },
+    {
+      "dataset": "TianActivation",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianActivation/2_semantic_embedding_v2_corrected_20261001/TianActivation_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation/2_semantic_embedding_v2_corrected_20261001/TianActivation_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 682859063,
+      "sha256": "5c964f335a56cf05c1da8aabbe3f4dfb5afd16e12a722aeee5f00b81d4f7ee3a"
+    },
+    {
+      "dataset": "TianActivation",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianActivation/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 50907,
+      "sha256": "14f7267c0bc39e939b1a90dd9dd349f07cda52762a4496a5beb0bb365608c2be"
+    },
+    {
+      "dataset": "TianActivation",
+      "role": "p4_component_prompts",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianActivation/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianActivation/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 76725,
+      "sha256": "6a43bb90d02c13b770e5bae92bbb09ef2d3092b08ca5099b6026c350fb913c1a"
+    },
+    {
+      "dataset": "TianInhibition",
+      "role": "canonical_context_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianInhibition/1_condition/TianKampmann2021_CRISPRi_with_minimal_context_schema.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition/1_condition/TianKampmann2021_CRISPRi_with_minimal_context_schema.h5ad",
+      "bytes": 1152095368,
+      "sha256": "dd710f12d65c728cc20f5abe672e314a6d6681653bd53b7525fd6fc1a176a479"
+    },
+    {
+      "dataset": "TianInhibition",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianInhibition/2_semantic_embedding_v2_corrected_20261001/TianInhibition_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition/2_semantic_embedding_v2_corrected_20261001/TianInhibition_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 1286403124,
+      "sha256": "5210422dd84d8a8e0bc6e5013d60caa651019d8dba7a826a73a2a9203dd42a5d"
+    },
+    {
+      "dataset": "TianInhibition",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianInhibition/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 183248,
+      "sha256": "8b5c900257becacb69afba2a7f7b29f175d284612a24e417c29adbd5fcb75c14"
+    },
+    {
+      "dataset": "TianInhibition",
+      "role": "p4_component_prompts",
+      "relative_path": "1_GeneticPerturbationDatasets/3_TianInhibition/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/1_GeneticPerturbationDatasets/3_TianInhibition/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 279309,
+      "sha256": "816c8dd082af520db2bd8caa1192081ff3e46f231bc8d3e718df7c9312db450e"
+    },
+    {
+      "dataset": "sciPlex3",
+      "role": "canonical_context_h5ad",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/1_condition/SrivatsanTrapnell2020_sciplex3_with_minimal_context_schema.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/1_condition/SrivatsanTrapnell2020_sciplex3_with_minimal_context_schema.h5ad",
+      "bytes": 12182189157,
+      "sha256": "12c546cef885b904fae000b0d9d92f3ae895688e06ac3b0ae4e210d57d535c12"
+    },
+    {
+      "dataset": "sciPlex3",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/2_semantic_embedding_v2_corrected_20261001/SrivatsanTrapnell2020_sciPlex3_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/2_semantic_embedding_v2_corrected_20261001/SrivatsanTrapnell2020_sciPlex3_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 15474506397,
+      "sha256": "e0ccadd5cadd3bee98b57801e69900f9343982b94c1f80aa46286eb51bb4e810"
+    },
+    {
+      "dataset": "sciPlex3",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 2026410,
+      "sha256": "c8d5e53ec47d5b0bc1c0d5ca49343b886361cb533b08ecc2c9158725458235cd"
+    },
+    {
+      "dataset": "sciPlex3",
+      "role": "p4_component_prompts",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 2639665,
+      "sha256": "a3e252492f78faac5d818bdf0906dbfb802e0f7c15d230fa77ea34fa9849e1b4"
+    },
+    {
+      "dataset": "McFarland",
+      "role": "canonical_context_h5ad",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/1_condition/McFarlandTsherniak2020_with_minimal_context_schema.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/1_condition/McFarlandTsherniak2020_with_minimal_context_schema.h5ad",
+      "bytes": 5709657851,
+      "sha256": "00e8c0a09847ff79140481333a99de2e5d910e3815f4dfd7ccd3ba1a9dc43051"
+    },
+    {
+      "dataset": "McFarland",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/2_semantic_embedding_v2_corrected_20261001/McFarland2020_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/2_semantic_embedding_v2_corrected_20261001/McFarland2020_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 6464027056,
+      "sha256": "82e6366ff0cef81a227feef67f8d8589137e899b200db8d647f82ef6d5ef1f61"
+    },
+    {
+      "dataset": "McFarland",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 731892,
+      "sha256": "3b9492fcb8c54a11a252a031c413b3a3ec71d3c0763a4d1833f46e70ffad244c"
+    },
+    {
+      "dataset": "McFarland",
+      "role": "p4_component_prompts",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/2_McFarland2020/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 934228,
+      "sha256": "bc6fbbfa47df7a46e0084cc25f2942490184db475fdedc58d8d9973b1d8231f5"
+    },
+    {
+      "dataset": "KaggleCrossPatient",
+      "role": "canonical_context_h5ad",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/1_condition/KaggleCrossPatient_with_minimal_context_schema_v2.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/1_condition/KaggleCrossPatient_with_minimal_context_schema_v2.h5ad",
+      "bytes": 3354043194,
+      "sha256": "a6d71e790643d7f88009477d6888c82000efe6a93b2501ce783a5d9df479e45f"
+    },
+    {
+      "dataset": "KaggleCrossPatient",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/2_semantic_embedding_v2_corrected_20261001/KaggleCrossPatient_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/2_semantic_embedding_v2_corrected_20261001/KaggleCrossPatient_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 4344930518,
+      "sha256": "7de8a3beb187f360bf1976a8748ed2c607796d7eaaf3a9fb20d13e63d1c30d00"
+    },
+    {
+      "dataset": "KaggleCrossPatient",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 896586,
+      "sha256": "580b2a9c648e0e0e5ecfcf0b053d2ae96b3fac7e9b879f351e415681fe85cf54"
+    },
+    {
+      "dataset": "KaggleCrossPatient",
+      "role": "p4_component_prompts",
+      "relative_path": "2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 1181703,
+      "sha256": "37cf6f54bf1881fbb9d0b2fb364beccf3c98cdbd0831a814a128eb8985621593"
+    },
+    {
+      "dataset": "Kang2018",
+      "role": "canonical_context_h5ad",
+      "relative_path": "3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/1_condition_v2_1_corrected_20261001/Kang2018_with_minimal_context_schema_v2_1_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/1_condition_v2_1_corrected_20261001/Kang2018_with_minimal_context_schema_v2_1_corrected.h5ad",
+      "bytes": 190961984,
+      "sha256": "6a0c3dcd524b02b2fea72119caee66bcb664b38c76ddcb24cfcc1fc6a2be9936"
+    },
+    {
+      "dataset": "Kang2018",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/2_semantic_embedding_v2_1_corrected_20261001/Kang2018_with_minimal_context_schema_bgem3_p4_v2_1_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/2_semantic_embedding_v2_1_corrected_20261001/Kang2018_with_minimal_context_schema_bgem3_p4_v2_1_corrected.h5ad",
+      "bytes": 367815274,
+      "sha256": "fa65439396c66f6bc3b50d3a8fba431a28a419385f66ec51ccec397c713964b1"
+    },
+    {
+      "dataset": "Kang2018",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/2_semantic_embedding_v2_1_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/2_semantic_embedding_v2_1_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 4161,
+      "sha256": "c4e1fac4211516916d4a33057c9f05cbede7e196fed378ad696bd09190ddfbba"
+    },
+    {
+      "dataset": "Kang2018",
+      "role": "p4_component_prompts",
+      "relative_path": "3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/2_semantic_embedding_v2_1_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/3_CytokineLigandGrowthFactorPerturbationDatasets/Kang2018/2_semantic_embedding_v2_1_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 5367,
+      "sha256": "1c0951a73bae8e5eeee051e13b83aefddf8cdf486ec28fa9a39e333a7f995fcf"
+    },
+    {
+      "dataset": "TCDD",
+      "role": "canonical_context_h5ad",
+      "relative_path": "4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/1_condition_v2_corrected_20261001/GSE148339_TCDD_with_minimal_context_schema_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/1_condition_v2_corrected_20261001/GSE148339_TCDD_with_minimal_context_schema_v2_corrected.h5ad",
+      "bytes": 506208256,
+      "sha256": "e2b8eddd5e74394091d79f16b7687f51aec031807a2ea3bd9e961c3ea54eb99c"
+    },
+    {
+      "dataset": "TCDD",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/2_semantic_embedding_v2_corrected_20261001/GSE148339_TCDD_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/2_semantic_embedding_v2_corrected_20261001/GSE148339_TCDD_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 571991802,
+      "sha256": "5d63e2052f6d9f236dd134f11c8ffc7d67bee76fc9d608bc3cc218e7fc881855"
+    },
+    {
+      "dataset": "TCDD",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 6149,
+      "sha256": "9c0d22abac2703f00c2bf00c14f641a87364c60aef6b4ca93575fc60bc209467"
+    },
+    {
+      "dataset": "TCDD",
+      "role": "p4_component_prompts",
+      "relative_path": "4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/4_EnvironmentalCulture_conditionPerturbationDatasets/TCDD/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 6824,
+      "sha256": "d78d9cd544947b9ea73676bf6c57ab2a8608252aed2ea7be05c610818de7a7a2"
+    },
+    {
+      "dataset": "Haber",
+      "role": "canonical_context_h5ad",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/1_condition_v2_corrected_20261001/Haber_with_minimal_context_schema_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/1_condition_v2_corrected_20261001/Haber_with_minimal_context_schema_v2_corrected.h5ad",
+      "bytes": 131442398,
+      "sha256": "df1cb4659c67f7cf49868cd2d04f524f2e03d1fb6393fb8869c0170361cc62f1"
+    },
+    {
+      "dataset": "Haber",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/2_semantic_embedding_v2_corrected_20261001/Haber_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/2_semantic_embedding_v2_corrected_20261001/Haber_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 171998458,
+      "sha256": "9bd49e9f602f67e01a81933df365cdb1c20a8698236b5da204f00968f971496a"
+    },
+    {
+      "dataset": "Haber",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 24073,
+      "sha256": "2692690cc1ad492e9fc3ab7b199939a4a9b118ed951bc21ef91ddf1aabfe6196"
+    },
+    {
+      "dataset": "Haber",
+      "role": "p4_component_prompts",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/1_Haber/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 28277,
+      "sha256": "016fa13f14a24ee3600c4177903ee272d632eced711530c2c78ac34b98e2b76e"
+    },
+    {
+      "dataset": "CrossSpecies",
+      "role": "canonical_context_h5ad",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/1_condition_v2_corrected_20261001/HagaiCrossSpecies_with_minimal_context_schema_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/1_condition_v2_corrected_20261001/HagaiCrossSpecies_with_minimal_context_schema_v2_corrected.h5ad",
+      "bytes": 4056806576,
+      "sha256": "0ce65592eb8c071696132b62a61a7cae54ec0e6095948630216ac347116ffc5f"
+    },
+    {
+      "dataset": "CrossSpecies",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/2_semantic_embedding_v2_corrected_20261001/HagaiCrossSpecies_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/2_semantic_embedding_v2_corrected_20261001/HagaiCrossSpecies_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 4548338768,
+      "sha256": "04833ca04d6e32fb0f31db2c4d875978a40bb1cd902c8d05d330f09410965c17"
+    },
+    {
+      "dataset": "CrossSpecies",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 15579,
+      "sha256": "22abfafea52fdf9f8d5f450f7f97da30ff97a4b54d48021623e409f115d112e4"
+    },
+    {
+      "dataset": "CrossSpecies",
+      "role": "p4_component_prompts",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/2_CrossSpecies/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 19031,
+      "sha256": "496501205bf806325bc6461f520936075863b0d93ba0bfd89eeb36feacc333fc"
+    },
+    {
+      "dataset": "GSE236581",
+      "role": "canonical_context_h5ad",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/1_condition_v2_corrected_20261001/GSE236581_with_minimal_context_schema_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/1_condition_v2_corrected_20261001/GSE236581_with_minimal_context_schema_v2_corrected.h5ad",
+      "bytes": 10589057583,
+      "sha256": "9c4aaf17cc4c48bc070b95b7e239af6f6b0a720a91a1edfed861252b3320372f"
+    },
+    {
+      "dataset": "GSE236581",
+      "role": "canonical_embedding_h5ad",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/2_semantic_embedding_v2_corrected_20261001/GSE236581_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/2_semantic_embedding_v2_corrected_20261001/GSE236581_with_minimal_context_schema_bgem3_p4_v2_corrected.h5ad",
+      "bytes": 14604191068,
+      "sha256": "a1efa23e8370d9036f290507ac6f1c423d69c659bc7f7d3e732af36a3e55b529"
+    },
+    {
+      "dataset": "GSE236581",
+      "role": "condition_table_bgem3_p4",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/2_semantic_embedding_v2_corrected_20261001/condition_table_bgem3_p4.csv",
+      "bytes": 2882092,
+      "sha256": "9717bc0fb2e80093f7f7b6a01f7169cf516ef1123ddb068346e55a4dc187a8ca"
+    },
+    {
+      "dataset": "GSE236581",
+      "role": "p4_component_prompts",
+      "relative_path": "5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/5_Biological_ImmuneStimulus_InfectionPerturbationDatasets/4_GSE236581/2_semantic_embedding_v2_corrected_20261001/p4_component_prompts.csv",
+      "bytes": 3678727,
+      "sha256": "927a81888e4ee6ce42c8f597d5f8ad9e796377c4b11fedf8bc89d94514bee9ff"
+    },
+    {
+      "dataset": "GLOBAL",
+      "role": "corrected_p4_generator",
+      "relative_path": "0_ProjectCodeAndLogs/context_p4_fix_v1_20261001/preprocess2_embedding_bgem3_p4_v4_context_instance.py",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/0_ProjectCodeAndLogs/context_p4_fix_v1_20261001/preprocess2_embedding_bgem3_p4_v4_context_instance.py",
+      "bytes": 59058,
+      "sha256": "dceb6851609c839680157ed5d55ca0042d02c446cf92d8cf507eccfe7d4d8937"
+    },
+    {
+      "dataset": "GLOBAL",
+      "role": "final_audit_tsv",
+      "relative_path": "0_ProjectCodeAndLogs/LOCAL_PHASE_AB_FINAL_AUDIT_v3_20261001/LOCAL_PHASE_AB_FINAL_AUDIT.tsv",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/0_ProjectCodeAndLogs/LOCAL_PHASE_AB_FINAL_AUDIT_v3_20261001/LOCAL_PHASE_AB_FINAL_AUDIT.tsv",
+      "bytes": 69290,
+      "sha256": "beef69e28bcc80e8288af84e67f4d3c45d7ecb5e8ecc7dd05b6b786cb96e3f55"
+    },
+    {
+      "dataset": "GLOBAL",
+      "role": "final_audit_txt",
+      "relative_path": "0_ProjectCodeAndLogs/LOCAL_PHASE_AB_FINAL_AUDIT_v3_20261001/LOCAL_PHASE_AB_FINAL_AUDIT.txt",
+      "absolute_path": "${PERTURBCONTEXTALIGN_PROJECT_ROOT}/0_ProjectCodeAndLogs/LOCAL_PHASE_AB_FINAL_AUDIT_v3_20261001/LOCAL_PHASE_AB_FINAL_AUDIT.txt",
+      "bytes": 2844,
+      "sha256": "d5f84f12cf1d44e5d44010daa515658b5c2cf9661f497c7f7c9fe9fc3e155eee"
+    }
+  ],
+  "immutability_policy": "This is a logical authority freeze. Source files are not chmod'ed or relocated. Any future modification must create a new version and a new freeze manifest.",
+  "server_policy": "Server migration must preserve historical assets, create corrected assets side-by-side, verify SHA256 against this manifest, and only then switch canonical training inputs."
+}

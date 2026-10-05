@@ -1,0 +1,56 @@
+{
+  "version": "sciplex_minimal_context_controls_v1_20260915",
+  "stage": "E09_MINIMAL_CONTEXT_CONTROLS_RETROSPECTIVE",
+  "base_config": "configs/prediction_six_encoder_v1.json",
+  "original_prediction_root": "predictions/sciplex_loco_six_encoder_v1",
+  "original_independent_qa": "qa/prediction_six_encoder_independent_v1/audit.json",
+  "effects_root": "effects/atomic_effects_v1",
+  "random_reference_root": "metrics/information_fidelity_v1",
+  "output_root": "predictions/sciplex_loco_minimal_context_controls_v1",
+  "n_new_settings": 15,
+  "n_scored_settings_including_copied_reference": 16,
+  "seed": 20260914,
+  "alpha": 10,
+  "n_landmarks": 256,
+  "scale_threshold": 1e-8,
+  "gene_min_n": 20,
+  "expected_genes_per_fold": 3000,
+  "primary_per_fold": 750,
+  "restricted_per_fold": 734,
+  "state_input_physical_role": "A",
+  "effect_reference_physical_role": "B",
+  "feature_selection_physical_role": "A",
+  "random_field": {
+    "dimensions": 512,
+    "seed": 20260914,
+    "view": "entity_exposure",
+    "typed_fields": ["source_entity_key", "dose_value", "time", "dose_unit"],
+    "implementation": "exact import of E01 random_field_features and exact equality to its saved typed unit vectors",
+    "interpretation": "fixed information-access reference with random geometry; not random guessing or a seed distribution"
+  },
+  "source_mapping_swap": {
+    "count_per_fold": 1,
+    "mapping": "swap the two source-context state labels for both source atoms and source landmarks; leave target state actual",
+    "source_kernel_atol": 2e-12,
+    "source_kernel_rtol": 0,
+    "interpretation": "the only nonidentity source-context bijection; a descriptive mapping sensitivity, not a general permutation test or permutation p-value"
+  },
+  "uniform_additive": {
+    "perturbation_weight": 0.5,
+    "state_weight": 0.5,
+    "formula": "(Kperturbation + Kstate) / 2",
+    "interpretation": "fixed ordinary main-effects kernel control; equal column budget does not imply equal effective degrees of freedom"
+  },
+  "control_only_prediction": "predict the unique heldout state once then broadcast exactly across all heldout drugs and doses",
+  "scorer_regression": {
+    "heldout_cell_line": "A549",
+    "methods": ["same_drug_dose_mean", "bge_entity_exposure", "bge_entity_exposure__control_state"],
+    "cohorts": ["primary", "restricted_evaluation"],
+    "policy": "all float64 metric values compare exactly to legacy TSV parsed with float_precision=round_trip; NA pattern and categorical/integer values must match; no tolerance substitution"
+  },
+  "planned_query_contrasts": "six mapping-vs-original-product, six additive-vs-original-product, random-product-vs-random-direct, control-only-vs-same-drug; pair atomic IDs before averaging",
+  "hyperparameter_tuning": false,
+  "retrospective_disclosure": "Original-name core results and the BiomedBERT state-conditioning risk were known before this contract. These bounded controls are retrospective sensitivities; no best alpha, weights, encoder or kernel is selected.",
+  "scope": "single-study descriptive three-context LOCO controls; not independent-study replication, causal mechanism evidence, or full benchmark completion",
+  "independent_qa": "PENDING_SEPARATE_CHECKER"
+}

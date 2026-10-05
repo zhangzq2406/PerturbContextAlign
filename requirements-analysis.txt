@@ -1,0 +1,11 @@
+-r requirements.txt
+h5py
+anndata
+PyYAML
+threadpoolctl
+tqdm
+torch
+transformers
+sentence-transformers
+FlagEmbedding
+rdkit

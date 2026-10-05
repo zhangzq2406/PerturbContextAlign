@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SOURCE_AND_OUTPUT_IDENTITY_WITH_EXECUTION_LOG_LIMITATION",
+  "historical_producer_sha256": "42d07e6e1e21ad56c9c6b8fd0cac77b8ba2244694ddd0e220e683efd5f41d289",
+  "public_path_adapted_producer_sha256": "39ac0d765a3c3dfa0aafc29aa139c215d25e0547d98987bf2cb5ef19c12838b4",
+  "historical_independent_qa_sha256": "80e72a6bda0598198e95269dd7189de43862b4f0e6ff4eacf82b3552aca42ac9",
+  "public_path_adapted_independent_qa_sha256": "2d63f2fca95dc92dd1d766434836bf96069762c109bcd9300162ec035284a546",
+  "metric_helper_sha256": "7719b593c53ed556750d60e6416fb3ef2b8876869e7ee924693e1ea1fabb2749",
+  "released_outputs": {
+    "baseline_l2_task_metrics.tsv": "22454ef5c9d88240d681ad2146d9f7c89a3b4b2ef9c8d7cbbd74fd9d61101022",
+    "baseline_l2_macro_summary.tsv": "6ec502c15549320c68b62a21bd4b8bb17219a8cf0a762952e1ba12784b892ade"
+  },
+  "producer_write_targets_verified_by_static_source_review": true,
+  "historical_package_contains_same_source_hash_in_two snapshots": true,
+  "historical_package_contains_canonical_output_hashes": true,
+  "independent_qa_source_recovered": true,
+  "historical_execution_log_recovered": false,
+  "scientific_recomputation_performed_in_this_repair": false,
+  "claim_boundary": "Exact historical producer source and output bytes are recovered from the same historical result lineage; no surviving execution log was used to prove that source file was the process that wrote those bytes."
+}

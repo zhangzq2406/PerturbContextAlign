@@ -1,0 +1,11 @@
+{
+  "status": "PUBLIC_TEXT_REDACTION_ONLY",
+  "private_full_mapping_sha256": "3cfd507b621a739980c405844c2e3331ac3a8cedf105c86c078e664dcbbee375",
+  "public_mapping_sha256": "4298942cdd28f3931cb7f8c13240a30ef6818d2d9cba0bfdceb0316c39929e53",
+  "public_corpus_sha256": "3de1be48a2a71d36ebfd45d2de81ccb1ddfec4968a2f69be775a826ad70f2217",
+  "removed_columns": [
+    "mechanism_text from corpus",
+    "shuffled_mechanism_text from mapping"
+  ],
+  "reason": "Third-party mechanism-description text is not redistributed in the public candidate package; hashes, entity assignments and length diagnostics are retained."
+}

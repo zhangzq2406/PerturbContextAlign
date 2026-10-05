@@ -1,0 +1,68 @@
+{
+  "version": "R2_sciplex_repeat_geometry_v1_20260925",
+  "source_root": "${PCA_DEEP_ROOT}",
+  "canonical_manuscript": "${PCA_PAPER_ROOT}/paper/20260923/context_response_v12",
+  "r0_root": "${PCA_PAPER_ROOT}/R0_execution_gate_20260924T170450534123665Z",
+  "r1_accepted_root": "${PCA_PAPER_ROOT}/R1_sciplex_dose_readout_alignment_20260925T072446731516425+0800",
+  "cell_lines": [
+    "A549",
+    "K562",
+    "MCF7"
+  ],
+  "dose_supports": {
+    "10": 188,
+    "100": 187,
+    "1000": 187,
+    "10000": 188
+  },
+  "replicates": [
+    "rep1",
+    "rep2"
+  ],
+  "directions": [
+    [
+      "rep1",
+      "rep2"
+    ],
+    [
+      "rep2",
+      "rep1"
+    ]
+  ],
+  "expected_primary_atoms": 2250,
+  "expected_measurements": 4512,
+  "genes_per_group": 3000,
+  "neighbor_k": 10,
+  "minimum_group_n": 12,
+  "effect_definition_id": "repeat_log2_ratio_normalized_treated_to_matched_B_pseudocount1_float32_cache_float64_compute",
+  "effect_formula": "log2((normalized_mean_rep+1)/(control_B_mean_rep+1))",
+  "geometry": "uncentered cosine; same original fixed-cell-line-by-dose cohort and 3000 source-feature-row axis",
+  "rsa": "average-tie-rank Spearman over matched upper triangle, excluding diagonal; constant geometry NA",
+  "relevance": "truth top10 excluding self; exact boundary ties split remaining relevance mass equally; sum=10",
+  "predicted_ties": "expected DCG over uniform ordering of each exact-score tied block",
+  "random": "truth-side mean(relevance)*sum(discounts)/IDCG; excess=NDCG-random; not ratio",
+  "nonfinite_or_negative_mean_policy": "stop affected source-dependent analysis, preserve evidence; no silent repair",
+  "zero_norm_policy": "stop affected group; no cosine-zero substitution or condition exclusion",
+  "constant_truth_policy": "UNINFORMATIVE_TRUTH, NDCG/random/excess NA; retain original denominator",
+  "statistical_scope": "one study; 12 dependent groups, two directions not independent replicates; descriptive only",
+  "unit": "drug condition at fixed cell line, dose and 24h; measurements from original rep1/rep2",
+  "exclusions": "only original main_eligible=False six YM155 atoms; no reliability-based selection",
+  "input_permission": "read-only frozen caches and definitions; no raw H5AD, encoding, fitting or new gene selection",
+  "qa_atol": 1e-10,
+  "outputs_expected": {
+    "geometry_summary": 12,
+    "neighbor_direction_summary": 24,
+    "neighbor_queries": 4500,
+    "condition_membership": 2256,
+    "measurement_control_links": 4512
+  },
+  "independent_qa": "independent source-cache reconstruction and all-group metrics; no new producer/helper import; semantic tie/NA fixtures",
+  "resource_estimate": "CPU single-thread; <2GiB target; one group at a time; not a runtime guarantee",
+  "interpretation": "repeat-consistency reference, not strict noise ceiling; fixed-dose scope differs from R1 cross-dose groups",
+  "r1_preserved_finding": "exposure additions improved dose readout and local neighborhoods in all36 dependent records; RSA mixed; do not recast as no response benefit",
+  "prompt_file": "${AUTHOR_HOME}/Downloads/codex_R2_response_geometry_reproducibility_20260925.md",
+  "prompt_received_before_numeric_read": true,
+  "reference_scope": "copy complete_metadata/source_name six-model72 rows and simple-baseline36 rows from12 fixed-dose groups; original pooled-effect truth, not the repeat endpoint; no correction or subtraction",
+  "qa_fixtures": ["no_ties_correct_ranking", "all_predicted_tied_random", "all_truth_tied_NA", "boundary_tie_fraction", "insufficient_candidates", "joint_condition_and_gene_permutation"],
+  "stop_after": "R2 results, independent QA, readout; no R3/R1_BROAD/C-lite/prototype/plots/manuscript edits"
+}

@@ -1,0 +1,67 @@
+{
+  "version": "kaggle_clean_embeddings_v1",
+  "metadata_root": "${PCA_DEEP_ROOT}/metadata/kaggle_atomic_preflight_v1",
+  "metadata_output_manifest_sha256": "cb9009609c10fb10062637980949665b9258446b3068cf6a28004334fd352f42",
+  "metadata_independent_audit": "${PCA_DEEP_ROOT}/qa/kaggle_atomic_metadata_independent_20260920.json",
+  "metadata_independent_audit_sha256": "6f17fdc058fab0e9ffe3da5c77adb6cee33c7aa1b5c84c545a0306af4a368870",
+  "frozen_study_contract_sha256": "e21ea7f1d67ffa0cf1e8376206e629c7a72889b6f28ef1b8c3a9287fb15f5f1f",
+  "input_root": "${PCA_DEEP_ROOT}/representations/kaggle_clean_views_v1",
+  "output_root": "${PCA_DEEP_ROOT}/representations/kaggle_clean_embeddings_v1",
+  "expected_atom_count": 816,
+  "expected_text_count": 137,
+  "expected_cache_hits_per_model": 7,
+  "expected_new_texts_per_model": 130,
+  "variant": "source_name",
+  "view": "entity_exposure",
+  "template": "{entity}; dose: {dose} nM; duration: 24 h.",
+  "source_entity_id": "sm_lincs_id",
+  "source_entity_name": "sm_name",
+  "source_dose_column": "dose_uM",
+  "unit_conversion": "Decimal(source dose_uM) * Decimal('1000'); canonical fixed-point decimal, no binary-float formatting",
+  "timepoint_hr": 24,
+  "max_length": 512,
+  "batch_size": 16,
+  "seed": 20260711,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "cpu_threads": 4,
+  "l2_normalize": true,
+  "network_access": "disabled",
+  "input_expression_or_effect_data": false,
+  "instruction_prompt": null,
+  "smoke_cache_text_count": 3,
+  "smoke_full_absolute_tolerance": 0.0001,
+  "smoke_tolerance_policy": "Existing frozen old-cache tolerance, unchanged; report actual max difference and bitwise equality separately. Production cache hits always copy original float32 bits.",
+  "legacy_groups": [
+    {
+      "config_path": "${PCA_DEEP_ROOT}/configs/encoding_v1.json",
+      "config_sha256": "72fea4fdad20bd3d15a97eed1cb7857645cdfc3ce0fb6b4fdcbea41e0ea3def9",
+      "helper_path": "${PCA_DEEP_ROOT}/code/encode_clean_views.py",
+      "helper_sha256": "8bb2df4b1774338f89d74015d2d8b07a9a50344215431179aba30b09d5ecf409",
+      "cache_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v1/full",
+      "audit_sha256": "51da0ed2ba337825969ac7ecae85b7c4c40e8ddf16c2bd56d538cb584ee00671",
+      "encoding_manifest_sha256": "1776cdd82e006c6da86dcd5ecb36f3cfdbde3d48a45b5b6375250b7767dea985",
+      "encoded_texts_sha256": "4eb558bcf2b592ef3dfba73f748d8fa5721e6043f67b2f15a98f5e8a6ecdf767",
+      "models": [
+        "bge_m3",
+        "sapbert"
+      ]
+    },
+    {
+      "config_path": "${PCA_DEEP_ROOT}/configs/encoding_v2_additional_four.json",
+      "config_sha256": "88095de266308f158d6fa8120f4a98face38a2c02a82e09f3126794cf1a3dc5c",
+      "helper_path": "${PCA_DEEP_ROOT}/code/encode_clean_views_v2.py",
+      "helper_sha256": "b53a24f201f85227b4c91c6553b6742e2fb50d51392ea79da83bdb4b9c35b7b0",
+      "cache_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v2_additional_four/full",
+      "audit_sha256": "0521155fb6968a1b870a9b64b27f1c1d269391903e9d3fcedd0fe0b28654a5d7",
+      "encoding_manifest_sha256": "0c55e4afb53119ad39c98b84b36a25aecb103d8e3d160fe48c7445d9b716b16b",
+      "encoded_texts_sha256": "4eb558bcf2b592ef3dfba73f748d8fa5721e6043f67b2f15a98f5e8a6ecdf767",
+      "models": [
+        "qwen3_0_6b",
+        "biomedbert",
+        "medcpt_article",
+        "medcpt_query"
+      ]
+    }
+  ]
+}

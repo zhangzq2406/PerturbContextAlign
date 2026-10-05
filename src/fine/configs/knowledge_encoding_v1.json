@@ -1,0 +1,65 @@
+{
+  "version": "knowledge_embeddings_v1",
+  "configuration_status": "FROZEN",
+  "metadata_root": "${PCA_DEEP_ROOT}/metadata/knowledge_inputs_v1",
+  "metadata_output_manifest_sha256": "a26c50d33537f3cf40e4d4e35539a610e213ab10d67df5a31f85b5446230d2d1",
+  "metadata_independent_audit": "${PCA_DEEP_ROOT}/qa/knowledge_inputs_independent_v1/audit.json",
+  "metadata_independent_audit_sha256": "1d2b29de1a997ef1dcf7c9f44dc51f9641a62dd5c3a8f121b56f84585e19071f",
+  "metadata_independent_status": "PASS_INDEPENDENT_KNOWLEDGE_INPUTS",
+  "output_root": "${PCA_DEEP_ROOT}/representations/knowledge_embeddings_v1",
+  "expected_text_count": 729,
+  "expected_rowmap_count": 1368,
+  "views": [
+    "complete_metadata+knowledge",
+    "knowledge_only"
+  ],
+  "variant": "verified_chembl37_snapshot",
+  "max_length": 512,
+  "batch_size": 16,
+  "seed": 20260711,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "cpu_threads": 4,
+  "l2_normalize": true,
+  "network_access": "disabled",
+  "input_expression_or_effect_data": false,
+  "instruction_prompt": null,
+  "smoke_texts_per_view": 3,
+  "smoke_cache_text_count": 3,
+  "smoke_full_absolute_tolerance": 0.0001,
+  "smoke_selection": "Per view longest three by Unicode character count, text_id ascending tie-break; union with lexical-first three original-cache text_ids; exact duplicates encoded once.",
+  "smoke_tolerance_policy": "Fixed original 1e-4 tolerance, actual max error and bitwise equality reported separately; production cache reuse always bitwise.",
+  "checkpoint_identity_scope": "Current locked six-model snapshots; no historical-weight-identity claim.",
+  "legacy_groups": [
+    {
+      "config_path": "${PCA_DEEP_ROOT}/configs/encoding_v1.json",
+      "config_sha256": "72fea4fdad20bd3d15a97eed1cb7857645cdfc3ce0fb6b4fdcbea41e0ea3def9",
+      "helper_path": "${PCA_DEEP_ROOT}/code/encode_clean_views.py",
+      "helper_sha256": "8bb2df4b1774338f89d74015d2d8b07a9a50344215431179aba30b09d5ecf409",
+      "cache_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v1/full",
+      "audit_sha256": "51da0ed2ba337825969ac7ecae85b7c4c40e8ddf16c2bd56d538cb584ee00671",
+      "encoding_manifest_sha256": "1776cdd82e006c6da86dcd5ecb36f3cfdbde3d48a45b5b6375250b7767dea985",
+      "encoded_texts_sha256": "4eb558bcf2b592ef3dfba73f748d8fa5721e6043f67b2f15a98f5e8a6ecdf767",
+      "models": [
+        "bge_m3",
+        "sapbert"
+      ]
+    },
+    {
+      "config_path": "${PCA_DEEP_ROOT}/configs/encoding_v2_additional_four.json",
+      "config_sha256": "88095de266308f158d6fa8120f4a98face38a2c02a82e09f3126794cf1a3dc5c",
+      "helper_path": "${PCA_DEEP_ROOT}/code/encode_clean_views_v2.py",
+      "helper_sha256": "b53a24f201f85227b4c91c6553b6742e2fb50d51392ea79da83bdb4b9c35b7b0",
+      "cache_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v2_additional_four/full",
+      "audit_sha256": "0521155fb6968a1b870a9b64b27f1c1d269391903e9d3fcedd0fe0b28654a5d7",
+      "encoding_manifest_sha256": "0c55e4afb53119ad39c98b84b36a25aecb103d8e3d160fe48c7445d9b716b16b",
+      "encoded_texts_sha256": "4eb558bcf2b592ef3dfba73f748d8fa5721e6043f67b2f15a98f5e8a6ecdf767",
+      "models": [
+        "qwen3_0_6b",
+        "biomedbert",
+        "medcpt_article",
+        "medcpt_query"
+      ]
+    }
+  ]
+}

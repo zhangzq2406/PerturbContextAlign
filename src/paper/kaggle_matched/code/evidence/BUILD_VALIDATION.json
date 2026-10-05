@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "scope": "IMPLEMENTATION_TESTS_ONLY_NOT_REAL_KAGGLE_RESULTS",
+  "interface_archive": "R3_interface_capture_20260925T010715912767Z.zip",
+  "formula_fixtures": {
+    "status": "PASS",
+    "scope": "SYNTHETIC_FORMULA_FIXTURES_NOT_REAL_DATA",
+    "n_checks": 29,
+    "checks": [
+      "independent_average_ranks",
+      "MAE_matches_frozen_float64_rule",
+      "gene_Spearman_matches_frozen_rule",
+      "constant_prediction_truth_and_both_remain_NA",
+      "exact_zero_error_not_NA",
+      "twenty_compound_minimum",
+      "cosine_independent",
+      "NDCG",
+      "random",
+      "IDCG",
+      "relevance",
+      "perfect_ranking",
+      "all_prediction_ties_equal_random",
+      "independent_all_prediction_ties",
+      "all_truth_ties_NA",
+      "insufficient_candidates_NA",
+      "fractional_truth_cutoff_ties",
+      "prediction_tie_crosses_cutoff_bruteforce",
+      "independent_fractional_and_prediction_ties",
+      "self_exclusion",
+      "condition_reindex",
+      "gene_permutation",
+      "rank_correlation",
+      "constant_pair_geometry_NA",
+      "common_valid_gene_difference",
+      "common_support_count",
+      "zero_effect_rejected_without_substitution",
+      "unexpected_nan_rejected",
+      "unexpected_inf_rejected"
+    ],
+    "atol": 1e-10,
+    "rtol": 0
+  },
+  "full_shape_synthetic_integration": {
+    "status": "PASS",
+    "tasks": 6,
+    "original_atoms": 816,
+    "primary_atoms": 810,
+    "original_methods": 22,
+    "scored_methods": 13,
+    "genes_per_task": 3000,
+    "independent_qa_counts": {
+      "tasks": 6,
+      "main_query": 4860,
+      "l3_query": 10530,
+      "gene_scores": 234000,
+      "main_task": 36,
+      "baseline_task": 42
+    },
+    "independent_numeric_and_identity_checks": 7695,
+    "maximum_absolute_difference": 8.881784197001252e-16,
+    "detached_launcher": "PASS",
+    "status_reader": "PASS",
+    "review_archive": "PASS",
+    "input_hashes_before_after": "PASS"
+  },
+  "negative_test": {
+    "pinned_input_mismatch": "REJECTED_BEFORE_SCIENTIFIC_SCORING",
+    "process_exit_code": 1
+  },
+  "limits": [
+    "The uploaded interface contains no numerical prediction/truth matrices.",
+    "No real Kaggle scores have been computed in this chat.",
+    "Synthetic testing used Python 3.13.5 / numpy 2.3.5 / pandas 2.2.3 / scipy 1.17.0.",
+    "The target environment is Python 3.11.14 / numpy 2.2.6 / pandas 2.2.3 / scipy 1.15.3; no packages are installed or upgraded.",
+    "The target run repeats formula checks and independently rescores all selected outputs before PASS."
+  ]
+}

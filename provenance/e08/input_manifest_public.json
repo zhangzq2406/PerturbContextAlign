@@ -1,0 +1,296 @@
+{
+  "files": [
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/effects/atomic_effects_v1/arrays.npz",
+      "sha256": "414e4ed90569dc708cf9ab3baf0df9dd4c83797fdf099bf411d3ad2eb4e875ff",
+      "bytes": 90827565
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/effects/atomic_effects_v1/atomic_index.tsv",
+      "sha256": "dd774445bc6361d97e1dec50e5cbc7024c513ed47c203673f27aee0492a1c201",
+      "bytes": 435487
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/effects/atomic_effects_v1/audit.json",
+      "sha256": "678d96f575c72383beb08d2c0bd5302d39044007cb76c31c7499eb868c5d002d",
+      "bytes": 5767
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/effects/atomic_effects_v1/feature_selection_sealed.json",
+      "sha256": "87ffd5bef76d838540e160b61c3a1b503b47ccf6610d97f1b057ae49a7e10a75",
+      "bytes": 3049
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/effects/atomic_effects_v1/fold_gene_panels.tsv",
+      "sha256": "209687796595fa94ec97f7dbcd62452c57f9e10af9a35854521c59ef9a056119",
+      "bytes": 574611
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/audit.json",
+      "sha256": "a2035a81e5d5b40776071229c26ab74e77917b29512a803ae654fff7db699ecb",
+      "bytes": 664
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/entity_coverage.tsv",
+      "sha256": "f351a27f065d8a98fb84d0cbdfbc3c425112d1862764b12701d518bb379d5314",
+      "bytes": 140755
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/human_target_membership.tsv",
+      "sha256": "7b06fb0b0c313532cbe3dc6cd0aa0478291bc919bf503b4dd42ece8b52440ef7",
+      "bytes": 14386
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/input_manifest.json",
+      "sha256": "f6db31fb2a6184f0dc13a3f39f5251245b700aa36094fa2e9470515414f1433c",
+      "bytes": 40329
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/mechanism_records.tsv",
+      "sha256": "de5fa4b234451860facf1587253ad715bdc029eca58af9fe7f2ef2e095df70f2",
+      "bytes": 98311
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/output_manifest.json",
+      "sha256": "a26c50d33537f3cf40e4d4e35539a610e213ab10d67df5a31f85b5446230d2d1",
+      "bytes": 1226
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/rowmap.tsv",
+      "sha256": "558710d6aeb1e52cadfe82d138be71fe4691ce8a218abe7763c5f9725c36e799",
+      "bytes": 659124
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/metadata/knowledge_inputs_v1/unique_texts.tsv",
+      "sha256": "89d3bb49297c93976ffd7ba8b837da11872f66e597eabf6fc1ac1b6304b078a9",
+      "bytes": 270424
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/qa/atomic_effect_subset_check_v1/audit.json",
+      "sha256": "6151ad3a020a9b6920b199e4b92884550a3b1e1e7588b8598b22e3caa27d1a4f",
+      "bytes": 3728
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/qa/knowledge_embeddings_independent_v1.json",
+      "sha256": "4c0c3454c480ab270f0b8b895fed59322e1bd7b1e176d611ae8583a4eff5f03f",
+      "bytes": 2342
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/qa/knowledge_inputs_independent_v1/audit.json",
+      "sha256": "1d2b29de1a997ef1dcf7c9f44dc51f9641a62dd5c3a8f121b56f84585e19071f",
+      "bytes": 2771
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/qa/prediction_six_encoder_independent_v1/audit.json",
+      "sha256": "c94d28ee2c2fca929b4b3dd5dd627bc143002b65fb0eeb4ecaa696695d64ec45",
+      "bytes": 6387
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v1/full/audit.json",
+      "sha256": "51da0ed2ba337825969ac7ecae85b7c4c40e8ddf16c2bd56d538cb584ee00671",
+      "bytes": 11351
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v1/full/bge_m3__source_name.npz",
+      "sha256": "a25323388a504bbce80c7c9bdb6a8c46609b8698911cb891ba9bb55f6a519328",
+      "bytes": 14680112
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v1/full/encoding_manifest.tsv",
+      "sha256": "1776cdd82e006c6da86dcd5ecb36f3cfdbde3d48a45b5b6375250b7767dea985",
+      "bytes": 615
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v1/full/sapbert__source_name.npz",
+      "sha256": "dfa9e044a6a6c5d803f71c05f056a0d82437bff52b9e8dae5db4244d61704fff",
+      "bytes": 11102923
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v2_additional_four/full/audit.json",
+      "sha256": "0521155fb6968a1b870a9b64b27f1c1d269391903e9d3fcedd0fe0b28654a5d7",
+      "bytes": 29938
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v2_additional_four/full/biomedbert__source_name.npz",
+      "sha256": "5c9e8785646fd80816f5c1827ebd5dc1fa3788db486415d3e2b87de0307b61ac",
+      "bytes": 11110302
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v2_additional_four/full/encoding_manifest.tsv",
+      "sha256": "0c55e4afb53119ad39c98b84b36a25aecb103d8e3d160fe48c7445d9b716b16b",
+      "bytes": 1310
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v2_additional_four/full/medcpt_article__source_name.npz",
+      "sha256": "5bc1db70a197c7738df213dbd1b8895123f6ee1f6e37ef9fe43d39cd4bc5c02b",
+      "bytes": 11096039
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v2_additional_four/full/medcpt_query__source_name.npz",
+      "sha256": "12d8e7f4dc6198a4c8c793b0871ddaec36cd140e21430cb972ca758e65281eb4",
+      "bytes": 11102220
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_embeddings_v2_additional_four/full/qwen3_0_6b__source_name.npz",
+      "sha256": "4fe9d8de2d759755342ef3eb5d578a32cd21f7a01bfc8ed6e1c9c51becda10c2",
+      "bytes": 14681217
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_views_v1/config.json",
+      "sha256": "bc3675d02e4436ceffc335767ace0107fb27e917a3cb3b7c9e1db77888f56b02",
+      "bytes": 3386
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_views_v1/entity_mapping.tsv",
+      "sha256": "4d4a987b44ea3096cbbd97668c912acb1a24a191964fa2a8d08681e8c6d73121",
+      "bytes": 71308
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_views_v1/row_to_text_registry.tsv",
+      "sha256": "13a4d1727a05319b47d06be671ed25dedb6f163c4799b4cf41c14d5c6ee1efab",
+      "bytes": 9281954
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_views_v1/source_sha256.tsv",
+      "sha256": "cb2003407aedfd0e1b41fac0c01f1341152750723ee0f9d438d3e34b31b7746e",
+      "bytes": 694
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/clean_views_v1/unique_texts.tsv",
+      "sha256": "1752cc0471a31640214438d31e2fb3d334c687889f5bc1e1bfda6158f58db1b8",
+      "bytes": 1865869
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/audit.json",
+      "sha256": "41b338c52ff2209cab532d94f88893a6b91582d0d3247bda787d881d6e261e53",
+      "bytes": 55177
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/bge_m3__verified_chembl37_snapshot.npz",
+      "sha256": "b86989d1e5f29960279e27606cea6b85259e9a2dbc37c3d7c63cf7de7529c0f9",
+      "bytes": 2847513
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/biomedbert__verified_chembl37_snapshot.npz",
+      "sha256": "76ce53a5d7c76e16f27300ddddb4042dcb63a039f5468903ed4f9f0bbc8931c5",
+      "bytes": 2156732
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/cache_lineage.tsv",
+      "sha256": "820c5eb06990af7cfe87bb62a99bb11c686d61764ca500b4ec47f7de320e197f",
+      "bytes": 1190681
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/encoded_texts.tsv",
+      "sha256": "89d3bb49297c93976ffd7ba8b837da11872f66e597eabf6fc1ac1b6304b078a9",
+      "bytes": 270424
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/encoding_manifest.tsv",
+      "sha256": "03fc11d0ac5d9d812d4704e28d7d43f29cdeb1fd3e6b37e69b65d1504e449d62",
+      "bytes": 2244
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/medcpt_article__verified_chembl37_snapshot.npz",
+      "sha256": "1c847bdb51b10ff6fa64eccb6d82a213ade4e93b5ecd29fb012b239717887c24",
+      "bytes": 2152488
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/medcpt_query__verified_chembl37_snapshot.npz",
+      "sha256": "6ab3bfdad9a737ebf7425b471f5b73b821260d91a47e184d1f418589b5e40a06",
+      "bytes": 2153529
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/newly_encoded_texts.tsv",
+      "sha256": "89d3bb49297c93976ffd7ba8b837da11872f66e597eabf6fc1ac1b6304b078a9",
+      "bytes": 270424
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/output_manifest.json",
+      "sha256": "32ae5fc9384635e83a650a41b59978ac46524f1926dc5fb1a62a49ab09a1b524",
+      "bytes": 2466
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/qwen3_0_6b__verified_chembl37_snapshot.npz",
+      "sha256": "7091bb1c3bd709e6e08c44256809d69daa4b043faa3f249e0f25924d90f1f887",
+      "bytes": 2847293
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/rowmap.tsv",
+      "sha256": "ab4868b1dbe5d6f81b01fe6c242e49697587c5d6f398a12b2da4c990a4b770eb",
+      "bytes": 259061
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/run.log",
+      "sha256": "eee691970905d3e38e5e55b32f5f20b6bee22e826ed6fefc43f4906d46a511a7",
+      "bytes": 4352
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/sapbert__verified_chembl37_snapshot.npz",
+      "sha256": "aa26faf8bd7c396c923268ab903d7c8d487184d6643d3c7d6e2599677d14c0da",
+      "bytes": 2153770
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/smoke_selection.tsv",
+      "sha256": "13bb6a73dcf6df2aa15d6540d9f9a8a57dbe7ff21c4ee41c2bb5138762e55005",
+      "bytes": 5336
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/knowledge_embeddings_v1/full/unique_texts.tsv",
+      "sha256": "89d3bb49297c93976ffd7ba8b837da11872f66e597eabf6fc1ac1b6304b078a9",
+      "bytes": 270424
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/morgan_v1/arrays.npz",
+      "sha256": "a57613ca3c9882209f0506c5e3ffb12ffa282eb96fe21567020e707428376d77",
+      "bytes": 19188
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/morgan_v1/audit.json",
+      "sha256": "b4656a2a4403e5d023e551c522944390a3fa795c1f310cd843f25203b6750492",
+      "bytes": 1889
+    },
+    {
+      "path": "${PCA_DATA_ROOT}/analysis/benchmark_context_v2_20260914/representations/morgan_v1/entity_fingerprint_manifest.tsv",
+      "sha256": "f2bc6a8ab4f6750d6a17d45e67867e7b0475cf16c554d0efc3383aa027d257fa",
+      "bytes": 92742
+    },
+    {
+      "path": "${PCA_PAPER_ROOT}/paper/20260920/code/analysis/code/landmark_decoder.py",
+      "sha256": "4ebe0a9d4d4d85076f36da1432fac2089b0c29e05bd9351dbe08c8ff44ff34ba",
+      "bytes": 9117
+    },
+    {
+      "path": "${PCA_PAPER_ROOT}/paper/20260920/code/analysis/code/prediction_metrics.py",
+      "sha256": "690d8d09711db134e9747c25517fd66d8d1d5454253613409905262844b56b75",
+      "bytes": 11842
+    },
+    {
+      "path": "${PCA_PAPER_ROOT}/paper/20260920/code/analysis/extensions/e08_prediction/OUTPUT_SCHEMA.md",
+      "sha256": "d6efbbbd1eb2185c4e9c0c831028cfcc9f41058c1dfad50e34b2ae99f1db88d6",
+      "bytes": 4900
+    },
+    {
+      "path": "${PCA_PAPER_ROOT}/paper/20260920/code/analysis/extensions/e08_prediction/run_e08_prediction.py",
+      "sha256": "9237155f6b85dbbb5fc96ea026e05444f7bb6dea32afc6a6850c568d451553cb",
+      "bytes": 45402
+    },
+    {
+      "path": "${PCA_PAPER_ROOT}/paper/20260920/code/analysis/extensions/e08_prediction/test_e08_prediction.py",
+      "sha256": "e17e74072478e39bc5b6c935a3c013a2c849e5871c7345023093ff353764cf35",
+      "bytes": 11189
+    },
+    {
+      "path": "${PCA_PAPER_ROOT}/paper/20260920/experiments/e08_prediction_v1/config.json",
+      "sha256": "454d46aec78d4e1a98c207305276d120e63f5725b3619bdf5fa69343eb344d05",
+      "bytes": 5316
+    },
+    {
+      "path": "${PCA_PAPER_ROOT}/paper/20260920/reports/e08_prediction_design_review.md",
+      "sha256": "c4a9cd1824737e53a72025742c837fb664e81f16c62076b79d602ae4f811cac9",
+      "bytes": 26778
+    }
+  ],
+  "created_utc": "2026-09-20T00:29:23.777057+00:00",
+  "response_values_read": false
+}

@@ -1,0 +1,10 @@
+dataset_id	manuscript_name	figure_label	original_source	subset	citation_key	source_uri	aliases
+norman_2019	Norman 2019	Norman 2019	Norman et al. (2019)	Single- and double-gene CRISPRa	norman2019genetic	https://doi.org/10.1126/science.aax4438	Norman;NormanWeissman2019
+replogle_k562_essential	Replogle 2022 K562-essential	Replogle K562-essential	Replogle et al. (2022)	K562 essential-scale CRISPRi, not K562 genome-wide	replogle2022perturbseq	https://doi.org/10.1016/j.cell.2022.05.013	K562 essential;Replogle K562 essential
+replogle_rpe1	Replogle 2022 RPE1-essential	Replogle RPE1-essential	Replogle et al. (2022)	RPE1 essential-scale CRISPRi	replogle2022perturbseq	https://doi.org/10.1016/j.cell.2022.05.013	RPE1;Replogle RPE1
+tian_activation	Tian 2021 CRISPRa	Tian CRISPRa	Tian et al. (2021)	Neuronal CRISPR activation	tian2021neurons	https://doi.org/10.1038/s41593-021-00862-0	Tian-a;TianActivation
+tian_inhibition	Tian 2021 CRISPRi	Tian CRISPRi	Tian et al. (2021)	Neuronal CRISPR interference	tian2021neurons	https://doi.org/10.1038/s41593-021-00862-0	Tian-i;TianInhibition
+srivatsan_sciplex3	sci-Plex 3	sci-Plex 3	Srivatsan et al. (2020)	Single-agent multidose screen; A549, K562, MCF7	srivatsan2020sciplex	https://doi.org/10.1126/science.aax6234	sci-Plex;sciPlex3;SciPlex3
+mcfarland_2020	McFarland 2020	McFarland 2020	McFarland et al. (2020)	Multiplexed cancer-cell-line perturbation profiling	mcfarland2020mixseq	https://doi.org/10.1038/s41467-020-17440-w	McFarland;McFarlandTsherniak2020
+kaggle_cross_patient	OP3	OP3	Open Problems – Single-Cell Perturbations (NeurIPS 2023)	Public PBMC small-molecule dataset; paper-defined cross-donor evaluation	kaggle2023	https://www.kaggle.com/competitions/open-problems-single-cell-perturbations	Kaggle;KaggleCrossPatient;Kaggle cross-patient
+combo_sciplex	ComboSciPlex	ComboSciPlex	Drug combination sci-Plex Data; CPA study	Single- and double-drug experiment; GSE206741	lotfollahi2023cpa	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206741	Combo;sciPlex3_comb;combosciplex

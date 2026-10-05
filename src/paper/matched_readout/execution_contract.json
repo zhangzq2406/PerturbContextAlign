@@ -1,0 +1,91 @@
+{
+  "version": "R1_sciplex_dose_readout_alignment_v1",
+  "source_root": "${PCA_DEEP_ROOT}",
+  "canonical_manuscript": "${PCA_PAPER_ROOT}/paper/20260923/context_response_v12",
+  "r0_root": "${PCA_PAPER_ROOT}/R0_execution_gate_20260924T170450534123665Z",
+  "models": [
+    "bge_m3",
+    "sapbert",
+    "qwen3_0_6b",
+    "biomedbert",
+    "medcpt_article",
+    "medcpt_query"
+  ],
+  "views": [
+    "entity",
+    "entity_exposure",
+    "entity_context",
+    "complete_metadata"
+  ],
+  "cell_lines": [
+    "A549",
+    "K562",
+    "MCF7"
+  ],
+  "dose_labels": [
+    10,
+    100,
+    1000,
+    10000
+  ],
+  "baselines": [
+    "tfidf",
+    "structured_onehot",
+    "random_field512"
+  ],
+  "variant": "source_name",
+  "contrasts": [
+    {
+      "contrast_id": "E1",
+      "contrast_family": "exposure_addition",
+      "view_from": "entity",
+      "view_to": "entity_exposure"
+    },
+    {
+      "contrast_id": "E2",
+      "contrast_family": "exposure_addition",
+      "view_from": "entity_context",
+      "view_to": "complete_metadata"
+    },
+    {
+      "contrast_id": "C1",
+      "contrast_family": "context_addition_sensitivity",
+      "view_from": "entity",
+      "view_to": "entity_context"
+    },
+    {
+      "contrast_id": "C2",
+      "contrast_family": "context_addition_sensitivity",
+      "view_from": "entity_exposure",
+      "view_to": "complete_metadata"
+    }
+  ],
+  "expected_base_records": 72,
+  "expected_paired_records": 72,
+  "primary_n": 2250,
+  "n_per_cell_line": 750,
+  "n_entities": 188,
+  "effect_definition_id": "sciplex_atomic_pooled_normalized_means_log2ratio_pc1_cosine_v1",
+  "geometry_scope": "within_cell_line_cross_dose_all_750_conditions",
+  "dose_metric_zero_division": 0,
+  "numeric_zero_tolerance": 1e-12,
+  "statistical_inference": "none; descriptive pairing only; no p-values, correlation test, bootstrap or pooled independent n",
+  "new_training": false,
+  "new_encoding": false,
+  "new_views": false,
+  "recompute_geometry": false,
+  "manuscript_edit": false,
+  "figures": false,
+  "run_other_branches": false,
+  "input_authorization": "Current user message accepts R0 and authorizes this R1 only; named companion markdown was not located in Downloads/attachments and was not used as a source.",
+  "interpretation_rules": [
+    "exposure additions include dose/duration/unit/template, not isolated numeric dose intervention",
+    "context additions are sensitivity of dose readout; cell-line label is constant within each evaluation cohort",
+    "cross-dose geometry contains drug, dose and same-drug-cross-dose relations; not fixed-dose drug discrimination",
+    "OOF probe trained across three cell lines using original entity folds; evaluation subset rescoring is not refitting",
+    "geometry is descriptive and has no matching learning folds",
+    "simple baseline readout and geometry references separate because fitting scopes differ",
+    "representation-response gap is a candidate interpretation, not a required outcome",
+    "R1_BROAD remains paused; 6110/6109 source issue remains a pre-submission dependency"
+  ]
+}

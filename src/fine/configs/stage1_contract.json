@@ -1,0 +1,57 @@
+{
+  "version": "context_v2_stage1_20260914",
+  "status": "METADATA_PREFLIGHT_ONLY",
+  "user_approved_scope": "Begin the agreed benchmark upgrade, prioritize local sci-Plex preparation and a small technical loop; preserve v1.",
+  "priority": "finish_as_soon_as_feasible",
+  "dataset_id": "srivatsan_sciplex3",
+  "raw_h5ad": "${PCA_DATA_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/0_raw/SrivatsanTrapnell2020_sciplex3.h5ad",
+  "schema_h5ad": "${PCA_DATA_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/1_SrivatsanTrapnell2020_sciPlex3/1_condition/SrivatsanTrapnell2020_sciplex3_with_minimal_context_schema.h5ad",
+  "legacy_pilot_cohort": "${PCA_DATA_ROOT}/analysis/sciplex_context_effect_v1/prepared/cohort.tsv",
+  "duration_raw": 24.0,
+  "duration_unit": null,
+  "duration_unit_status": "PENDING_PRIMARY_SOURCE_AND_LOCAL_MAPPING_REVIEW",
+  "cell_lines": ["A549", "K562", "MCF7"],
+  "dose_values_nM": [10.0, 100.0, 1000.0, 10000.0],
+  "vehicle_names_exact": ["control"],
+  "candidate_control_policies": {
+    "line_time_rep_plate": ["cell_line", "time", "replicate", "plate"],
+    "line_time_rep": ["cell_line", "time", "replicate"],
+    "line_time": ["cell_line", "time"]
+  },
+  "active_control_policy": null,
+  "support_audit_thresholds": [5, 10, 20, 50],
+  "training_allowed": false,
+  "expression_values_allowed_in_this_stage": false,
+  "tracks": {
+    "target_controls_available": {
+      "target_control_state_input": true,
+      "target_perturbed_response_input": false,
+      "learned_transforms_fit_scope": "outer_training_only"
+    },
+    "metadata_only": {
+      "target_control_state_input": false,
+      "target_controls_for_sealed_truth_only": true,
+      "target_perturbed_response_input": false,
+      "learned_transforms_fit_scope": "outer_training_only"
+    }
+  },
+  "task": {
+    "name": "seen_perturbation_unseen_cell_line",
+    "split_status": "CANDIDATE_NOT_FORMAL_TRAINING_SPLIT",
+    "target_line_leave_out": "all_perturbed_measurements",
+    "source_support": "same_source_entity_key_and_exact_exposure",
+    "experiment_replicates_split_together": true,
+    "cross_context_control_fallback": false
+  },
+  "entity_resolution": "dataset_local_source_name_normalization_only; external canonical synonym mapping pending",
+  "raw_and_legacy_outputs": "read_only",
+  "gates_before_effects_or_training": [
+    "duration_unit_local_source_mapping",
+    "replicate_and_plate_control_policy",
+    "human_gene_axis_and_duplicate_ensembl_policy",
+    "expression_scale_and_count_validation",
+    "task_level_minimum_support_freeze",
+    "control_input_truth_separation_policy",
+    "decoder_capacity_interaction_and_metric_contract"
+  ]
+}

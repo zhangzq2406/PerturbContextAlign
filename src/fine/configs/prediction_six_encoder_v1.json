@@ -1,0 +1,75 @@
+{
+  "version": "sciplex_clean_six_encoder_loco_core_v1_20260915",
+  "effects_root": "${PCA_DEEP_ROOT}/effects/atomic_effects_v1",
+  "clean_views_root": "${PCA_DEEP_ROOT}/representations/clean_views_v1",
+  "morgan_root": "${PCA_DEEP_ROOT}/representations/morgan_v1",
+  "output_root": "${PCA_DEEP_ROOT}/predictions/sciplex_loco_six_encoder_v1",
+  "seed": 20260914,
+  "alpha": 10,
+  "n_landmarks": 256,
+  "gene_min_n": 20,
+  "expected_genes_per_fold": 3000,
+  "method_count": 29,
+  "landmark_policy": "source-only SHA256(seed|atomic_id), one per drug then fill to 256; identical columns across methods",
+  "context_state_kernel": "cosine of log1p line-level A-well normalized mean on source-selected genes; multiply perturbation kernel for interaction",
+  "identity_exposure_features": "source-vocabulary drug one-hot plus source-vocabulary dose one-hot",
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "max_features": 20000,
+    "sublinear_tf": true,
+    "lowercase": true,
+    "fit_unique_source_texts_only": true
+  },
+  "cohorts": {
+    "primary": 2250,
+    "restricted_evaluation_not_refit": 2202
+  },
+  "hyperparameter_tuning": false,
+  "scientific_scope": "retrospective source-held-out protocol in one study; not a prospectively blinded trial",
+  "controls_permission": "only methods ending __control_state may use target A-control molecular state; B-control truth never enters predictor",
+  "morgan_baseline_status": "source linkage and 188/188 structure coverage audited; included before any prediction scores were observed",
+  "morgan_kernel": "(Tanimoto full-source binary Morgan radius2 2048 chirality + numeric-dose equality)/2, with and without product A-state kernel",
+  "morgan_scope": "additional molecular prior plus additive exposure information; not a same-information language encoder comparison or a drug-by-dose interaction model",
+  "six_encoder_formal_matrix_status": "S3 planned core: six encoders in one study under unchanged S2 scientific contract; not complete cross-study benchmark",
+  "stage": "S3_SIX_ENCODER_SINGLE_STUDY_CORE",
+  "legacy_prediction_root": "${PCA_DEEP_ROOT}/predictions/sciplex_loco_technical_v1",
+  "encoders": [
+    {
+      "model_key": "bge_m3",
+      "method_prefix": "bge",
+      "embedding_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v1/full"
+    },
+    {
+      "model_key": "sapbert",
+      "method_prefix": "sapbert",
+      "embedding_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v1/full"
+    },
+    {
+      "model_key": "qwen3_0_6b",
+      "method_prefix": "qwen3",
+      "embedding_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v2_additional_four/full"
+    },
+    {
+      "model_key": "biomedbert",
+      "method_prefix": "biomedbert",
+      "embedding_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v2_additional_four/full"
+    },
+    {
+      "model_key": "medcpt_article",
+      "method_prefix": "medcpt_article",
+      "embedding_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v2_additional_four/full"
+    },
+    {
+      "model_key": "medcpt_query",
+      "method_prefix": "medcpt_query",
+      "embedding_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_v2_additional_four/full"
+    }
+  ],
+  "legacy_regression_policy": "float32_bitwise_exact",
+  "legacy_regression_scope": "Rerun all original 17 methods; after freezing 29 predictions and before scoring verify original query/gene/landmark axes and float32 bits for every fold. Any mismatch fails; no tolerance changes.",
+  "scope_extension": "Four preapproved frozen language encoders added without changing effects, feature panels, observations, landmarks, alpha, seed, baselines, or scoring. No test-driven model selection."
+}

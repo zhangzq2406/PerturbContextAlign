@@ -1,0 +1,81 @@
+{
+  "version": "kaggle_release_scale_donor_within_type_contract_v1_20260920",
+  "status": "DESIGN_FIXED_BEFORE_NEW_EFFECTS_PENDING_METADATA_ADMISSION",
+  "raw_h5ad": "${PCA_DATA_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/0_raw/raw.h5ad",
+  "obs_csv": "${PCA_DATA_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/0_raw/open-problems-single-cell-perturbations/adata_obs_meta.csv",
+  "excluded_pairs_csv": "${PCA_DATA_ROOT}/2_DrugOrSmallmoleculePerturbationDatasets/3_KaggleCrossPatient/0_raw/open-problems-single-cell-perturbations/adata_excluded_ids.csv",
+  "source_definition_report": "qa/kaggle_release_semantics_20260920.md",
+  "source_task_support": "metadata/kaggle_task_support_v1",
+  "seed": 20260914,
+  "measurement_scale": "unfiltered_source_provided_log_normalized_difference",
+  "expression_transform": "none; operate directly on provided finite nonnegative X values; no exp, no re-normalization, no inferred log base or raw count",
+  "exclusion_list": "not applied: this is not reproduction of official filtered DE. Preserve provenance and membership audit. No claim that its effect is negligible; source-defined unfiltered measurement is the scope.",
+  "vehicle": {
+    "sm_name": "Dimethyl Sulfoxide",
+    "sm_lincs_id": "LSM-36361",
+    "exact_both_fields_required": true,
+    "source_control_boolean_not_used_to_define_vehicle": true,
+    "positive_controls_remain_active_treatments": ["Belinostat", "Dabrafenib"]
+  },
+  "control_pool_key": ["donor_id", "cell_type", "library_id", "plate_name"],
+  "control_partition": {
+    "minimum_total_cells": 40,
+    "minimum_cells_per_part": 20,
+    "algorithm": "within each exact vehicle pool sort all obs_id by SHA256(seed|obs_id), break ties by obs_id; assign alternating positions A and B; retain all cells",
+    "allocate_once_globally": true,
+    "reuse_same_B_mean_for_every_matching_treated_measurement": true,
+    "independent_wells": false,
+    "interpretation": "disjoint cell subsets of ONE physical vehicle well; sampling separation only, shared well and upstream biological/technical variation remain"
+  },
+  "treated_measurement_key": ["sm_lincs_id", "dose_uM", "timepoint_hr", "donor_id", "cell_type", "library_id", "plate_name", "well"],
+  "minimum_treated_cells_per_measurement": 20,
+  "measurement_admission": "at least20 provided treated cells AND a unique exact matched vehicle pool with at least40; keep all other measurements and reasons in exclusion manifest",
+  "atomic_key": ["sm_lincs_id", "dose_uM", "timepoint_hr", "donor_id", "cell_type"],
+  "measurement_effect": "mean(provided X over admitted treated measurement) minus mean(provided X over matched control-B cells)",
+  "atomic_effect": "equal-weight mean of admitted measurement effects within each atomic key; no cell-count weighting across wells",
+  "source_state_A": "equal-weight mean of A-cell means over ALL count-eligible vehicle wells in each donor_id/cell_type, independent of retained drugs and queried library; constant across drugs of that donor/type",
+  "tasks": {
+    "name": "donor_held_out_within_fixed_source_annotated_cell_type",
+    "donors": ["donor_0", "donor_1", "donor_2"],
+    "source_rule": "two donor contexts only within same fixed cell type; all treated responses of third donor withheld",
+    "query_rule": "observed drug-dose-time atom with at least one admitted measurement in each of all three donors; exact common support, never impute absent atoms",
+    "type_admission": "at least20 common source compound IDs at one fixed dose/time; determine from metadata only, report unsupported types",
+    "scope": "retrospective source RNA-derived cell-type labels; donor and nested plate/library joint shift, NOT pure donor effect, unseen-cell-line claim, or cross-study trained model transfer"
+  },
+  "feature_selection": {
+    "fit_scope": "all A-control cells from the TWO source donors of the fixed cell type; no target-A cells and no treated responses",
+    "candidate_axis": "all21255 unique source gene rows as provided; this is not a claim about the original normalization denominator",
+    "variance": "cell-pooled population variance on unchanged provided X; float64 sums and squared sums, ddof0",
+    "order": "positive variance descending, then original source_feature_row ascending",
+    "n_genes": 3000,
+    "insufficient_features": "fail task if fewer than3000 positive-variance source-control genes; no target-driven fill"
+  },
+  "endpoints": {
+    "condition": ["MAE", "RMSE", "across_gene_Spearman"],
+    "gene": ["across_drug_Spearman", "pair_order_accuracy"],
+    "gene_min_n": 20,
+    "gene_scope": "one fixed cell_type, heldout donor, dose and time; unique source compounds; no dose/time/donor pooling to meet count",
+    "single_Belinostat_dose": "eligible for condition errors if common across donors; gene ranking at0.1uM unsupported when below20 compounds",
+    "constant_prediction": "Spearman remains NA, pair ordering0.5 for distinguishable true pairs",
+    "inference": "descriptive paired effects with explicit denominators; no cell-based p values and no treatment of gene/pair/cell counts as independent biological replicates",
+    "cross_study": "never average absolute MAE between studies with different expression units; compare within-study paired baselines and directions"
+  },
+  "decoder": {
+    "alpha": 10,
+    "max_landmarks": 256,
+    "landmarks": "source-only hash order with at least one atom per source entity then fill; if fewer source atoms than256 use all, retain actual dimension",
+    "hyperparameter_tuning": false,
+    "language_models": "same six frozen encoders and pooling as sciplex core; source_name entity+exposure only",
+    "method_registry": "22settings: zero,source_mean,source_median,same_drug_source_mean; identity,TF-IDF,Morgan and sixLLM entity+exposure each direct and product-with-state",
+    "same_drug_source_mean": "equal mean of the two source donor atomic effects at exactly the same source compound ID,dose,time within fixed cell type; source responses only",
+    "controls_permissions": "target control-A state available only to named control-state methods, control-B only in target truth"
+  },
+  "execution_gates": [
+    "metadata source identity, drug/dose/unit mapping, vehicle roles and actual common-support cohort validated",
+    "exact control A/B cell membership frozen before reading new treated values",
+    "input X full relevant-cell finite/nonnegative/positive-expression checks and declared sparse-format integrity",
+    "source-only feature selections saved before query truths exposed to fitting",
+    "frozen predictions before scoring; independent numerical QA before manuscript reporting"
+  ],
+  "not_completed_by_this_file": ["formal cohort", "A/B cell partition", "effects", "feature panels", "new clean text registry or embeddings", "predictions", "independent numerical QA"]
+}

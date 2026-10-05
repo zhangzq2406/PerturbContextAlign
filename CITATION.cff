@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: "If you use PerturbContextAlign in your research, please cite the software and the accompanying manuscript."
+title: "PerturbContextAlign"
+type: software
+version: 1.0.0
+
+authors:
+  - family-names: "Zhang"
+    given-names: "Zhiqiang"
+  - family-names: "Qiao"
+    given-names: "Jianbo"
+  - family-names: "Zhuang"
+    given-names: "Zhihui"
+  - family-names: "Zhu"
+    given-names: "Youzhuo"
+  - family-names: "Zhu"
+    given-names: "Hengwei"
+  - family-names: "Su"
+    given-names: "Chen"
+  - family-names: "Wei"
+    given-names: "Leyi"
+    email: "weileyi@mpu.edu.mo"
+
+repository-code: "https://github.com/zhangzq2406/PerturbContextAlign"
+url: "https://github.com/zhangzq2406/PerturbContextAlign"
+license: MIT
+
+abstract: >-
+  PerturbContextAlign provides analysis code for studying how pretrained text
+  encoders represent single-cell perturbation context and how semantic
+  relationships in those representations correspond to experimentally measured
+  perturbation responses. The released analyses cover context retention,
+  text-response correspondence, controlled context and mechanism perturbations,
+  and downstream prediction-oriented evaluations across genetic, small-molecule,
+  and combination perturbation datasets.
+
+keywords:
+  - "single-cell perturbation"
+  - "single-cell RNA sequencing"
+  - "perturbation context"
+  - "pretrained text encoders"
+  - "text embeddings"
+  - "representation learning"
+  - "perturbation response"
+  - "response alignment"
+  - "drug perturbation"
+  - "genetic perturbation"
+
+preferred-citation:
+  type: article
+  title: "Pretrained text representations of single-cell perturbation context and their correspondence with measured perturbation responses"
+  authors:
+    - family-names: "Zhang"
+      given-names: "Zhiqiang"
+    - family-names: "Qiao"
+      given-names: "Jianbo"
+    - family-names: "Zhuang"
+      given-names: "Zhihui"
+    - family-names: "Zhu"
+      given-names: "Youzhuo"
+    - family-names: "Zhu"
+      given-names: "Hengwei"
+    - family-names: "Su"
+      given-names: "Chen"
+    - family-names: "Wei"
+      given-names: "Leyi"
+      email: "weileyi@mpu.edu.mo"
+  year: 2026

@@ -1,0 +1,157 @@
+{
+  "version": "kaggle_prediction_v1_20260920",
+  "scientific_contract": "${PCA_DEEP_ROOT}/configs/kaggle_independent_study_contract_v1.json",
+  "scientific_contract_sha256": "e21ea7f1d67ffa0cf1e8376206e629c7a72889b6f28ef1b8c3a9287fb15f5f1f",
+  "metadata_root": "${PCA_DEEP_ROOT}/metadata/kaggle_atomic_preflight_v1",
+  "metadata_root_manifest_sha256": "cb9009609c10fb10062637980949665b9258446b3068cf6a28004334fd352f42",
+  "effects_root": "${PCA_DEEP_ROOT}/effects/kaggle_atomic_effects_v1",
+  "effects_root_manifest_sha256": "020e37ca4efbb0cece9179cd8b9785f044176eb267901740ce575a59987c0261",
+  "clean_views_root": "${PCA_DEEP_ROOT}/representations/kaggle_clean_views_v1",
+  "clean_views_root_manifest_sha256": "bdc89812f4d9d46561bf7298e79a8f5bcd1e52437879e65a2a7ee8a9ad83b595",
+  "embeddings_root": "${PCA_DEEP_ROOT}/representations/kaggle_clean_embeddings_v1/full",
+  "embeddings_root_manifest_sha256": "84c147059162990cec14facda217ebbaf2eb7beafe371ce0acdc934118ae3b38",
+  "morgan_root": "${PCA_DEEP_ROOT}/representations/kaggle_morgan_v1",
+  "morgan_audit_sha256": "52b7e34b85dc41c91a62559d19ab917c6cfec36f8a5370c952965ed627185021",
+  "output_root": "${PCA_DEEP_ROOT}/predictions/kaggle_prediction_v1",
+  "seed": 20260914,
+  "alpha": 10,
+  "n_landmarks": 256,
+  "gene_min_n": 20,
+  "expected_genes_per_fold": 3000,
+  "expected_tasks": 6,
+  "method_order": [
+    "zero",
+    "source_mean",
+    "source_median",
+    "same_drug_source_mean",
+    "identity_exposure",
+    "identity_exposure__control_state",
+    "tfidf_entity_exposure",
+    "tfidf_entity_exposure__control_state",
+    "morgan_entity_exposure",
+    "morgan_entity_exposure__control_state",
+    "bge_entity_exposure",
+    "bge_entity_exposure__control_state",
+    "sapbert_entity_exposure",
+    "sapbert_entity_exposure__control_state",
+    "qwen3_entity_exposure",
+    "qwen3_entity_exposure__control_state",
+    "biomedbert_entity_exposure",
+    "biomedbert_entity_exposure__control_state",
+    "medcpt_article_entity_exposure",
+    "medcpt_article_entity_exposure__control_state",
+    "medcpt_query_entity_exposure",
+    "medcpt_query_entity_exposure__control_state"
+  ],
+  "measurement_scale": "unfiltered_source_provided_log_normalized_difference",
+  "state_transform": "none",
+  "state_kernel": "cosine of source-gene-panel state_A equal-well means on unchanged provided scale",
+  "identity_kernel": "source drug onehot plus source numeric-dose onehot; cosine",
+  "tfidf": {
+    "lowercase": true,
+    "analyzer": "word",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "max_features": 20000,
+    "sublinear_tf": true,
+    "fit_scope": "unique exact source prompts only"
+  },
+  "morgan_kernel": "0.5*(Tanimoto binary fingerprints with int64 accumulation + numeric dose equality)",
+  "llm_kernel": "cosine; source_name entity_exposure exact-text frozen embeddings",
+  "landmark_policy": "source-only SHA256(seed|atomic_id) order, one atom per source compound then fill; min(256,nsource)",
+  "source_fit_rows": "all source biological atomic conditions retained; never collapse duplicated feature rows before ridge fitting",
+  "query_prediction_policy": "compute unique input representation kernels once, then predict each exact unique query feature row once and broadcast",
+  "hyperparameter_tuning": false,
+  "scoring_policy": "all six prediction files sealed before query truth slicing for scoring; all 22 shared cohort",
+  "summary_policy": "condition all137/135 query atoms; gene only fixed1uM/24h136/134 compounds; separate dose tables retain0.1uM NA; equal3donors within type then equal2types",
+  "paired_direction": {
+    "errors": "baseline-minus-method",
+    "utilities": "method-minus-baseline",
+    "state_errors": "direct-minus-state",
+    "state_utilities": "state-minus-direct"
+  },
+  "independent_gates": {
+    "metadata": {
+      "path": "${PCA_DEEP_ROOT}/qa/kaggle_atomic_metadata_independent_20260920.json",
+      "sha256": "6f17fdc058fab0e9ffe3da5c77adb6cee33c7aa1b5c84c545a0306af4a368870",
+      "required_status": "PASS_INDEPENDENT_METADATA_ROLES_AND_FOLDS",
+      "bindings": [
+        {
+          "keys": [
+            "producer_output_manifest_sha256"
+          ],
+          "expected": "cb9009609c10fb10062637980949665b9258446b3068cf6a28004334fd352f42"
+        }
+      ]
+    },
+    "effects": {
+      "path": "${PCA_DEEP_ROOT}/qa/kaggle_effects_independent_v1/audit.json",
+      "sha256": "051f731e9bb919b8180ec53c503d94b74ea4a5697300dddcca9a28527fd561dc",
+      "required_status": "PASS",
+      "bindings": [
+        {
+          "keys": [
+            "production_output_sha256",
+            "output_manifest.json"
+          ],
+          "expected": "020e37ca4efbb0cece9179cd8b9785f044176eb267901740ce575a59987c0261"
+        },
+        {
+          "keys": [
+            "all_exported_float32_effect_bits_equal"
+          ],
+          "expected": true
+        }
+      ]
+    },
+    "embeddings": {
+      "path": "${PCA_DEEP_ROOT}/qa/kaggle_clean_embeddings_independent_v1.json",
+      "sha256": "c9e5bad81ac0b62f69c0526d0ce3c280ef219a298c271935e092d729e7f1cffa",
+      "required_status": "PASS_INDEPENDENT_TEXT_PROVENANCE_VECTOR_STRUCTURE_AND_EXACT_CACHE_REUSE",
+      "bindings": [
+        {
+          "keys": ["manifest_bindings", 1, "sha256"],
+          "expected": "bdc89812f4d9d46561bf7298e79a8f5bcd1e52437879e65a2a7ee8a9ad83b595"
+        },
+        {
+          "keys": ["manifest_bindings", 1, "path"],
+          "expected": "${PCA_DEEP_ROOT}/representations/kaggle_clean_views_v1/output_manifest.json"
+        },
+        {
+          "keys": ["manifest_bindings", 4, "sha256"],
+          "expected": "84c147059162990cec14facda217ebbaf2eb7beafe371ce0acdc934118ae3b38"
+        },
+        {
+          "keys": ["manifest_bindings", 4, "path"],
+          "expected": "${PCA_DEEP_ROOT}/representations/kaggle_clean_embeddings_v1/full/output_manifest.json"
+        }
+      ]
+    },
+    "morgan": {
+      "path": "${PCA_DEEP_ROOT}/qa/kaggle_morgan_independent_v1.json",
+      "sha256": "ded996924dc08a15caea8cf720e9e862cff79cca118d2eff1b8e68fc3408da61",
+      "required_status": "PASS",
+      "bindings": [
+        {
+          "keys": [
+            "production_audit_sha256"
+          ],
+          "expected": "52b7e34b85dc41c91a62559d19ab917c6cfec36f8a5370c952965ed627185021"
+        },
+        {
+          "keys": [
+            "all_bits_exact"
+          ],
+          "expected": true
+        }
+      ]
+    }
+  },
+  "immutable_helpers": {
+    "${PCA_DEEP_ROOT}/code/landmark_decoder.py": "4ebe0a9d4d4d85076f36da1432fac2089b0c29e05bd9351dbe08c8ff44ff34ba",
+    "${PCA_DEEP_ROOT}/code/prediction_metrics.py": "690d8d09711db134e9747c25517fd66d8d1d5454253613409905262844b56b75"
+  }
+}

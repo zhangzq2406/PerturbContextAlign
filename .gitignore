@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+outputs/
+resolved_configs/
+*.h5ad
+*.npy
+*.npz
+*.pt
+*.pth
+*.safetensors
+*.log
+*.pid
+.DS_Store

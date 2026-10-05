@@ -1,0 +1,78 @@
+{
+  "status": "PASS_MAPPING_PREFLIGHT_ONLY_NO_ENCODING",
+  "source_permutation_manifest": "PRIVATE_V29_GLOBAL_SHUFFLE_MANIFEST_PATH_REDACTED",
+  "source_sha256": "627e020d65f2a123f23dca93f6411561e4a3c750c4367cae5bbe7483b62419f5",
+  "n_entities": 57,
+  "unique_mechanism_texts": 45,
+  "n_selected_derangements": 20,
+  "constraints": [
+    "source_entity != target_entity",
+    "assigned mechanism-text hash != target original mechanism-text hash",
+    "each source entity used exactly once per permutation; mechanism-text multiset therefore preserved exactly"
+  ],
+  "length_cost_formula": "0.5*abs(log((assigned_chars+1)/(correct_chars+1))) + 0.5*abs(log((assigned_whitespace_tokens+1)/(correct_whitespace_tokens+1)))",
+  "global_optimum_total_cost": 5.487092664300026,
+  "eligible_cost_ratio_threshold": 1.1,
+  "candidate_protocol": {
+    "seeds": [
+      2026100521,
+      2026100522,
+      2026100523,
+      2026100524,
+      2026100525,
+      2026100526,
+      2026100527,
+      2026100528,
+      2026100529,
+      2026100530,
+      2026100531,
+      2026100532,
+      2026100533,
+      2026100534,
+      2026100535,
+      2026100536,
+      2026100537,
+      2026100538,
+      2026100539,
+      2026100540
+    ],
+    "jitter_amplitudes": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "candidates_per_seed_amplitude": 80,
+    "candidate_attempts": 8000,
+    "eligible_unique_text_assignments": 4977,
+    "selection": "deterministic greedy maximin Hamming diversity among eligible text-assignment vectors; first candidate is lowest length cost; ties deterministic"
+  },
+  "selected_cost_ratio_min": 0.9999999999999999,
+  "selected_cost_ratio_max": 1.0996293266573116,
+  "selected_cost_ratio_mean": 1.077219261337812,
+  "selected_mean_char_relative_diff_range": [
+    0.10882772175216503,
+    0.13554578763373945
+  ],
+  "selected_mean_token_relative_diff_range": [
+    0.08751302895581756,
+    0.10523496025115604
+  ],
+  "existing_global_mean_char_relative_diff_range": [
+    0.7261932043275874,
+    1.1074637211315124
+  ],
+  "existing_global_mean_token_relative_diff_range": [
+    0.6463716132803652,
+    0.9879142238495466
+  ],
+  "pairwise_text_assignment_fraction_different_min": 0.543859649122807,
+  "pairwise_text_assignment_fraction_different_median": 0.6140350877192983,
+  "pairwise_text_assignment_fraction_different_max": 0.7368421052631579,
+  "response_or_prediction_values_read": false,
+  "encoding_run": false,
+  "prediction_run": false,
+  "truth_scoring_run": false,
+  "source_path_publication_note": "Original private path is intentionally withheld; source_sha256 retains file identity."
+}

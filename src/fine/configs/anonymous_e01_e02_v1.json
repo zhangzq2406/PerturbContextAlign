@@ -1,0 +1,32 @@
+{
+  "version": "sciplex_anonymous_e01_e02_three_mapping_v1_20260915",
+  "output_root": "${PCA_DEEP_ROOT}/metrics/anonymous_controls_v1",
+  "source_e01_config": "${PCA_DEEP_ROOT}/configs/information_fidelity_v1.json",
+  "source_e02_config": "${PCA_DEEP_ROOT}/configs/effect_alignment_v1.json",
+  "anonymous_embedding_root": "${PCA_DEEP_ROOT}/representations/clean_embeddings_anonymous_v1/full",
+  "contract": "${PCA_DEEP_ROOT}/qa/e01_e02_anonymous_execution_contract.md",
+  "variants": ["anonymous_seed_20260914", "anonymous_seed_20260915", "anonymous_seed_20260916"],
+  "mapping_seeds": [20260914, 20260915, 20260916],
+  "reference_methods": ["structured_onehot", "random_field512"],
+  "source_locked_hashes": {
+    "code/run_information_fidelity_v1.py": "9532ec8d0e80eb3471ebb71b5254763a1b5742bb2b862741ec14b2cbc920a660",
+    "code/run_effect_alignment_v1.py": "cf802067764510e41390e5b2c74ea9fe2c9c4f2d481f1e45767f01ed4c4841d3",
+    "code/effect_alignment_metrics.py": "7719b593c53ed556750d60e6416fb3ef2b8876869e7ee924693e1ea1fabb2749",
+    "code/landmark_decoder.py": "4ebe0a9d4d4d85076f36da1432fac2089b0c29e05bd9351dbe08c8ff44ff34ba",
+    "configs/information_fidelity_v1.json": "b206fd3ad906f5a7324ede2fd541063d5cac506e0ea577f66c1d30e7cb912d5d",
+    "configs/effect_alignment_v1.json": "057c2dcc12e4608eff8faa02e586705ed73647069bab87fecb52f276dde275da",
+    "metrics/information_fidelity_v1/audit.json": "42fab8f4855955be28913e50ac09537de72d75f0bfc9dafc6792b81d31d385be",
+    "metrics/effect_alignment_v1/audit.json": "84b0c22da0e5a08bfeabea7be723f8eac2bf61c8b6305658627da6d61fd78231",
+    "representations/clean_embeddings_anonymous_v1/full/audit.json": "819ab57bb8bf4bcb49802a8cb5447e8d32aff27f33dc2ef78063d68e74f939d4"
+  },
+  "inheritance": "No change to original E01/E02 scientific definitions, metadata identity, all source fold IDs/landmarks, candidate pools, truth geometry or feature axes.",
+  "serialization_only_adapter": "Within a documented context manager, call the immutable E01 baseline_features, convert only feature_names to Unicode dtype, and finally restore the original function. Numeric features and all fit arguments remain unchanged.",
+  "paired_delta": "anonymous minus source_name; E01 per-field correctness and retrieval expected MRR/Hit1; E02 per-query NDCG/excess and per-group RSA. Exact atom/candidate/truth alignment required; NA retained.",
+  "aggregation": "All three seed results retained. Equal-dose then equal-cell E02 means use original definitions. Seed ranges/means are mapping sensitivity, not independent-study confidence intervals or inferential n.",
+  "original_results_known_before_contract": true,
+  "anonymous_scores_inspected_before_contract": false,
+  "scientific_scope": "Entity-name and lexical-form sensitivity; not isolated identification of pretrained biological knowledge or information leakage.",
+  "no_raw_or_expression_read": true,
+  "no_anonymous_prediction_run": true,
+  "cpu_threads": 4
+}

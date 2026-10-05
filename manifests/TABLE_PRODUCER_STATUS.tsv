@@ -1,0 +1,4 @@
+source_file	panel	status	notes
+sources/deep/legacy/supp/result3/e08_paired_fold_summary.tsv	FigS4d	PRODUCER_AND_AGGREGATION_VERIFIED	Producer source/output identity is hash-linked to the retained execution seal; the 1,470-row dose-to-fold aggregation is independently reproducible from released inputs. Full prediction is not rerun by package QA.
+sources/deep/added/baseline_l2_task_metrics.tsv	FigS5a	PRODUCER_SOURCE_AND_OUTPUT_IDENTITY_AVAILABLE	The released producer source writes this table and the canonical output hash matches the retained lineage; independent QA source is available. A process-level execution log is not claimed.
+sources/deep/added/baseline_l2_macro_summary.tsv	FigS5a	PRODUCER_SOURCE_OUTPUT_AND_AGGREGATION_VERIFIED	The same producer writes the macro table; canonical output hash matches and the 18-task to 3-macro aggregation is independently reproducible. A process-level execution log is not claimed.

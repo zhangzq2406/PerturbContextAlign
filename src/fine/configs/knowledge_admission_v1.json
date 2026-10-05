@@ -1,0 +1,19 @@
+{
+  "version": "e08_verified_existing_chembl_snapshot_v1",
+  "output_root": "metadata/knowledge_inputs_v1",
+  "identity_policy": "Exact equality of canonical full isomeric SMILES of source and the already-chosen ChEMBL molecule using RDKit 2025.09.1. Preserve fragments, charge and stereochemistry; no new candidate choice, salt stripping, neutralization, stereo completion or tautomer rescue.",
+  "annotation_policy": "Use every untruncated local raw mechanism record with a nonempty non-Unknown mechanism_of_action and molecule_chembl_id equal to the already-chosen molecule ID. A linked target must have its raw target payload and tax_id=9606, organism=Homo sapiens; missing target IDs are permitted for mechanism text only. Record all exclusions.",
+  "source_policy": "Local ChEMBL snapshot retrieved 2026-07-16, raw source_statuses must declare ChEMBL_37. This is the embedded source statement, not independent verification of remote release or transactional consistency.",
+  "knowledge_text_policy": "Mechanisms of action: followed by lexically sorted distinct original mechanism strings separated by semicolon and a final period. No synonyms, identifiers, approval/disease fields, manually supplied knowledge, target-name duplication or response-dependent choice. No truncation.",
+  "augmentation_policy": "Append exactly one space and knowledge text to the frozen complete_metadata source_name prompt. knowledge_only contains the same knowledge text without appended entity, cell line, exposure or source ID.",
+  "cohorts": {
+    "mechanism_text": "Exact-identity source entities with at least one allowed informative mechanism record; all existing main-eligible atoms of these entities.",
+    "human_target": "Subset of mechanism_text with at least one linked human target ChEMBL ID; binary multi-hot set of IDs, no all-zero missing target vector.",
+    "morgan": "All existing 2250 primary atoms, 188 source entities; full-source Morgan prior already frozen independently. Not restricted by mechanism availability."
+  },
+  "inference_scope": "Conservative verified coverage in one study. Missing or identity-unverified annotation does not mean absence of biology. Native human target IDs include protein families, complexes and nucleic-acid targets; do not call them a gene-target network.",
+  "outcomes_read_before_admission": false,
+  "variant": "verified_chembl37_snapshot",
+  "expected_all_entities": 188,
+  "expected_primary_atoms": 2250
+}

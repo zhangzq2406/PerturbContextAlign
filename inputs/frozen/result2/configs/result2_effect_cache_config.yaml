@@ -1,0 +1,80 @@
+code_version: result2_v2.2.0
+seed: 20260711
+schema:
+  condition_id_column: C_condition_id
+  control_column: C_control_indicator
+  control_value: true
+  required_obs_columns:
+    - C_condition_id
+    - C_control_indicator
+    - C_perturbation_family
+    - C_perturbation_mode
+    - C_perturbation_combo_n
+    - C_context_cell_type
+    - C_context_cell_line
+    - C_context_donor
+    - C_context_tissue
+    - C_context_disease
+    - C_batch
+    - C_platform
+expression:
+  layer: null
+  data_state: raw_counts
+  supported_states: [raw_counts, log1p_library_normalized]
+  target_sum: 10000.0
+  fail_on_non_counts: true
+effect_cache:
+  use_hvg: true
+  n_hvg: 3000
+  hvg_selection_population: controls_only
+  min_cells_per_condition: 20
+  min_cells_control: 20
+  pseudocount: 1.0
+matched_control:
+  strategy: multi_stratum_weighted
+  min_controls_per_stratum: 5
+  match_keys_priority:
+    - [C_context_donor, C_batch]
+    - [C_context_donor]
+    - [C_context_cell_line, C_batch]
+    - [C_context_cell_line]
+    - [C_context_cell_type, C_batch]
+    - [C_context_cell_type]
+    - [C_batch]
+deg:
+  method: welch_ttest
+  alpha: 0.05
+  abs_logfc_threshold: 0.25
+  # DEG labels are threshold-only; no forced top-k positives.
+  top_k: 0
+pca:
+  fit_strategy: fit_on_normalized_controls_only
+  model_type: truncated_svd
+  n_components: 30
+  max_fit_cells: 20000
+  random_state: 20260711
+reliability:
+  # A deterministic condition subsample makes split-half geometry practical
+  # for the two >2,000-condition Replogle datasets.
+  n_repeats: 5
+  max_conditions: 128
+  min_cells_per_half: 10
+  min_conditions: 8
+  max_condition_pairs: 20000
+  seed: 20260711
+pathway_response:
+  enabled: false
+  gmt_path: null
+  min_genes: 5
+  aggregation: mean_signed
+  role: effect_representation_only
+output:
+  effect_cache_dir: result2/cache/effect_geometry_v2
+  effect_cache_catalog: result2/cache/effect_geometry_v2/effect_catalog.tsv
+  log_path: result2/logs/build_effect_cache_v2.log
+memory:
+  max_hvg_cells: 20000
+  hvg_gene_chunk_size: 2000
+  max_control_cells_per_condition: 20000
+  max_condition_cells_per_condition: 0
+  pca_transform_chunk_size: 10000

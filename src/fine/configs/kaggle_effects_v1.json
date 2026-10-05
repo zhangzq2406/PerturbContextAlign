@@ -1,0 +1,23 @@
+{
+  "version": "kaggle_provided_scale_atomic_effects_v1_20260920",
+  "scientific_contract": "${PCA_DEEP_ROOT}/configs/kaggle_independent_study_contract_v1.json",
+  "scientific_contract_sha256": "e21ea7f1d67ffa0cf1e8376206e629c7a72889b6f28ef1b8c3a9287fb15f5f1f",
+  "metadata_root": "${PCA_DEEP_ROOT}/metadata/kaggle_atomic_preflight_v1",
+  "independent_metadata_audit": "${PCA_DEEP_ROOT}/qa/kaggle_atomic_metadata_independent_20260920.json",
+  "independent_metadata_audit_sha256": "6f17fdc058fab0e9ffe3da5c77adb6cee33c7aa1b5c84c545a0306af4a368870",
+  "output_root": "${PCA_DEEP_ROOT}/effects/kaggle_atomic_effects_v1",
+  "selected_cells_per_chunk": 1024,
+  "structure_rows_per_chunk": 4096,
+  "expected_shape": [240090, 21255],
+  "expected_nnz": 416442312,
+  "expected_sizes": {"control_pools": 96, "contexts": 6, "tasks": 6, "control_A": 8305, "control_B": 8255, "treated_cells": 161430, "measurements": 994, "atoms": 816},
+  "variance_roundoff": "variance=sumsq/N-(sum/N)^2; fail below -64*eps64*max(1,sumsq/N+(sum/N)^2), otherwise negative roundoff becomes0; strictly positive variance ranking",
+  "aggregation_dtype": "float64 from unchanged source float32 values",
+  "export_effect_dtype": "float32 with complete float64 atomic cache retained",
+  "export_state_dtype": "float64; state_A/state_B have no second transform",
+  "raw_value_access": "CSR index integrity scan can read all source indices; expression slices request ONLY selected control rows until gene panels are sealed, then ONLY admitted treated rows; physical HDF5 chunks may contain additional rows",
+  "raw_hash": "one complete byte-level SHA256 before numerical passes, stable size/mtime/ctime/inode/device afterward; byte hashing is provenance I/O, not statistical expression access",
+  "exclusion_mask_applied": false,
+  "normalization_applied": false,
+  "log_or_inverse_log_applied": false
+}

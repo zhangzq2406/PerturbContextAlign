@@ -1,0 +1,1759 @@
+{
+  "files": [
+    {
+      "path": "audit.json",
+      "bytes": 1400,
+      "sha256": "b10aa8f6769008983f5b4dc4bc5edd11c2326a01e73755591a1dabce2aff363e"
+    },
+    {
+      "path": "contrast_registry.tsv",
+      "bytes": 10427,
+      "sha256": "c0d49ac8ea6bf7672815553692d48a3072e73fa09e5592e56c5e9ddd17a2c79d"
+    },
+    {
+      "path": "dose_summary.tsv",
+      "bytes": 252328,
+      "sha256": "047bbc2c5a5b6ed3fb200ea002cc55332495abc9329486886967860c1c974a34"
+    },
+    {
+      "path": "execution_seal.json",
+      "bytes": 2920,
+      "sha256": "585d8a5c0ece477cf54394daf44af2dac6c313a01cc6ca5b38ac26ed552d3906"
+    },
+    {
+      "path": "fold_summary.tsv",
+      "bytes": 58597,
+      "sha256": "937fd0259474cce87f810bfc34e6cf2fc90ca67afa8873cf60c9c592cc5c4ac3"
+    },
+    {
+      "path": "frozen_config.json",
+      "bytes": 5316,
+      "sha256": "454d46aec78d4e1a98c207305276d120e63f5725b3619bdf5fa69343eb344d05"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 16126,
+      "sha256": "3e73d17b613fe3d5850f3d4b0f041bfba0507051936840e44600dbabc7401657"
+    },
+    {
+      "path": "macro_summary.tsv",
+      "bytes": 18344,
+      "sha256": "660db61899957888eac3e3ac7b42bd1ad71ba1723fcf8101effed2cf3b428d5e"
+    },
+    {
+      "path": "mechanism57/A549/condition_metrics.tsv.gz",
+      "bytes": 385542,
+      "sha256": "6215aef1dbd742701a43b4a7182878dd631e5dd47ef39735c2a0115c8493b350"
+    },
+    {
+      "path": "mechanism57/A549/feature_audit.json",
+      "bytes": 135344,
+      "sha256": "2f0a557e32ffcaefdef2fc50a885cfd2834ca9289175461f44515343d1cf7bc3"
+    },
+    {
+      "path": "mechanism57/A549/gene_metrics.tsv.gz",
+      "bytes": 10429702,
+      "sha256": "f90abeb3475bee3556d4f8d71564617ecf4d824fb1d4dd563c7d76513707bf94"
+    },
+    {
+      "path": "mechanism57/A549/gene_panel.tsv",
+      "bytes": 191661,
+      "sha256": "fa0861ffe54458c20d34412755b53c5b05a07775077acb51660cc0f5ee309eb0"
+    },
+    {
+      "path": "mechanism57/A549/kernels/bge_m3__C.npz",
+      "bytes": 1294514,
+      "sha256": "8c84fd69fccd9cd74fd794e9039aaca9f8acaf161d30895e09f10a75a80d19a5"
+    },
+    {
+      "path": "mechanism57/A549/kernels/bge_m3__CK.npz",
+      "bytes": 1299425,
+      "sha256": "ce663c5e330730293590f6e74414726aa570dc36d7a92deda8ab3de352ff7335"
+    },
+    {
+      "path": "mechanism57/A549/kernels/bge_m3__K.npz",
+      "bytes": 306808,
+      "sha256": "9e4964a71eaec78adc8e4aa622b1a7aaf1295347d560d68158ed02d1b3a17379"
+    },
+    {
+      "path": "mechanism57/A549/kernels/bge_m3__fusion_morgan.npz",
+      "bytes": 1298933,
+      "sha256": "5aad154a1003473de3ff0aa6d7392dfda794040ef1a1375656cabf64b9e9c057"
+    },
+    {
+      "path": "mechanism57/A549/kernels/biomedbert__C.npz",
+      "bytes": 1215144,
+      "sha256": "8c86c50e9db618dedff5275bd6b3277905a88000cba38ee48224cb220e1ef6c5"
+    },
+    {
+      "path": "mechanism57/A549/kernels/biomedbert__CK.npz",
+      "bytes": 1227390,
+      "sha256": "4ed155f3ec4d220188e3865efbd09c1cc0dc3829b2791beeaa2d2322c6a926ef"
+    },
+    {
+      "path": "mechanism57/A549/kernels/biomedbert__K.npz",
+      "bytes": 300977,
+      "sha256": "e17fe3a7f79971d73bd28cb5730d9faa9a68bf89569b63b32948a9f256ffa571"
+    },
+    {
+      "path": "mechanism57/A549/kernels/biomedbert__fusion_morgan.npz",
+      "bytes": 1273327,
+      "sha256": "674b6e72c0f31f4c7f309ae6c8ce60e65265a8e807946b73296df6f91e9ddca9"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_article__C.npz",
+      "bytes": 1279460,
+      "sha256": "d8e128cf4b25459e3444ce8f4ec592509c8daef0b60855d6f9fd99358606156b"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_article__CK.npz",
+      "bytes": 1288333,
+      "sha256": "c2ddcca32dcae1306def83bc0037602bdf4c000bba7fe7851b0961bf842fa335"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_article__K.npz",
+      "bytes": 304491,
+      "sha256": "cf48fe2faeec26cb6b71e0067a4f36d0f598a28c4b3af1a5a2c7078f55635b63"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_article__fusion_morgan.npz",
+      "bytes": 1290423,
+      "sha256": "3510b56e366374eec2cda225420f9ed7fe13134152e63ae1bd94e95ff273707d"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_query__C.npz",
+      "bytes": 1305682,
+      "sha256": "a6c859e76d9eaab9acd757fd7c84c1b30c1d6ea06cfa64089a6827bd7a8a1762"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_query__CK.npz",
+      "bytes": 1308255,
+      "sha256": "32de3a3b578fd7b042250c3e7d69968394a9345073588999177f8dd04ed80627"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_query__K.npz",
+      "bytes": 307296,
+      "sha256": "0151320ebb70efc1c761509de68918ec39d2111dc79039459fd548545473c0c9"
+    },
+    {
+      "path": "mechanism57/A549/kernels/medcpt_query__fusion_morgan.npz",
+      "bytes": 1306536,
+      "sha256": "2b2d90103002f5ca7ab1104c85e19cbbe194a75316587cbcbc302f086a5b5691"
+    },
+    {
+      "path": "mechanism57/A549/kernels/native_morgan_exposure.npz",
+      "bytes": 377866,
+      "sha256": "01b12e2cf3de4e4f6a5088f94f0905c928a37e13a9f96586a2ea29a23725f915"
+    },
+    {
+      "path": "mechanism57/A549/kernels/qwen3_0_6b__C.npz",
+      "bytes": 1306546,
+      "sha256": "9f1b2652faf45c69f9aae3fb712fba03ad8de06b87e7e45aff6e02e9b4895b70"
+    },
+    {
+      "path": "mechanism57/A549/kernels/qwen3_0_6b__CK.npz",
+      "bytes": 1307678,
+      "sha256": "d372c9f575516cc054aa920e3ecb839925c57aed73ad3c0b02d04e713db90e8f"
+    },
+    {
+      "path": "mechanism57/A549/kernels/qwen3_0_6b__K.npz",
+      "bytes": 307161,
+      "sha256": "2984c0339f1741993d78f3871992a6042ed80c25216893a9508b03f90e6caaf2"
+    },
+    {
+      "path": "mechanism57/A549/kernels/qwen3_0_6b__fusion_morgan.npz",
+      "bytes": 1303590,
+      "sha256": "f6ae41efe2d0c46fc01e82b784f8467fcc18d77fe2263ac259ef19599e67663e"
+    },
+    {
+      "path": "mechanism57/A549/kernels/sapbert__C.npz",
+      "bytes": 1312939,
+      "sha256": "5b7dd94f5303cd6e0dfdd58e9bc2df36af5edd029a288b033cd6e3191a4235f9"
+    },
+    {
+      "path": "mechanism57/A549/kernels/sapbert__CK.npz",
+      "bytes": 1312643,
+      "sha256": "675e8cabdbdd3b77efdace437b434055bdf5f7621f3cb2df1bd742a158e21796"
+    },
+    {
+      "path": "mechanism57/A549/kernels/sapbert__K.npz",
+      "bytes": 307724,
+      "sha256": "8a11faa32c3c818f3434b43336f0bf99eb85e2072138405838cfd871e9ef5c92"
+    },
+    {
+      "path": "mechanism57/A549/kernels/sapbert__fusion_morgan.npz",
+      "bytes": 1310270,
+      "sha256": "1a2bbaea39c2108eb3e77a036d9bc46f51cfe08b4304739aff14c1da4acbd9a9"
+    },
+    {
+      "path": "mechanism57/A549/kernels/structured_identity_exposure.npz",
+      "bytes": 63270,
+      "sha256": "02ba245bde0e6a30e7ba335b6a38cd3c1d23ed250c5c324c0d79eb451313ae24"
+    },
+    {
+      "path": "mechanism57/A549/kernels/tfidf__C.npz",
+      "bytes": 191865,
+      "sha256": "2586718bbf7bb9fef71057dccb05f9eeff1f8cbbae85cbcea86b1337e9b59ffb"
+    },
+    {
+      "path": "mechanism57/A549/kernels/tfidf__CK.npz",
+      "bytes": 856152,
+      "sha256": "7a1949edae2ef638f55a5b386ae5e3e05ed5cacaf5f0cc4a90b93cbe35c3f6af"
+    },
+    {
+      "path": "mechanism57/A549/kernels/tfidf__K.npz",
+      "bytes": 277558,
+      "sha256": "2a89e9c72a86727845227e37039e1b21efa7895de6670dad9a589968f8640fe3"
+    },
+    {
+      "path": "mechanism57/A549/landmarks.tsv",
+      "bytes": 51484,
+      "sha256": "0c6cc1282b6391ede815b4169608f091eb1002d3124d7e44c0c53daa2b2136bc"
+    },
+    {
+      "path": "mechanism57/A549/paired_condition_metrics.tsv.gz",
+      "bytes": 711927,
+      "sha256": "8ee296d7f045827a8896a1c591bc747f1cd8e4da3c16d9bd816546a979e1b106"
+    },
+    {
+      "path": "mechanism57/A549/paired_gene_metrics.tsv.gz",
+      "bytes": 12485173,
+      "sha256": "d2831d733c7726645e5178a974f2a9052dee5404bf687f45e2c771021abe93ac"
+    },
+    {
+      "path": "mechanism57/A549/parameters/bge_m3__C.npz",
+      "bytes": 5912896,
+      "sha256": "1f6ebed079a54f1e67d3e1e23589ab00ecbc2a34e329b06a1796bdb5e1ef3026"
+    },
+    {
+      "path": "mechanism57/A549/parameters/bge_m3__CK.npz",
+      "bytes": 5912987,
+      "sha256": "7270e74075780a321606a5a7eac47f0e12d71df12fc6ec2d4bb8c73cd220e875"
+    },
+    {
+      "path": "mechanism57/A549/parameters/bge_m3__K.npz",
+      "bytes": 5821640,
+      "sha256": "f52f582043f151a9edace23f60bdc5d175b51ec82a39282f6fc7210b23cafec1"
+    },
+    {
+      "path": "mechanism57/A549/parameters/bge_m3__fusion_morgan.npz",
+      "bytes": 5912845,
+      "sha256": "725e166b4b9bbb5a2fea088b2953389e7429a3b1f760153668d85412744ce183"
+    },
+    {
+      "path": "mechanism57/A549/parameters/biomedbert__C.npz",
+      "bytes": 5912555,
+      "sha256": "beeef034ba6268c04bbdf14e5afde84331f02e61164f75b8446885c7faafc650"
+    },
+    {
+      "path": "mechanism57/A549/parameters/biomedbert__CK.npz",
+      "bytes": 5912546,
+      "sha256": "b24a6b247b8bbf581809c3e56abf143cd7e3d336f9492103b1ad85da509fb5ee"
+    },
+    {
+      "path": "mechanism57/A549/parameters/biomedbert__K.npz",
+      "bytes": 5822794,
+      "sha256": "0bee7b8577c83433f9982f66c48dd0ca5e368ee34bf3f87db195ec8854977ff4"
+    },
+    {
+      "path": "mechanism57/A549/parameters/biomedbert__fusion_morgan.npz",
+      "bytes": 5912667,
+      "sha256": "511fbd32fbcfa395472b158ff1b2ea395cb7e69d25c5b990f98b0d205bd84cf1"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_article__C.npz",
+      "bytes": 5913096,
+      "sha256": "c6129f9b77f3b869548021f4e329074623901bc500573eed4a0be22181736198"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_article__CK.npz",
+      "bytes": 5912720,
+      "sha256": "574ba907874cc0c23a7eedac51a003b0ae4c8d4591941a4fb5232e38ea49fcb4"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_article__K.npz",
+      "bytes": 5822006,
+      "sha256": "e1efc6334850ac00a0ad787c5b726777cf3e35f1483d2bc80aab345b7df73d61"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_article__fusion_morgan.npz",
+      "bytes": 5912609,
+      "sha256": "b29fe43872b9100a6e973bbfcd67239bf8f5d8eac9f0e293c87cb1b6f20d73f2"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_query__C.npz",
+      "bytes": 5912758,
+      "sha256": "2ed9075d7f71946e4309da3f9fe996213574525832bb6d0529429b54ccfbd1e9"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_query__CK.npz",
+      "bytes": 5912871,
+      "sha256": "5d4f719ebf4919e5b6b14e882e7a64f0c7f0d902ca7c636fa9f8aac0613bdd14"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_query__K.npz",
+      "bytes": 5822616,
+      "sha256": "c5f8078653ed69d378b134d125d32c2790bbb02bb256010791a1e475b474175d"
+    },
+    {
+      "path": "mechanism57/A549/parameters/medcpt_query__fusion_morgan.npz",
+      "bytes": 5912910,
+      "sha256": "0c0816fa3ede977aecf4487d0e14530570fb2a075c8e8659be33329a94897e41"
+    },
+    {
+      "path": "mechanism57/A549/parameters/native_morgan_exposure.npz",
+      "bytes": 5910735,
+      "sha256": "ea84dd3ec6279e57fa6ccd50227d244bc2a26652565ea8db790b7600b9d217a5"
+    },
+    {
+      "path": "mechanism57/A549/parameters/qwen3_0_6b__C.npz",
+      "bytes": 5913177,
+      "sha256": "9640b5790a92971d150469942e95caf0a1bb56a2f8bdf29778d2e104e702009a"
+    },
+    {
+      "path": "mechanism57/A549/parameters/qwen3_0_6b__CK.npz",
+      "bytes": 5912904,
+      "sha256": "640b9afbc2bedfcef1edcf6ea56ec544acaca7de3b850801fe36ae38a64ccd92"
+    },
+    {
+      "path": "mechanism57/A549/parameters/qwen3_0_6b__K.npz",
+      "bytes": 5824807,
+      "sha256": "2e52cae96e39ec2777713dfdf7b1ec383998f635532bd2446b4c3c4b8fe74c2c"
+    },
+    {
+      "path": "mechanism57/A549/parameters/qwen3_0_6b__fusion_morgan.npz",
+      "bytes": 5913055,
+      "sha256": "8f0d35cddd04dff8572a1227876d09180302d474b116914d7ef814bfb8360904"
+    },
+    {
+      "path": "mechanism57/A549/parameters/sapbert__C.npz",
+      "bytes": 5912714,
+      "sha256": "2197fa2ddc69ea563602e32488b0c9ec9d080356131a937936df594bdf72c741"
+    },
+    {
+      "path": "mechanism57/A549/parameters/sapbert__CK.npz",
+      "bytes": 5913056,
+      "sha256": "bdcef68299b68c4f7e142eadcdf0cff8f7d295b17b31967e3c6c474e8aa8d618"
+    },
+    {
+      "path": "mechanism57/A549/parameters/sapbert__K.npz",
+      "bytes": 5823886,
+      "sha256": "a52f6b6ff6dd30f2f6b1b7088a41f60843f44b394fc613a1159fa0f26117fd7f"
+    },
+    {
+      "path": "mechanism57/A549/parameters/sapbert__fusion_morgan.npz",
+      "bytes": 5913116,
+      "sha256": "37c4baaf26c64c3dfcb41d42af31e46ac970cddbd9135236e99f2f6c44b1460d"
+    },
+    {
+      "path": "mechanism57/A549/parameters/structured_identity_exposure.npz",
+      "bytes": 5909481,
+      "sha256": "8da67017ea204874c8129c103f62cfa4cca7cdfe40d3a89befa5db7ef06ad1e6"
+    },
+    {
+      "path": "mechanism57/A549/parameters/tfidf__C.npz",
+      "bytes": 5911100,
+      "sha256": "ffc57f1b3c0db8cb52cf20730f1431b1c6856c2b62f48047806a9f522d26ee1f"
+    },
+    {
+      "path": "mechanism57/A549/parameters/tfidf__CK.npz",
+      "bytes": 5911784,
+      "sha256": "e941a3c90591843c62e1a3ac40de77a4888ef57ce619a69a1dae0eeb64ae7604"
+    },
+    {
+      "path": "mechanism57/A549/parameters/tfidf__K.npz",
+      "bytes": 5800520,
+      "sha256": "b8f47b518e4e2612ee42deef61e04a242e27cccb67f0288497559b2376259f9c"
+    },
+    {
+      "path": "mechanism57/A549/predictions.npz",
+      "bytes": 75295415,
+      "sha256": "135a949e47fc27c81fff74f8a1fc8515507f4582fd3978a5400739bd977c1989"
+    },
+    {
+      "path": "mechanism57/A549/query_atoms.tsv",
+      "bytes": 45677,
+      "sha256": "f4db5b03760c1aa4a46b1c117cb650da9453bafa48f24e500509b1cd7ac4b158"
+    },
+    {
+      "path": "mechanism57/A549/same_drug_source_pairs.tsv",
+      "bytes": 20568,
+      "sha256": "7575dacb08b7e504bac74662b9305996668757352ded8bb118a1b7061131b1c5"
+    },
+    {
+      "path": "mechanism57/A549/source_atoms.tsv",
+      "bytes": 91295,
+      "sha256": "7d765d5befa150cf3188b213d1d4237baaae9a8b1b8769800e7c7c7b4d985dfb"
+    },
+    {
+      "path": "mechanism57/A549/source_response.npz",
+      "bytes": 5990993,
+      "sha256": "e92bde3a2e8a1127090104a8faa1083e1c76ab2d313cc89ee71c8b31b2ccfd8e"
+    },
+    {
+      "path": "mechanism57/A549/text_mapping.tsv",
+      "bytes": 591061,
+      "sha256": "e04561fcffaed085e7dc70e9cc05170f8132ff6d5d56425dbe9d6485f911df15"
+    },
+    {
+      "path": "mechanism57/A549/truth.npz",
+      "bytes": 2568608,
+      "sha256": "27f9428ac279e56baa6fab6aab5e030cc1bbcf29415a33b15b71f2ad628269e6"
+    },
+    {
+      "path": "mechanism57/K562/condition_metrics.tsv.gz",
+      "bytes": 384272,
+      "sha256": "7ff04388376cb1cbd549102348a287acb44d1e301c76c02c537799104716f0cf"
+    },
+    {
+      "path": "mechanism57/K562/feature_audit.json",
+      "bytes": 135344,
+      "sha256": "151a5c6dbc3f71bbc157a0452ec08c203b00d29d7ec523747d0517c02287201b"
+    },
+    {
+      "path": "mechanism57/K562/gene_metrics.tsv.gz",
+      "bytes": 10512448,
+      "sha256": "9e2eddd61c44d306500977de80237a39bbe178feef8d1c488bb6c48781b269de"
+    },
+    {
+      "path": "mechanism57/K562/gene_panel.tsv",
+      "bytes": 191542,
+      "sha256": "68312d82337f9ff59451aa16595a022a9567fbe61e9b59594dc9624824bf4595"
+    },
+    {
+      "path": "mechanism57/K562/kernels/bge_m3__C.npz",
+      "bytes": 1293629,
+      "sha256": "f291120363b36d182f70eef2d33eaafc64b119a058a4d4121a7a00b03b56f1d4"
+    },
+    {
+      "path": "mechanism57/K562/kernels/bge_m3__CK.npz",
+      "bytes": 1299523,
+      "sha256": "4856476b95c5fd03f342dcd962117926d84b3e0bc5609582d8a10d533462cd9e"
+    },
+    {
+      "path": "mechanism57/K562/kernels/bge_m3__K.npz",
+      "bytes": 303434,
+      "sha256": "df960020271a5375c24ad5d72ef4001289cd996a847584bc3adc2e1e1fd5af38"
+    },
+    {
+      "path": "mechanism57/K562/kernels/bge_m3__fusion_morgan.npz",
+      "bytes": 1298725,
+      "sha256": "6e2a7303fa3970068f17439b3f3fdb93fcd973c57ee631b23edd9ba423b527d8"
+    },
+    {
+      "path": "mechanism57/K562/kernels/biomedbert__C.npz",
+      "bytes": 1215018,
+      "sha256": "ce10c4c25dddac87b5c29e318ff2a9ab51305d9809669f46f2d8caeafd4cc932"
+    },
+    {
+      "path": "mechanism57/K562/kernels/biomedbert__CK.npz",
+      "bytes": 1226812,
+      "sha256": "78eae4d27429ddd95e458d41f770c199a69add4c91a3e540e6192f4e22be61e1"
+    },
+    {
+      "path": "mechanism57/K562/kernels/biomedbert__K.npz",
+      "bytes": 297453,
+      "sha256": "43dd5e741c183ba0492f4533270fb006250d27695a8e870e705e72a589f88182"
+    },
+    {
+      "path": "mechanism57/K562/kernels/biomedbert__fusion_morgan.npz",
+      "bytes": 1272091,
+      "sha256": "d13dd210c418a0823b2e1e59bc0f8765ffa832d772a9afd3e4f051bc031d97d0"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_article__C.npz",
+      "bytes": 1277755,
+      "sha256": "d60cd34ca1274cde0e57bacbc722cf4654469fad38b9206a44ef3cf210e41fda"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_article__CK.npz",
+      "bytes": 1288827,
+      "sha256": "60db0908b289b50c5401ce3fe0175d7659a006c6b6e1da1e3bb6785e7f71174e"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_article__K.npz",
+      "bytes": 301413,
+      "sha256": "43c6ef25d39933971c2591de984808101b752f31432b236866b41458c3ee887f"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_article__fusion_morgan.npz",
+      "bytes": 1290081,
+      "sha256": "a5125b3b57e8378394d620e72ac06bfe2a369c1fd6bd04e39baabf17a52f3395"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_query__C.npz",
+      "bytes": 1306420,
+      "sha256": "914432610e34e3c5eb927ca353954c753fea39164a95a49a2210ddf14532bf1c"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_query__CK.npz",
+      "bytes": 1309036,
+      "sha256": "7dd3709a45169593f6ce30c64f9629ef2f1516773be53600ad793d30a65a513c"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_query__K.npz",
+      "bytes": 304198,
+      "sha256": "13d9c2a16a37810db33dfce5084f11d84b071d6b804758880d040ddb6b7cbcff"
+    },
+    {
+      "path": "mechanism57/K562/kernels/medcpt_query__fusion_morgan.npz",
+      "bytes": 1306987,
+      "sha256": "e7a9acda872a984a0951ae7cdcc3b1bcc76c87196d7b7ed75519a864713417f3"
+    },
+    {
+      "path": "mechanism57/K562/kernels/native_morgan_exposure.npz",
+      "bytes": 376353,
+      "sha256": "949d1bb151ef4559837dc7d225463c3d8e6c6563897e45df988ed3b57294b01c"
+    },
+    {
+      "path": "mechanism57/K562/kernels/qwen3_0_6b__C.npz",
+      "bytes": 1307232,
+      "sha256": "cef45510a7c6581162afd5eb18fedacb479358882030e523e8e906f01c6605cd"
+    },
+    {
+      "path": "mechanism57/K562/kernels/qwen3_0_6b__CK.npz",
+      "bytes": 1307855,
+      "sha256": "bed1d9edff0bd36441a94b226f1e36a3e5a14f2e5817bf67863ce8d09b3db8e0"
+    },
+    {
+      "path": "mechanism57/K562/kernels/qwen3_0_6b__K.npz",
+      "bytes": 303664,
+      "sha256": "5007c00581fb77d7637b05a26800744c7b40cb7870fe87986fe6e9bf4cfde94e"
+    },
+    {
+      "path": "mechanism57/K562/kernels/qwen3_0_6b__fusion_morgan.npz",
+      "bytes": 1304025,
+      "sha256": "b9290734b625a5ab06c5ee2654ba67e055a77d91ff67238ee28b8c11e5a71acf"
+    },
+    {
+      "path": "mechanism57/K562/kernels/sapbert__C.npz",
+      "bytes": 1313281,
+      "sha256": "429d20a289e0b89e5666b7bd796d2eb076368703dc8025492c65d37f4f5f6402"
+    },
+    {
+      "path": "mechanism57/K562/kernels/sapbert__CK.npz",
+      "bytes": 1312988,
+      "sha256": "d709095b9f2ea2c3baa588445ef4ec959fa0e10d3a981d74bc170996bb75cbab"
+    },
+    {
+      "path": "mechanism57/K562/kernels/sapbert__K.npz",
+      "bytes": 305084,
+      "sha256": "a11d52296d0af804c47978e0fae75fe58553b8bbd4926d3573a8c571a12d4b04"
+    },
+    {
+      "path": "mechanism57/K562/kernels/sapbert__fusion_morgan.npz",
+      "bytes": 1310576,
+      "sha256": "16367b48bc65bd840c06935c8f064aa3a132c477e364d74525077c2939622418"
+    },
+    {
+      "path": "mechanism57/K562/kernels/structured_identity_exposure.npz",
+      "bytes": 62910,
+      "sha256": "91d3239c552264d8538f891e660cf093af8606a50a08c4af4661090ec17a7423"
+    },
+    {
+      "path": "mechanism57/K562/kernels/tfidf__C.npz",
+      "bytes": 193184,
+      "sha256": "7aa779e3dfe31c923a19a04ee08212e5204834fbd53c158d8bfe072414ec4bee"
+    },
+    {
+      "path": "mechanism57/K562/kernels/tfidf__CK.npz",
+      "bytes": 871550,
+      "sha256": "7dbabab8b8dc714958bfa338c1c29e6660cae80f230a6b324728d93b0b01de65"
+    },
+    {
+      "path": "mechanism57/K562/kernels/tfidf__K.npz",
+      "bytes": 274764,
+      "sha256": "d8db4b5637d84141b59df2c62c394f977d682871874b663a3c6b506ef4dfe176"
+    },
+    {
+      "path": "mechanism57/K562/landmarks.tsv",
+      "bytes": 51398,
+      "sha256": "52d57c1884ad71a6ba6e027a31b1db81cf72492848e4efae82a6f207244a8663"
+    },
+    {
+      "path": "mechanism57/K562/paired_condition_metrics.tsv.gz",
+      "bytes": 710685,
+      "sha256": "1cc26c326ecf7114756dbfc35fef2147b4ed4133b95a5f5402aafea34cf571e3"
+    },
+    {
+      "path": "mechanism57/K562/paired_gene_metrics.tsv.gz",
+      "bytes": 12644327,
+      "sha256": "f6608d887861cb5963ea6151d2e690d23edba07b64585e6538f2b3bfdff5ac14"
+    },
+    {
+      "path": "mechanism57/K562/parameters/bge_m3__C.npz",
+      "bytes": 5912990,
+      "sha256": "3e55de14a65cb28f290259d0d62460f79e4fa2d2ae1885ff122da5c96b2dd235"
+    },
+    {
+      "path": "mechanism57/K562/parameters/bge_m3__CK.npz",
+      "bytes": 5912764,
+      "sha256": "7f8bcc08269d96dba6d1d61350f1165cd719d55d2396e21fbf5a51003743ea4a"
+    },
+    {
+      "path": "mechanism57/K562/parameters/bge_m3__K.npz",
+      "bytes": 5844347,
+      "sha256": "7164c6ed0587496bfd6c3487c5ac674db60ae62b3845f832caab1bde9f262122"
+    },
+    {
+      "path": "mechanism57/K562/parameters/bge_m3__fusion_morgan.npz",
+      "bytes": 5913021,
+      "sha256": "29c01a2fdaa011c60802cb08ad1f604aaf5e8f243155af130beb093dd172c8f8"
+    },
+    {
+      "path": "mechanism57/K562/parameters/biomedbert__C.npz",
+      "bytes": 5912801,
+      "sha256": "57fef9e319e4e28dab9a35d549507b263e16a9744ef680bb1707fa869da80c19"
+    },
+    {
+      "path": "mechanism57/K562/parameters/biomedbert__CK.npz",
+      "bytes": 5913011,
+      "sha256": "27ee9dd2e5cee49a6b3fd3467fea38b240ae8ee7a5f52ff4530a164bffbc2fa1"
+    },
+    {
+      "path": "mechanism57/K562/parameters/biomedbert__K.npz",
+      "bytes": 5845604,
+      "sha256": "dbbebea80462799037f9c87564b86e43aea8547744eacd5a765a48c921d99cdf"
+    },
+    {
+      "path": "mechanism57/K562/parameters/biomedbert__fusion_morgan.npz",
+      "bytes": 5912851,
+      "sha256": "9b98069801de5e1d3c2735aeaad246cfd9496d09f0b3746c9e127e97ba8e1ceb"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_article__C.npz",
+      "bytes": 5912839,
+      "sha256": "3f092b8ca8a2acece9a951b734683a61b126974d594ae94a2fde8f86f5992ea7"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_article__CK.npz",
+      "bytes": 5912847,
+      "sha256": "6f9c402d14209c9318a3bad7c923d96f6322f7d337af030f2ba32d2bf2d1e445"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_article__K.npz",
+      "bytes": 5845150,
+      "sha256": "2c965e28fc666612c47ef8427e5c15032af00f871cfed1bec4aabaec53e6360c"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_article__fusion_morgan.npz",
+      "bytes": 5912978,
+      "sha256": "4e5c7b1f79a763e6c17fe936792e2c448de9f820042fea54a21fa5ab4ab965b2"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_query__C.npz",
+      "bytes": 5912772,
+      "sha256": "2ebe31f9caa2236a456050b55a7715dfcbdff061dfcb8788ba436a12de65c49f"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_query__CK.npz",
+      "bytes": 5912869,
+      "sha256": "e9cba63a1fa9088664d93038ed6d78d62bb7cd07c15a0eb2540c8e3848a2edd1"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_query__K.npz",
+      "bytes": 5845982,
+      "sha256": "318dd1e23463c9dec046efe8d8adce1c2542c4bbf0ade13b021f5c34b510be3f"
+    },
+    {
+      "path": "mechanism57/K562/parameters/medcpt_query__fusion_morgan.npz",
+      "bytes": 5912966,
+      "sha256": "5566b2b6649ff9fab8c6dc7e8e2bb058375bc6774804a6d5ca54a454f1153cd4"
+    },
+    {
+      "path": "mechanism57/K562/parameters/native_morgan_exposure.npz",
+      "bytes": 5910893,
+      "sha256": "b37d86a6a566f26f96205db4ff6696a8f922c40f14097f60ffb1182010b20dc1"
+    },
+    {
+      "path": "mechanism57/K562/parameters/qwen3_0_6b__C.npz",
+      "bytes": 5913287,
+      "sha256": "5bd1f2b3d7bfd8409aba9f444eb72ce46b77b2ce1ac1afec9b8bf63cb396788f"
+    },
+    {
+      "path": "mechanism57/K562/parameters/qwen3_0_6b__CK.npz",
+      "bytes": 5913114,
+      "sha256": "96b49e5d00aaefbe9fea5335a08d93a1c6db5ed202e56529593d72c06d3aae96"
+    },
+    {
+      "path": "mechanism57/K562/parameters/qwen3_0_6b__K.npz",
+      "bytes": 5845072,
+      "sha256": "6b4a3350537fbf6d96bdc5c1424b53bd6ec67c57b6c47592ea253c9aeed7a5a1"
+    },
+    {
+      "path": "mechanism57/K562/parameters/qwen3_0_6b__fusion_morgan.npz",
+      "bytes": 5912964,
+      "sha256": "aa95c081ba74db021820c62c8aa3becd86377b3acc47c38e1e17160483e2a6ea"
+    },
+    {
+      "path": "mechanism57/K562/parameters/sapbert__C.npz",
+      "bytes": 5912793,
+      "sha256": "424bb091e3546460b621c8f077ddaedc0b72e93670ad1a6e94bd6dc21ab81775"
+    },
+    {
+      "path": "mechanism57/K562/parameters/sapbert__CK.npz",
+      "bytes": 5912870,
+      "sha256": "6c4fe584fea76a70c07ea6c840f6ae58717cf44eb42cce2f9277a8e74df2f04e"
+    },
+    {
+      "path": "mechanism57/K562/parameters/sapbert__K.npz",
+      "bytes": 5844617,
+      "sha256": "d07813730265af3ebe741e611011b9bd6dd2cad61da1940afe5c25b183af379c"
+    },
+    {
+      "path": "mechanism57/K562/parameters/sapbert__fusion_morgan.npz",
+      "bytes": 5912759,
+      "sha256": "509e6c940cd6b6d3aa25b1e30d4243ddf487ecd42a92c49b8bc1c1ace1d33bad"
+    },
+    {
+      "path": "mechanism57/K562/parameters/structured_identity_exposure.npz",
+      "bytes": 5909732,
+      "sha256": "4477b7fd5e2104ad3010d5b418a061f8142257214ca3c752dc5b52fbfc2949a2"
+    },
+    {
+      "path": "mechanism57/K562/parameters/tfidf__C.npz",
+      "bytes": 5911325,
+      "sha256": "60b04ca6bb17a3281b20a6ae696934a8a5b905be395689471388193b9404f898"
+    },
+    {
+      "path": "mechanism57/K562/parameters/tfidf__CK.npz",
+      "bytes": 5912086,
+      "sha256": "96af29b63236b34647727ba8c62698f66d30f250252e582ba3e5ea97afed1d2a"
+    },
+    {
+      "path": "mechanism57/K562/parameters/tfidf__K.npz",
+      "bytes": 5803192,
+      "sha256": "e048af7c57af20f7b1c70ee5fe902c479497552be59d0c01714fe411760c6ef5"
+    },
+    {
+      "path": "mechanism57/K562/predictions.npz",
+      "bytes": 74964606,
+      "sha256": "03cf4324f2a893e3ea7daf7a80a5b39ee495bc4b864e9df296bbbb27765c157f"
+    },
+    {
+      "path": "mechanism57/K562/query_atoms.tsv",
+      "bytes": 45735,
+      "sha256": "608601b672f207c5bdbd5555c779aea6b47c2532358b9539b806359c2677982a"
+    },
+    {
+      "path": "mechanism57/K562/same_drug_source_pairs.tsv",
+      "bytes": 20568,
+      "sha256": "935dfeda42a793ba5c8811c541f509a7d23a6acb256eaba06fa1f388aba4dcfc"
+    },
+    {
+      "path": "mechanism57/K562/source_atoms.tsv",
+      "bytes": 91237,
+      "sha256": "3f3f562471aeb2330034cddffda5ce6f5aacc5952089ccae5e9912674db8f4fb"
+    },
+    {
+      "path": "mechanism57/K562/source_response.npz",
+      "bytes": 5987553,
+      "sha256": "a3dd6b6896749f8020c716e8a18a1de49682068c6b0325c8a4e63224c8d14871"
+    },
+    {
+      "path": "mechanism57/K562/text_mapping.tsv",
+      "bytes": 591061,
+      "sha256": "e04561fcffaed085e7dc70e9cc05170f8132ff6d5d56425dbe9d6485f911df15"
+    },
+    {
+      "path": "mechanism57/K562/truth.npz",
+      "bytes": 2573006,
+      "sha256": "40a14a71823be2e1d344d02df6e942be5cd69c23afd18d0778f371f4e5602502"
+    },
+    {
+      "path": "mechanism57/MCF7/condition_metrics.tsv.gz",
+      "bytes": 384583,
+      "sha256": "df5ee154c2fbb6727a01d0da678338f1634b969b24930830b728d577594b301c"
+    },
+    {
+      "path": "mechanism57/MCF7/feature_audit.json",
+      "bytes": 135344,
+      "sha256": "052e79df1d0f68a4f81d39adc4b6e507cb5a1ec3e0ca883255bec3ef9777f708"
+    },
+    {
+      "path": "mechanism57/MCF7/gene_metrics.tsv.gz",
+      "bytes": 10325168,
+      "sha256": "37a44c4701c08ccd80fcf6157daa15bdd4b50ef489bc042a82c3fd14b5fc71f3"
+    },
+    {
+      "path": "mechanism57/MCF7/gene_panel.tsv",
+      "bytes": 191630,
+      "sha256": "4938984c423553c094ae7ad63933c362aff60f6caa0052067a2ac57da561ece6"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/bge_m3__C.npz",
+      "bytes": 1292318,
+      "sha256": "7898e5b17df8dd8bdcf95269ad64b1693651afafbbbe66fcb53ca54406456cc7"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/bge_m3__CK.npz",
+      "bytes": 1299318,
+      "sha256": "ce448763e6bc1584430a246efe03137086b31ce2985fbb086b1d6d7b7e2ac854"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/bge_m3__K.npz",
+      "bytes": 301167,
+      "sha256": "cdb165014a29a84549a336252130c6b30a1f0a04d836a3b632065c37ae77be10"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/bge_m3__fusion_morgan.npz",
+      "bytes": 1298217,
+      "sha256": "5921ad504970305ae914f5f252520c6748822655ec46d03796f38b6c9cfb1b16"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/biomedbert__C.npz",
+      "bytes": 1216124,
+      "sha256": "be7647b814ac7b4370548d142468ec6f18f4ec83ffc15a6b5f21218495c2a6ec"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/biomedbert__CK.npz",
+      "bytes": 1227455,
+      "sha256": "4a8c1e46c12b00556d8fe86c468deefa0781827fa3ee72cdf4bc6908ad05b36f"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/biomedbert__K.npz",
+      "bytes": 295390,
+      "sha256": "0c8d5012ec496d20d90b0b061221a1447ab52be074f61e4d7ff788a9047320d1"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/biomedbert__fusion_morgan.npz",
+      "bytes": 1273386,
+      "sha256": "6899238a96060ef8d524e07d379d21e4e0e97a89d47e27af2eb148accd9a9e2f"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_article__C.npz",
+      "bytes": 1280004,
+      "sha256": "be8f35400f13dd53695e76da922bc43d1a1e07be6dd1ad900bd8e7391f854526"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_article__CK.npz",
+      "bytes": 1289042,
+      "sha256": "9ab098daa7b5ded87375a6a1c863c87e14cd5fbcce5272e1a7eb272eb8b63443"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_article__K.npz",
+      "bytes": 298566,
+      "sha256": "d8b25736247e2b1e530db9fd6eadf5d6967b297c8195d1a345c3ebb0b878ad75"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_article__fusion_morgan.npz",
+      "bytes": 1290760,
+      "sha256": "08b38134595d272f75fbd105c5e500966c2ffc2076f5221dfed949a23248947a"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_query__C.npz",
+      "bytes": 1307504,
+      "sha256": "e997e19ff0a5fc9a4e1dc813df2d1af73ec3e6f3ac90b78f220f5cd2010b8658"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_query__CK.npz",
+      "bytes": 1309243,
+      "sha256": "2e26db3e99d5c0880d30bdfeeac2ce455b423c62423f81948f54b11061e5dd1b"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_query__K.npz",
+      "bytes": 301767,
+      "sha256": "6b36b56d2f3ee5282d117952fed760076b94a272b13fff6a76a9e68f686b1c1a"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/medcpt_query__fusion_morgan.npz",
+      "bytes": 1308141,
+      "sha256": "7cc7fe9a68cd8b7d3bfba545832edf4fff6219bcadda54776bfcdf6662072d27"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/native_morgan_exposure.npz",
+      "bytes": 373259,
+      "sha256": "19a3a5cdc3fe4fc6505762d43e50f68c083201403dbfaf62218c4a82cbea2084"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/qwen3_0_6b__C.npz",
+      "bytes": 1306338,
+      "sha256": "7ac9cf11b619f19b5768bb3fd5f59e6ab5d8a043b286773cf58bd12470fed39a"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/qwen3_0_6b__CK.npz",
+      "bytes": 1306960,
+      "sha256": "a9fec7350348cee1db5170de92fd89906f2704742ebe1440d2e4149add733f62"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/qwen3_0_6b__K.npz",
+      "bytes": 301103,
+      "sha256": "03c4c034059f07023e4c009ef5a8c5c73b9b347be4f2d1c37ad5f5a767a44bc6"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/qwen3_0_6b__fusion_morgan.npz",
+      "bytes": 1303661,
+      "sha256": "583ebe4a576d7276deb4a7522a223b20a2c87ddabe971a30a076c91800449807"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/sapbert__C.npz",
+      "bytes": 1312986,
+      "sha256": "e8aaa4bc35e7305e860530a9d03a6668e7349658b7f9e2863d241c46569afb90"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/sapbert__CK.npz",
+      "bytes": 1312516,
+      "sha256": "e31a65e746fd7efd4db11f7bf1c57e426eb492e3cc8315d8610c9e54b247a05b"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/sapbert__K.npz",
+      "bytes": 302398,
+      "sha256": "559540d42cb642a3d5e894c72a0e59247bb6f68283c4d9f74faa9b39a0058c1d"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/sapbert__fusion_morgan.npz",
+      "bytes": 1310509,
+      "sha256": "bba209274986bff2e5c496a2fde8a09dc00f0a98bc8afad229778c0690375f76"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/structured_identity_exposure.npz",
+      "bytes": 62268,
+      "sha256": "cd18f8c4a5360b1cb0e29fce23b506d74cc9f118519c9e5d140886ef724926da"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/tfidf__C.npz",
+      "bytes": 189481,
+      "sha256": "07740c63d60ef4197b5b1a56086fd250dce8ae96cbc225ca2f392f071c50f7e9"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/tfidf__CK.npz",
+      "bytes": 861043,
+      "sha256": "b353c553aabb4d7a6b047641c5f809adeaeba8e50b1f7a888d11d45c65dcf389"
+    },
+    {
+      "path": "mechanism57/MCF7/kernels/tfidf__K.npz",
+      "bytes": 270171,
+      "sha256": "97a3bb2ded56f3f296a6ceca9aa21392dc790cc644339dfe328159d473257c4b"
+    },
+    {
+      "path": "mechanism57/MCF7/landmarks.tsv",
+      "bytes": 51271,
+      "sha256": "a1f1905f023661a8a405a3929d6784e1eaab32986e422777a23a34d7be8700e9"
+    },
+    {
+      "path": "mechanism57/MCF7/paired_condition_metrics.tsv.gz",
+      "bytes": 710108,
+      "sha256": "d2b2de8e8a57c4a4deac2c0bce96a21421cca8725f0a6bc4386e358ce0066b30"
+    },
+    {
+      "path": "mechanism57/MCF7/paired_gene_metrics.tsv.gz",
+      "bytes": 12289119,
+      "sha256": "c5ec0d5f52dc7ed098c93672df867e0bede4d1924ff8eecf9d8588a366053d17"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/bge_m3__C.npz",
+      "bytes": 5912684,
+      "sha256": "f27b03d12f7cfdae39d8cbd3c8423cca330d69fbfdccbd11d8d7f4e15e2f1022"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/bge_m3__CK.npz",
+      "bytes": 5912809,
+      "sha256": "6506d75bd646116022dedbbdbe1ac48b2761efcf3507c5880513e2b5fa9168e6"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/bge_m3__K.npz",
+      "bytes": 5832404,
+      "sha256": "fd95572ab15fa16250efa3716d02c6bb489c277a620a0eb742cb64f9c7a5bc4e"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/bge_m3__fusion_morgan.npz",
+      "bytes": 5912647,
+      "sha256": "c22bb8f0e7c4e61b24db2a6566f13f92d522dc66277abf382498e7eded17f18f"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/biomedbert__C.npz",
+      "bytes": 5912325,
+      "sha256": "f9fe4b93c48dc328f0b55dda39e855737b3fad893f8a551be9394fc6bb9e014d"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/biomedbert__CK.npz",
+      "bytes": 5912563,
+      "sha256": "fddd972cf8ef6e92822d615e795e7f7390c10bb129ab545ff253a238f96af084"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/biomedbert__K.npz",
+      "bytes": 5833079,
+      "sha256": "67064b8ab9e3133e4cd73a0644999d9ba6b80a67d757520ac7870e0bd7119b4b"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/biomedbert__fusion_morgan.npz",
+      "bytes": 5912666,
+      "sha256": "64c696082cf99cff87bd478b3d8a74ea20dec3311fc6f273dd2a271813ed3697"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_article__C.npz",
+      "bytes": 5912782,
+      "sha256": "3a4ac34b599b8539d4db53b790176ecba8f19d3535613713c7c6e9d7986e6f81"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_article__CK.npz",
+      "bytes": 5912456,
+      "sha256": "1dd76a57dec4b24097978a5fc52214c01283362ffeb7738fefbc39fb87609092"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_article__K.npz",
+      "bytes": 5833686,
+      "sha256": "826bb3f9c3d2056b359d6ca02f2721a919d59c5678b87066ab3fb542799cc0f3"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_article__fusion_morgan.npz",
+      "bytes": 5912525,
+      "sha256": "a07ead0a26138e37a6d8db0b0c6c745431b3cbe9d7aa7ae988fe960159fefe50"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_query__C.npz",
+      "bytes": 5912493,
+      "sha256": "e85bf1243515ac7d5a838600ce8cc3ef7afaf7a41448915e98955132899ff462"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_query__CK.npz",
+      "bytes": 5912507,
+      "sha256": "2d305a9962b27debc87699304b32f36822f82080bbbbd5a7c7d16198b54863da"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_query__K.npz",
+      "bytes": 5830851,
+      "sha256": "9670589f7c15a2c0213f31ddce5b8e326197e63a6090e8e66d8d67539550f6fc"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/medcpt_query__fusion_morgan.npz",
+      "bytes": 5912603,
+      "sha256": "ba2565083fda2f52d03807b9694024b5d959fb601dc77df51515a75d3f233c09"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/native_morgan_exposure.npz",
+      "bytes": 5910617,
+      "sha256": "480e731cbbbe43db9cc18cb0770b9e688b8092fcb21b5aa2b58e21c876ce4d0e"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/qwen3_0_6b__C.npz",
+      "bytes": 5912559,
+      "sha256": "155c585ba3af37d2e5d5d43bada8aaf0e4627fa81c7748e9f0e60a0019552884"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/qwen3_0_6b__CK.npz",
+      "bytes": 5912719,
+      "sha256": "a45f0eb189b29cdea9dc9f868c92438a9d1a76ff6225473ca3bf8fa29e6b657a"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/qwen3_0_6b__K.npz",
+      "bytes": 5832566,
+      "sha256": "c63b70693b5fc7864e5107cb5828747526ec26d97dc27a4facea2afa7eb313b3"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/qwen3_0_6b__fusion_morgan.npz",
+      "bytes": 5912645,
+      "sha256": "6f5011dfeea0e89a45a3ddc4d4319d9c40a28eed0d6791e48a118476526ce527"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/sapbert__C.npz",
+      "bytes": 5912845,
+      "sha256": "f499407d71a5ef9df5155b9da97c775cffa4c596a497306cc1cde1f3aee7b339"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/sapbert__CK.npz",
+      "bytes": 5912578,
+      "sha256": "842a466cd283425c32b96f3f8d147cb69fe551457013cfc601669eded03a8d75"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/sapbert__K.npz",
+      "bytes": 5833026,
+      "sha256": "da0f5f968c304881b3ff074d3e76806a43dc70868cb34eba4b17bac1da1edc29"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/sapbert__fusion_morgan.npz",
+      "bytes": 5912789,
+      "sha256": "784fe3981d98cf6127aade81dcdf489473dc5d4621b35dc86d4bcafbb2316e4c"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/structured_identity_exposure.npz",
+      "bytes": 5908923,
+      "sha256": "a0e12a042d105b87eb466ce44778a631d022b8bbdfd8845c65d8564b7c8d72b6"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/tfidf__C.npz",
+      "bytes": 5910783,
+      "sha256": "284ffb25333f85a2301c496a6b7a9743b2028ff1f642e08bc3dbe669e10284a7"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/tfidf__CK.npz",
+      "bytes": 5911781,
+      "sha256": "0f2ab77621b24b549f10e9706b89bad56bfc8044e404aa45c3771133af91cde5"
+    },
+    {
+      "path": "mechanism57/MCF7/parameters/tfidf__K.npz",
+      "bytes": 5774647,
+      "sha256": "457da68be7bb619944fe2b33af7aaa5a9a8f104c7dab1ad921ca8155dc771a07"
+    },
+    {
+      "path": "mechanism57/MCF7/predictions.npz",
+      "bytes": 75716634,
+      "sha256": "e06a8268e7de08a4102daaff2e422add56c8393657cd92edb764b20d7e49e95e"
+    },
+    {
+      "path": "mechanism57/MCF7/query_atoms.tsv",
+      "bytes": 45818,
+      "sha256": "1e5aea1dd7418409a8a2f8e5c05c6e1d7cd348541009b3619d55f724fc39d0c7"
+    },
+    {
+      "path": "mechanism57/MCF7/same_drug_source_pairs.tsv",
+      "bytes": 20568,
+      "sha256": "6cf49455f706647e4dd8f9dca683129deff4a42fb272d6851751681388fe9ec0"
+    },
+    {
+      "path": "mechanism57/MCF7/source_atoms.tsv",
+      "bytes": 91154,
+      "sha256": "745c4a7e310e7e5b78c16ecf30c0a1a393691320a7ff5ece6addf6b63d7457b4"
+    },
+    {
+      "path": "mechanism57/MCF7/source_response.npz",
+      "bytes": 5972157,
+      "sha256": "2ddb85718b40a9649e2c638d85ae6805d545d8a2ab6ac09117ec87630bef3f84"
+    },
+    {
+      "path": "mechanism57/MCF7/text_mapping.tsv",
+      "bytes": 591061,
+      "sha256": "e04561fcffaed085e7dc70e9cc05170f8132ff6d5d56425dbe9d6485f911df15"
+    },
+    {
+      "path": "mechanism57/MCF7/truth.npz",
+      "bytes": 2580356,
+      "sha256": "9577481cd72f7650e1a796571e5efb2016b0c53769d59d76611a9954f3208d96"
+    },
+    {
+      "path": "method_registry.tsv",
+      "bytes": 2395,
+      "sha256": "ea1aebeb2f0d430a73ae97902f89dd33371abf186522ba9a3bf624d813e03546"
+    },
+    {
+      "path": "paired_dose_summary.tsv",
+      "bytes": 966945,
+      "sha256": "11ccd813d140a97ac21026b5625b8635fb6d2b442c484b304f6dcb5958292c9f"
+    },
+    {
+      "path": "paired_fold_summary.tsv",
+      "bytes": 233121,
+      "sha256": "e6dcb40debe09061d4951597cb384144a63eac65c9410d56087e02f26d26d3e2"
+    },
+    {
+      "path": "paired_macro_summary.tsv",
+      "bytes": 75297,
+      "sha256": "f28fd15637e453beebbf1cb1aeb15aef917bbc4066aad841e7828fa4ccca8c24"
+    },
+    {
+      "path": "predictions_sealed.json",
+      "bytes": 1855,
+      "sha256": "5fa0cf5e7b4635d1bb7ec541937ffce269a61700f2aa247cb38f27eda51b9e21"
+    },
+    {
+      "path": "run_started.json",
+      "bytes": 151,
+      "sha256": "6b6bbc58db4dd35d3640e24cbce316780256cb828fbe561669016ede9d55da66"
+    },
+    {
+      "path": "scoring_started.json",
+      "bytes": 155,
+      "sha256": "998158cd6a0926c291d5db68135d061009ace31b3c2e654f97a1ca9bc8d57a63"
+    },
+    {
+      "path": "target56/A549/condition_metrics.tsv.gz",
+      "bytes": 194747,
+      "sha256": "1bcd24e0646d858664cf4d1b05ed7670f593094f6f8b1e00cf36eec28bdb009f"
+    },
+    {
+      "path": "target56/A549/feature_audit.json",
+      "bytes": 3212,
+      "sha256": "b7e5067a955d408c8b660245fff2ebe3a6bddf5a8eca87a185288a4ef6d12d00"
+    },
+    {
+      "path": "target56/A549/gene_metrics.tsv.gz",
+      "bytes": 4612201,
+      "sha256": "b0b96578f8b1f7688b598fa0cf14163093be99e2374019e39e3e8fc83bd83170"
+    },
+    {
+      "path": "target56/A549/gene_panel.tsv",
+      "bytes": 191661,
+      "sha256": "fa0861ffe54458c20d34412755b53c5b05a07775077acb51660cc0f5ee309eb0"
+    },
+    {
+      "path": "target56/A549/kernels/bge_m3__C.npz",
+      "bytes": 1271512,
+      "sha256": "9fb9e31a3a355e94700b3cdd52d72a441e36536c17c26294c093763100f3d1eb"
+    },
+    {
+      "path": "target56/A549/kernels/bge_m3__fusion_target.npz",
+      "bytes": 1268911,
+      "sha256": "4d12d60b9b56c7bb2d42fee8e528174184cbe4d93a87910155f595a3787aee22"
+    },
+    {
+      "path": "target56/A549/kernels/biomedbert__C.npz",
+      "bytes": 1194065,
+      "sha256": "7516c12e3750f9506ed710b61709439779158c6fa4c723cc9c8da9322e9d6256"
+    },
+    {
+      "path": "target56/A549/kernels/biomedbert__fusion_target.npz",
+      "bytes": 1193368,
+      "sha256": "c0ef535c6d35112902c90a4e62c80ab311179d6468e7be9d6e80479a518702e4"
+    },
+    {
+      "path": "target56/A549/kernels/medcpt_article__C.npz",
+      "bytes": 1256659,
+      "sha256": "cbdbb33f5714f506bc0e01c087d37afff5b844747b06038a352f70df0a45369d"
+    },
+    {
+      "path": "target56/A549/kernels/medcpt_article__fusion_target.npz",
+      "bytes": 1253904,
+      "sha256": "fbb40ceed5fb51b10bb1c1ebbf4929ce973a3b45c204df467a6060e02e0309fb"
+    },
+    {
+      "path": "target56/A549/kernels/medcpt_query__C.npz",
+      "bytes": 1282663,
+      "sha256": "12502a291ccb3a6822817c564e4513e030d9770af92473f10497df4d9d097b76"
+    },
+    {
+      "path": "target56/A549/kernels/medcpt_query__fusion_target.npz",
+      "bytes": 1278978,
+      "sha256": "5b193dd93965badc2db7102a4b6e7137a9374f3c8ba32be8c6cc06c7d675ad0f"
+    },
+    {
+      "path": "target56/A549/kernels/native_target_exposure.npz",
+      "bytes": 82257,
+      "sha256": "dc842f85b6adf09574d41de28dc17bc9cb9de1e0b04c63b7223d6a817b035cd1"
+    },
+    {
+      "path": "target56/A549/kernels/qwen3_0_6b__C.npz",
+      "bytes": 1283494,
+      "sha256": "9dfae8f32e39315769c9a44c1a2f2c642d719ecf65ba3d93c3b9d8720968afd3"
+    },
+    {
+      "path": "target56/A549/kernels/qwen3_0_6b__fusion_target.npz",
+      "bytes": 1279783,
+      "sha256": "5f0a6bcc691c614c0954e18ed5a9087c74b45ab924dff3ee3bdb74f56fa12cd4"
+    },
+    {
+      "path": "target56/A549/kernels/sapbert__C.npz",
+      "bytes": 1289741,
+      "sha256": "5da21d47eb90d2cb0488048e99eb49841d6edbd78de94b84c8319b5145f3e723"
+    },
+    {
+      "path": "target56/A549/kernels/sapbert__fusion_target.npz",
+      "bytes": 1282677,
+      "sha256": "468d4831792bc157746e14c0d970ee905e532e15efcbc6c4e2d1f8446f882d1f"
+    },
+    {
+      "path": "target56/A549/landmarks.tsv",
+      "bytes": 51483,
+      "sha256": "f8154198c7d4d88d931a43bcbed592463ae812353b8f2073658a9aded2c4c207"
+    },
+    {
+      "path": "target56/A549/paired_condition_metrics.tsv.gz",
+      "bytes": 372255,
+      "sha256": "1179e4f07b04a0ed15bada69afdd2f4613c4837808db3ad6a2ed4648541fe13c"
+    },
+    {
+      "path": "target56/A549/paired_gene_metrics.tsv.gz",
+      "bytes": 6246578,
+      "sha256": "e894bb5cd4dc021db470a9dfdf91fb173a5b5d63836d4454aa373aad48b1733b"
+    },
+    {
+      "path": "target56/A549/parameters/bge_m3__C.npz",
+      "bytes": 5912243,
+      "sha256": "cc0a867095d317781d80470e891cbc05b8b6122a994b0f851717068731ae20eb"
+    },
+    {
+      "path": "target56/A549/parameters/bge_m3__fusion_target.npz",
+      "bytes": 5912427,
+      "sha256": "47423feb01b5af8a6755ec4abda3687ba1fb148a6cd2d800b756107e14b1b196"
+    },
+    {
+      "path": "target56/A549/parameters/biomedbert__C.npz",
+      "bytes": 5912016,
+      "sha256": "1915916f40ea6d48515d8bf7feddf7eee9b0d1fa9b1fd6552db6b67fd0418bf1"
+    },
+    {
+      "path": "target56/A549/parameters/biomedbert__fusion_target.npz",
+      "bytes": 5912704,
+      "sha256": "4e5d3b318febf9540efe89ba2374d7e827760cab68c95c98e299f98415939489"
+    },
+    {
+      "path": "target56/A549/parameters/medcpt_article__C.npz",
+      "bytes": 5912289,
+      "sha256": "d96342ccf2795dc7b19c9ac875d2df5608452a9bfcb25ebb62eab971d459ae54"
+    },
+    {
+      "path": "target56/A549/parameters/medcpt_article__fusion_target.npz",
+      "bytes": 5912190,
+      "sha256": "62d1a99b3a7ff6148acce95f605d5f658b86b472147634f2b0a205f9e3d587ee"
+    },
+    {
+      "path": "target56/A549/parameters/medcpt_query__C.npz",
+      "bytes": 5912277,
+      "sha256": "cbb9cce6d9c015b67570764df0653641e1f37e5abfa635b445405a1c13f8c10a"
+    },
+    {
+      "path": "target56/A549/parameters/medcpt_query__fusion_target.npz",
+      "bytes": 5912367,
+      "sha256": "2c80a539c601c21d3127beced1a6b535e82e65265ac2f1fe4835b7693aa3834d"
+    },
+    {
+      "path": "target56/A549/parameters/native_target_exposure.npz",
+      "bytes": 5898831,
+      "sha256": "b743b99adb3b85115106d54e70eb368f3f7873bb63f29f988d5936e55a34274a"
+    },
+    {
+      "path": "target56/A549/parameters/qwen3_0_6b__C.npz",
+      "bytes": 5912461,
+      "sha256": "a75a3fed0546e3fc96cd7133dd6bb21c00fcf7c72095083131ea45c9d81fd268"
+    },
+    {
+      "path": "target56/A549/parameters/qwen3_0_6b__fusion_target.npz",
+      "bytes": 5912266,
+      "sha256": "68df5c36a869a7b32a047c5bc83d4e30ec9a9fdb3c12a4424ba991cd1af8ecd8"
+    },
+    {
+      "path": "target56/A549/parameters/sapbert__C.npz",
+      "bytes": 5912494,
+      "sha256": "dea0a679463f290d3e05fdcb2006d9d1208d0a4af5d4271890de44b8aecc3b01"
+    },
+    {
+      "path": "target56/A549/parameters/sapbert__fusion_target.npz",
+      "bytes": 5912795,
+      "sha256": "f3f5965589b20e39a8e106372a6090080da6f8efd0ad6a2d8315bc463458a2b6"
+    },
+    {
+      "path": "target56/A549/predictions.npz",
+      "bytes": 35017159,
+      "sha256": "a9775568c15e287f4d99592636a9e25c2bda66c1c90530737be413a07d5b50e8"
+    },
+    {
+      "path": "target56/A549/query_atoms.tsv",
+      "bytes": 44876,
+      "sha256": "821afa584f680fa229b8c2c1f63123f37785c41fffef3932713a6c00b9db29a0"
+    },
+    {
+      "path": "target56/A549/same_drug_source_pairs.tsv",
+      "bytes": 20208,
+      "sha256": "d9e74c93560570b42717c5135a4d7c7d7db5a2fa651cfa2ce515309549dcfe5f"
+    },
+    {
+      "path": "target56/A549/source_atoms.tsv",
+      "bytes": 89683,
+      "sha256": "9339bf844656d2c18eb13b3fedaca6791a8b9b0523b413d9f4bfb0681402fb4a"
+    },
+    {
+      "path": "target56/A549/source_response.npz",
+      "bytes": 5886349,
+      "sha256": "c7c25e3ef3937fbe98bd59c3686dc2ecaad3ea3cda788dfa6080fa05e1c3df81"
+    },
+    {
+      "path": "target56/A549/text_mapping.tsv",
+      "bytes": 156793,
+      "sha256": "13612ba53d417d756bc415c6b8aea7a9a93d057fe670e6a420dc0519a79a785d"
+    },
+    {
+      "path": "target56/A549/truth.npz",
+      "bytes": 2524061,
+      "sha256": "56d357d1455663468afa44a1b4319c5e63d76daab5e98bdf2d890e2e576bcc6c"
+    },
+    {
+      "path": "target56/K562/condition_metrics.tsv.gz",
+      "bytes": 194068,
+      "sha256": "51c4719e9de2136a716f9f9fcb57920ce6b32e1eb9f0282f05fc17eebb8445b6"
+    },
+    {
+      "path": "target56/K562/feature_audit.json",
+      "bytes": 3212,
+      "sha256": "b7e5067a955d408c8b660245fff2ebe3a6bddf5a8eca87a185288a4ef6d12d00"
+    },
+    {
+      "path": "target56/K562/gene_metrics.tsv.gz",
+      "bytes": 4668718,
+      "sha256": "54cfaeb21aa485a44c86b3879078ce62ca15f1af9f11c71419fac54057d87fb6"
+    },
+    {
+      "path": "target56/K562/gene_panel.tsv",
+      "bytes": 191542,
+      "sha256": "68312d82337f9ff59451aa16595a022a9567fbe61e9b59594dc9624824bf4595"
+    },
+    {
+      "path": "target56/K562/kernels/bge_m3__C.npz",
+      "bytes": 1270737,
+      "sha256": "8ce315f8c524ddcbac91b07e708dc8e351fe4d0c7777bfdb50eb0bd4ec977be3"
+    },
+    {
+      "path": "target56/K562/kernels/bge_m3__fusion_target.npz",
+      "bytes": 1268150,
+      "sha256": "aa040ecc7b8a8bb65d32a87b20e94297188162d58391e3bd4282aceb8bf0e22b"
+    },
+    {
+      "path": "target56/K562/kernels/biomedbert__C.npz",
+      "bytes": 1193679,
+      "sha256": "ac498625c57fbeb68d9d8b75bc1df7244365dbc9936247201a45f8b25bdd3df3"
+    },
+    {
+      "path": "target56/K562/kernels/biomedbert__fusion_target.npz",
+      "bytes": 1193165,
+      "sha256": "11ca2321359d5591b795542bc7acc6b74ea0f7ce73ae8ff9475a9ed21da84157"
+    },
+    {
+      "path": "target56/K562/kernels/medcpt_article__C.npz",
+      "bytes": 1254708,
+      "sha256": "688ff95d93baf682f8a6534967f5f444522f14289a149442edc93d0d87d11ac2"
+    },
+    {
+      "path": "target56/K562/kernels/medcpt_article__fusion_target.npz",
+      "bytes": 1252162,
+      "sha256": "dbd928258877158e76f04eee36574e8150765ec9fe8655e92e807f1b389f9bef"
+    },
+    {
+      "path": "target56/K562/kernels/medcpt_query__C.npz",
+      "bytes": 1283361,
+      "sha256": "33ce9d5a1f9c3c9f24ebc51cb3a9f8b88a10f38b2b8e0fc9658abcc25c280346"
+    },
+    {
+      "path": "target56/K562/kernels/medcpt_query__fusion_target.npz",
+      "bytes": 1279598,
+      "sha256": "f133a84a9145bf5445132f3e4a4c29ca9300b29cf2655f64a64f9977fffd02a7"
+    },
+    {
+      "path": "target56/K562/kernels/native_target_exposure.npz",
+      "bytes": 82058,
+      "sha256": "492d3654dc7293c36dc7598a84dbb8b17590b925aeec24f42022a728a5b7a694"
+    },
+    {
+      "path": "target56/K562/kernels/qwen3_0_6b__C.npz",
+      "bytes": 1284148,
+      "sha256": "1f252bf6e4a8f2b9de52f30c7f1441edbe4ffc16898d01d697773151ab45c6fd"
+    },
+    {
+      "path": "target56/K562/kernels/qwen3_0_6b__fusion_target.npz",
+      "bytes": 1280117,
+      "sha256": "82a3a0a2220fa52ae3755e588824e41d8b40522c9998a928700b1f71979431ea"
+    },
+    {
+      "path": "target56/K562/kernels/sapbert__C.npz",
+      "bytes": 1290055,
+      "sha256": "3a2101da0672cbbebbbce598c96501ad5a408aedb0017642229f8be3a1df2223"
+    },
+    {
+      "path": "target56/K562/kernels/sapbert__fusion_target.npz",
+      "bytes": 1282909,
+      "sha256": "bc60b58529fc4dfe9742fe0ca0bd26c4de76341856d904231456330db3cd1a3f"
+    },
+    {
+      "path": "target56/K562/landmarks.tsv",
+      "bytes": 51350,
+      "sha256": "e445a2e903aebf6287932b5c0aa98f1437ae2361cc61332926f80c742f37b5b3"
+    },
+    {
+      "path": "target56/K562/paired_condition_metrics.tsv.gz",
+      "bytes": 371562,
+      "sha256": "235796bf6db89a5827bf28110e73255a99cb2de62ae88551c880122b9380caea"
+    },
+    {
+      "path": "target56/K562/paired_gene_metrics.tsv.gz",
+      "bytes": 6345609,
+      "sha256": "439b83b00f5b2264f1df88c250f0852b555ab46926767b2818fcc24e2d261a17"
+    },
+    {
+      "path": "target56/K562/parameters/bge_m3__C.npz",
+      "bytes": 5912815,
+      "sha256": "36646c4a00567fe422c8b20236e32442519241d9dcf8ee5bbda114035d3d7d23"
+    },
+    {
+      "path": "target56/K562/parameters/bge_m3__fusion_target.npz",
+      "bytes": 5912446,
+      "sha256": "8479211e78c6c7c0d585d901534946f9f6832cb91b0642683bd1ce29b7fbc98b"
+    },
+    {
+      "path": "target56/K562/parameters/biomedbert__C.npz",
+      "bytes": 5912168,
+      "sha256": "b5e3b1051b01f9f50f80e439d64ad34bd807233ed8421bd21e69146241f6f7dd"
+    },
+    {
+      "path": "target56/K562/parameters/biomedbert__fusion_target.npz",
+      "bytes": 5912810,
+      "sha256": "23fe7179b5ff3ebb7349bee71ef3297244e63f62f58f4d0004f50e68c50bf76e"
+    },
+    {
+      "path": "target56/K562/parameters/medcpt_article__C.npz",
+      "bytes": 5912218,
+      "sha256": "e0b0242c20992e2748a1e5cc861d765d8c2459306c3fb2cfc92aa8c932d91860"
+    },
+    {
+      "path": "target56/K562/parameters/medcpt_article__fusion_target.npz",
+      "bytes": 5912378,
+      "sha256": "e68335cce41c81c72937cc28709ae00e7b406d28d3ceaf457c696866eb49bfda"
+    },
+    {
+      "path": "target56/K562/parameters/medcpt_query__C.npz",
+      "bytes": 5912319,
+      "sha256": "231f44f4958ee2956df0c4b98fe0e82582f0ea6561123e70909666acb26b947e"
+    },
+    {
+      "path": "target56/K562/parameters/medcpt_query__fusion_target.npz",
+      "bytes": 5912408,
+      "sha256": "bbded572ab950d6dfdcc22266cc5a04ca74227c09ba020c09dac6878b233f037"
+    },
+    {
+      "path": "target56/K562/parameters/native_target_exposure.npz",
+      "bytes": 5910309,
+      "sha256": "19a698df41cd9e42c0ecca66d4ab489c338526780f6a76ce7fe49d86714e1838"
+    },
+    {
+      "path": "target56/K562/parameters/qwen3_0_6b__C.npz",
+      "bytes": 5912570,
+      "sha256": "a5c50547319e0fe8e7c7460f8fc585725bb72c140fb918efc0caaf7e14edf54e"
+    },
+    {
+      "path": "target56/K562/parameters/qwen3_0_6b__fusion_target.npz",
+      "bytes": 5912516,
+      "sha256": "52b1328ed60ee39c0a45b30b38d3ccbc549308aab82da1af2167a5cf3f76ca16"
+    },
+    {
+      "path": "target56/K562/parameters/sapbert__C.npz",
+      "bytes": 5912542,
+      "sha256": "5657c69dc84a07b323a5172f1bc082f43979636d0110ee2bed58c49a56fc94b2"
+    },
+    {
+      "path": "target56/K562/parameters/sapbert__fusion_target.npz",
+      "bytes": 5912407,
+      "sha256": "cbc7c2a8be265d3e06f25fbfeb1304e0328aa9025ef0c3b9864725ce9fd1147a"
+    },
+    {
+      "path": "target56/K562/predictions.npz",
+      "bytes": 35036075,
+      "sha256": "0c745143ca2d82bbd31a541e75cc105fd2fd7a8f29925394b90e6c8ce320912d"
+    },
+    {
+      "path": "target56/K562/query_atoms.tsv",
+      "bytes": 44930,
+      "sha256": "6c25a1d0fc604a9ae4209f332a960538b9f6105189bf5416d123097ce9dd186a"
+    },
+    {
+      "path": "target56/K562/same_drug_source_pairs.tsv",
+      "bytes": 20208,
+      "sha256": "d35813ebd379583a0ef2bea0eaa11551d6c53463cbefea1179f0b7b8f985ee54"
+    },
+    {
+      "path": "target56/K562/source_atoms.tsv",
+      "bytes": 89629,
+      "sha256": "c2f17a5c1b612641754cc219f23a172e851b88ee3853d3095bde12bc8d33b591"
+    },
+    {
+      "path": "target56/K562/source_response.npz",
+      "bytes": 5882937,
+      "sha256": "c407a1e8d62c2bc321f9c59a312243ba6fd3b9e0dc3dbcae3c45559087dc2661"
+    },
+    {
+      "path": "target56/K562/text_mapping.tsv",
+      "bytes": 156793,
+      "sha256": "13612ba53d417d756bc415c6b8aea7a9a93d057fe670e6a420dc0519a79a785d"
+    },
+    {
+      "path": "target56/K562/truth.npz",
+      "bytes": 2528186,
+      "sha256": "ff7528345c32f5a2cbbe73b334560633bc572459e40665cda70d4205ea5bde23"
+    },
+    {
+      "path": "target56/MCF7/condition_metrics.tsv.gz",
+      "bytes": 194155,
+      "sha256": "070c729e100a8bea603d61d3e8bb146bfc7c8a03673cebf0e8cc41d4b2ea9210"
+    },
+    {
+      "path": "target56/MCF7/feature_audit.json",
+      "bytes": 3212,
+      "sha256": "b7e5067a955d408c8b660245fff2ebe3a6bddf5a8eca87a185288a4ef6d12d00"
+    },
+    {
+      "path": "target56/MCF7/gene_metrics.tsv.gz",
+      "bytes": 4544006,
+      "sha256": "7dde733c47b2363596403bf29378dbd13840e88351aaba582675710673948d90"
+    },
+    {
+      "path": "target56/MCF7/gene_panel.tsv",
+      "bytes": 191630,
+      "sha256": "4938984c423553c094ae7ad63933c362aff60f6caa0052067a2ac57da561ece6"
+    },
+    {
+      "path": "target56/MCF7/kernels/bge_m3__C.npz",
+      "bytes": 1269446,
+      "sha256": "82628cd61cee5bd48d8db7fe994f91a461638a3c27bc208fa302bf6c21f01d06"
+    },
+    {
+      "path": "target56/MCF7/kernels/bge_m3__fusion_target.npz",
+      "bytes": 1266917,
+      "sha256": "3f0587c4163c960cadf759cb016a9ef6c571ca739262a3c84f30f7177078893f"
+    },
+    {
+      "path": "target56/MCF7/kernels/biomedbert__C.npz",
+      "bytes": 1194599,
+      "sha256": "1ef90eeae290ca49525d04be75027abc750981a192aa13af068829330da22d93"
+    },
+    {
+      "path": "target56/MCF7/kernels/biomedbert__fusion_target.npz",
+      "bytes": 1194203,
+      "sha256": "0fc50ba2508d27fb2b98abcaae613d495bfb9d68edd266dbb0f4686fc21252c8"
+    },
+    {
+      "path": "target56/MCF7/kernels/medcpt_article__C.npz",
+      "bytes": 1257117,
+      "sha256": "79b3a2fdb5b9e7ec41f9590c3696c213f1273488feb8f79d9fa7426f27306d70"
+    },
+    {
+      "path": "target56/MCF7/kernels/medcpt_article__fusion_target.npz",
+      "bytes": 1254646,
+      "sha256": "77adf8a252301edaf274028c3fa13d26e080c819735f984af3c208e3aba57e33"
+    },
+    {
+      "path": "target56/MCF7/kernels/medcpt_query__C.npz",
+      "bytes": 1284394,
+      "sha256": "89d984c27c39b075990349f91922e16a3144700fa7743188aad69b859a5eee84"
+    },
+    {
+      "path": "target56/MCF7/kernels/medcpt_query__fusion_target.npz",
+      "bytes": 1280387,
+      "sha256": "4d71c6d46db56fd25aa9086a0bce73160c8e47ae633f64aaf0058eab67954129"
+    },
+    {
+      "path": "target56/MCF7/kernels/native_target_exposure.npz",
+      "bytes": 81521,
+      "sha256": "0317f30781526bafd6ab26917d278fcd03edda186fedb4d19ea11de32bd29460"
+    },
+    {
+      "path": "target56/MCF7/kernels/qwen3_0_6b__C.npz",
+      "bytes": 1283329,
+      "sha256": "14802d1a7846c20997bda5e776e4f21e083c248162d3687fa9b1c5b49da43286"
+    },
+    {
+      "path": "target56/MCF7/kernels/qwen3_0_6b__fusion_target.npz",
+      "bytes": 1279592,
+      "sha256": "d0e020025383711c3f4e8c11ff54547f582f77ad6501e5cdf083e5a9c5d286fb"
+    },
+    {
+      "path": "target56/MCF7/kernels/sapbert__C.npz",
+      "bytes": 1289844,
+      "sha256": "b5f843a209ac70a263c2f3b4b3481f0c3fd79403d81074e3d8e0be5e07264c42"
+    },
+    {
+      "path": "target56/MCF7/kernels/sapbert__fusion_target.npz",
+      "bytes": 1282542,
+      "sha256": "dcaa1d83090b1961a4c008acc2f81eca2d2537ae2e9581eae9f1be578aac7c25"
+    },
+    {
+      "path": "target56/MCF7/landmarks.tsv",
+      "bytes": 51267,
+      "sha256": "a0f284ec7c9e02a9fd6faba1eac6cb8ed39f933d5ed158274eace3a81d1c7b26"
+    },
+    {
+      "path": "target56/MCF7/paired_condition_metrics.tsv.gz",
+      "bytes": 371490,
+      "sha256": "07c83b92bc44182089f062a13c31fe037145a3e8040e770c84221778439df99e"
+    },
+    {
+      "path": "target56/MCF7/paired_gene_metrics.tsv.gz",
+      "bytes": 6129760,
+      "sha256": "9563e6abdd85013bd1243429c53ed699f0d10107fb66e2427f29b77b150f45b6"
+    },
+    {
+      "path": "target56/MCF7/parameters/bge_m3__C.npz",
+      "bytes": 5912408,
+      "sha256": "b80a5d6e720f99677f18201c26af498c9188a654badb9b057e93522b46c035a9"
+    },
+    {
+      "path": "target56/MCF7/parameters/bge_m3__fusion_target.npz",
+      "bytes": 5912423,
+      "sha256": "75c359e4361797b9afa6ea78b96ff1fe0f787ce22c0b7ea17768022e950e6ebc"
+    },
+    {
+      "path": "target56/MCF7/parameters/biomedbert__C.npz",
+      "bytes": 5911750,
+      "sha256": "c76df8233fcc838b2db46f386a807644c2b9f7411af3907a763a686aaeec6631"
+    },
+    {
+      "path": "target56/MCF7/parameters/biomedbert__fusion_target.npz",
+      "bytes": 5912411,
+      "sha256": "e4e85852f47aa6f92968114a318e10cd130d9375df24d1b272d7e20c4d6ac7ef"
+    },
+    {
+      "path": "target56/MCF7/parameters/medcpt_article__C.npz",
+      "bytes": 5912125,
+      "sha256": "f5d1a317e3f4a704af87f73b88c222b0b3a1a12d08a62bc3c5c70c1a46cb8129"
+    },
+    {
+      "path": "target56/MCF7/parameters/medcpt_article__fusion_target.npz",
+      "bytes": 5912162,
+      "sha256": "6ce7a552a6a66904297643f63846b410a0533f0198f0a8028fa456f273aeac8e"
+    },
+    {
+      "path": "target56/MCF7/parameters/medcpt_query__C.npz",
+      "bytes": 5912498,
+      "sha256": "2894d7cbfa24e32a5d8a80ca320f74bddf008cfdace4b6e9b630760bb77cef4d"
+    },
+    {
+      "path": "target56/MCF7/parameters/medcpt_query__fusion_target.npz",
+      "bytes": 5911953,
+      "sha256": "cd7ce9e892b712190b9b32eaa7e7779e91666b7038f77ccc59e744a07b14e052"
+    },
+    {
+      "path": "target56/MCF7/parameters/native_target_exposure.npz",
+      "bytes": 5895550,
+      "sha256": "b49706547c5c94a18685990a80b724ff608ead12087447aa22bff0316aaa36e0"
+    },
+    {
+      "path": "target56/MCF7/parameters/qwen3_0_6b__C.npz",
+      "bytes": 5912329,
+      "sha256": "48acea8f4402f9ecf14466ceffd4817391b69d5bc8412dc99c303bca22f36cbe"
+    },
+    {
+      "path": "target56/MCF7/parameters/qwen3_0_6b__fusion_target.npz",
+      "bytes": 5912247,
+      "sha256": "04b0416833606f22bcc0458166a30065c31b50a89fb23a185933ffb093274c62"
+    },
+    {
+      "path": "target56/MCF7/parameters/sapbert__C.npz",
+      "bytes": 5912230,
+      "sha256": "0707b0d64650752ec3603532fe6fd887f50b8a5c3a748491c00578fe1adf9089"
+    },
+    {
+      "path": "target56/MCF7/parameters/sapbert__fusion_target.npz",
+      "bytes": 5912174,
+      "sha256": "0354e70a6f0b8523f9da53ad11d590d84befa395a7893f5311bf72b9ca4a5f2f"
+    },
+    {
+      "path": "target56/MCF7/predictions.npz",
+      "bytes": 35019546,
+      "sha256": "cd9c986c5347170317302eb205bbd9cb8688b2a0a77ce897beaf5500d36dc39e"
+    },
+    {
+      "path": "target56/MCF7/query_atoms.tsv",
+      "bytes": 45011,
+      "sha256": "b0e92668daac2f98b85155ad7be6d8cc18f2876fbe88d02e5f1a87c6857ffda0"
+    },
+    {
+      "path": "target56/MCF7/same_drug_source_pairs.tsv",
+      "bytes": 20208,
+      "sha256": "c801ea0de29978219680bdfb83069d66cd04c0f73e11274449ed6c2529e02b69"
+    },
+    {
+      "path": "target56/MCF7/source_atoms.tsv",
+      "bytes": 89548,
+      "sha256": "058008baec32c142957de01b4af99980293137df9878493968e7725bca5a45c1"
+    },
+    {
+      "path": "target56/MCF7/source_response.npz",
+      "bytes": 5868135,
+      "sha256": "1055c6444ffc9529ec393ef87f1981c4f267fcfaa8a8993670a9f76087c29f92"
+    },
+    {
+      "path": "target56/MCF7/text_mapping.tsv",
+      "bytes": 156793,
+      "sha256": "13612ba53d417d756bc415c6b8aea7a9a93d057fe670e6a420dc0519a79a785d"
+    },
+    {
+      "path": "target56/MCF7/truth.npz",
+      "bytes": 2535732,
+      "sha256": "a0687bf78cbe806e81a6ca3f61df4f21d67f673db3e7a110ca6539f5806d2876"
+    }
+  ]
+}
