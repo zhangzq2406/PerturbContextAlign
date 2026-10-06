@@ -238,11 +238,9 @@ For broader scientific reruns, read [`docs/RUNBOOK.md`](docs/RUNBOOK.md) and the
 
 Raw datasets are **not redistributed** in this repository. They should be obtained from their original public repositories or study resources, as described in the manuscript and accompanying documentation.
 
-Public figure-linked source data, compact analysis outputs, data dictionaries, panel-to-source mappings, checksums, and public-safe provenance records will be deposited on **Figshare**.
+Public figure-linked source data, compact analysis outputs, data dictionaries, panel-to-source mappings, checksums, and public-safe provenance records are available from the accompanying **Figshare** record.
 
-**Figshare DOI:** forthcoming.
-
-The Figshare link and DOI will be added here when the public data record is created.
+**Figshare DOI:** [10.6084/m9.figshare.34071051](https://doi.org/10.6084/m9.figshare.34071051).
 
 ---
 
